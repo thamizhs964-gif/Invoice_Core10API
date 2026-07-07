@@ -19,7 +19,7 @@ namespace Invoice_API.Controllers
 
     [ApiController]
 
-    [Authorize]
+   // [Authorize]
 
     public class CategoryController : ControllerBase
 
