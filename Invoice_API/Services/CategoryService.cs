@@ -39,10 +39,11 @@ namespace Invoice_API.Services
             return await _repository.DeleteAsync(id);
         }
         public async Task<PagedResultDto<CategoryDto>> GetAllPagedAsync(
-string? catCode,
-string? itemName,
-int pageNumber,
-int pageSize)
+         string? catCode,
+         string? itemName,
+         int pageNumber,
+         int pageSize)
+
         {
             var result = await _repository.GetAllPagedAsync(
                 catCode, itemName, pageNumber, pageSize);

@@ -189,13 +189,6 @@ int pageSize)
 
                     IsActive = reader.GetBoolean(4),
 
-                    CreatedBy = reader.GetString(5),
-
-                    CreatedDate = reader.GetDateTime(6),
-
-                    UpdatedBy = reader.GetString(7),
-
-                    UpdatedDate = reader.GetDateTime(8) 
 
                 });
 
