@@ -21,6 +21,8 @@ builder.Services.AddScoped<IItemmasterRepository, ItemmasterRepository>();
 builder.Services.AddScoped<IItemmasterService, ItemmasterService>();
 
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(CategoryProfile).Assembly));
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(ItemmasterProfile).Assembly));
+
 var AllowAngular = "_allowAngular"; builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: AllowAngular,
