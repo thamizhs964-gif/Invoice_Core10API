@@ -15,6 +15,8 @@ public class AppDbContext : DbContext
 
     public DbSet<Category> Category { get; set; }
 
+    public DbSet<Users> Users { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
 

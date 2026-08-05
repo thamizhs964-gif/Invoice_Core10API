@@ -10,13 +10,29 @@ using Microsoft.OpenApi;
 using System.Text;
 //using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Annotations;
+using Invoice_API.Mapper;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<ICategoryRepository, CategoryRepositories>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(CategoryProfile).Assembly));
-    
+
+builder.Services.AddScoped<IUsersRepository, UsersRepositories>();
+builder.Services.AddScoped<IUsersService, UsersService>();
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(UsersProfile).Assembly));
+
+
+var AllowAngular = "_allowAngular"; builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: AllowAngular,
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:4200")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -79,15 +95,20 @@ builder.Services.AddSwaggerGen(c => {
 
 var app = builder.Build();
 
-app.UseSwagger();
-app.UseSwaggerUI();
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 
 // Configure the HTTP request pipeline.
 // if (app.Environment.IsDevelopment())
 //{
-  //  app.MapOpenApi();
+//  app.MapOpenApi();
 //}
-
+app.UseCors(AllowAngular);
+app.UseAuthorization();
 app.UseAuthorization();
 
 app.MapControllers();
