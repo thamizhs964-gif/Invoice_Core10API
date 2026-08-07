@@ -73,14 +73,11 @@ public class Users
     [Required]
     public bool IsActive { get; set; }
 
-    [Required]
     public bool IsDeleted { get; set; }
 
-    [Required]
     [StringLength(100)]
     public string CreatedBy { get; set; }
 
-    [Required]
     public DateTime CreatedDate { get; set; }
 
     [StringLength(100)]

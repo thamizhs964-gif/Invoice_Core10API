@@ -163,15 +163,6 @@ E:\Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\refint\Invoi
 E:\Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.pdb
 E:\Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.genruntimeconfig.cache
 E:\Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\ref\Invoice_API.dll
-E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.csproj.AssemblyReference.cache
-E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\rpswa.dswa.cache.json
-E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.GeneratedMSBuildEditorConfig.editorconfig
-E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.AssemblyInfoInputs.cache
-E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.AssemblyInfo.cs
-E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.csproj.CoreCompileInputs.cache
-E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.MvcApplicationPartsAssemblyInfo.cs
-E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.MvcApplicationPartsAssemblyInfo.cache
-E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.sourcelink.json
 E:\Invoice Projects\Invoice Management System\Invoice_API\bin\Debug\net10.0\appsettings.Development.json
 E:\Invoice Projects\Invoice Management System\Invoice_API\bin\Debug\net10.0\appsettings.json
 E:\Invoice Projects\Invoice Management System\Invoice_API\bin\Debug\net10.0\Invoice_API.staticwebassets.endpoints.json
@@ -312,6 +303,15 @@ E:\Invoice Projects\Invoice Management System\Invoice_API\bin\Debug\net10.0\runt
 E:\Invoice Projects\Invoice Management System\Invoice_API\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 E:\Invoice Projects\Invoice Management System\Invoice_API\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 E:\Invoice Projects\Invoice Management System\Invoice_API\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.csproj.AssemblyReference.cache
+E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\rpswa.dswa.cache.json
+E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.GeneratedMSBuildEditorConfig.editorconfig
+E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.AssemblyInfoInputs.cache
+E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.AssemblyInfo.cs
+E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.csproj.CoreCompileInputs.cache
+E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.MvcApplicationPartsAssemblyInfo.cs
+E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.MvcApplicationPartsAssemblyInfo.cache
+E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\Invoice_API.sourcelink.json
 E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\rjimswa.dswa.cache.json
 E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 E:\Invoice Projects\Invoice Management System\Invoice_API\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json

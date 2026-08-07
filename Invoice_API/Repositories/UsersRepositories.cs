@@ -43,9 +43,7 @@ public class UsersRepositories : IUsersRepository
             @ZipCode,
             @Country,
             @DateOfBirth,
-            @IsActive,
-            @IsDeleted,
-            @CreatedBy",
+            @IsActive",
 
             new SqlParameter("@UserName", users.UserName),
             new SqlParameter("@Email", users.Email),
@@ -63,9 +61,8 @@ public class UsersRepositories : IUsersRepository
             new SqlParameter("@ZipCode", users.ZipCode),
             new SqlParameter("@Country", users.Country),
             new SqlParameter("@DateOfBirth", (object?)users.DateOfBirth ?? DBNull.Value),
-            new SqlParameter("@IsActive", users.IsActive),
-            new SqlParameter("@IsDeleted", users.IsDeleted),
-            new SqlParameter("@CreatedBy", users.CreatedBy)
+            new SqlParameter("@IsActive", users.IsActive)
+         
         );
 
         return result;
@@ -116,9 +113,7 @@ public class UsersRepositories : IUsersRepository
  
             @DateOfBirth,
 
-            @IsActive,
-
-            @IsDeleted",
+            @IsActive",
 
             new SqlParameter("@Id", users.Id),
 
@@ -154,9 +149,7 @@ public class UsersRepositories : IUsersRepository
 
             new SqlParameter("@DateOfBirth", (object?)users.DateOfBirth ?? DBNull.Value),
 
-            new SqlParameter("@IsActive", users.IsActive),
-
-            new SqlParameter("@IsDeleted", users.IsDeleted)
+            new SqlParameter("@IsActive", users.IsActive)
 
             );
 

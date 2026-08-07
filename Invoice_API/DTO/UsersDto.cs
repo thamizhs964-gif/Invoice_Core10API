@@ -42,7 +42,7 @@ namespace Invoice_API.DTO
 
         public bool IsDeleted { get; set; }
 
-        public string CreatedBy { get; set; }
+        public string? CreatedBy { get; set; }
 
         public DateTime CreatedDate { get; set; }
 
