@@ -7,15 +7,15 @@ namespace Invoice_API.Mapper
 
 {
 
-    public class CategoryProfile : Profile
+    public class UsersProfile : Profile
 
     {
 
-        public CategoryProfile()
+        public UsersProfile()
 
         {
 
-            CreateMap<Category, CategoryDto>().ReverseMap();
+            CreateMap<Users, UsersDto>().ReverseMap();
 
         }
 

@@ -1,15 +1,10 @@
-﻿using Invoice_API.DTO;
-using Invoice_API.Contracts;
-
+﻿using Invoice_API.Contracts;
+using Invoice_API.DTO;
 using Invoice_API.Models;
-
+using Invoice_API.Services;
 using Microsoft.AspNetCore.Authorization;
-
 using Microsoft.AspNetCore.Http;
-
 using Microsoft.AspNetCore.Mvc;
-
-using Microsoft.EntityFrameworkCore;
 
 namespace Invoice_API.Controllers
 
@@ -21,13 +16,13 @@ namespace Invoice_API.Controllers
 
     [Authorize]
 
-    public class CategoryController : ControllerBase
+    public class UsersController : ControllerBase
 
     {
 
-        private readonly ICategoryService _service;
+        private readonly IUsersService _service;
 
-        public CategoryController(ICategoryService service)
+        public UsersController(IUsersService service)
 
         {
 
@@ -47,15 +42,17 @@ namespace Invoice_API.Controllers
 
                 var data = await _service.GetAllAsync();
 
-                return Ok(new ApiResponse<IEnumerable<CategoryDto>>
+                return Ok(new ApiResponse<IEnumerable<UsersDto>>
 
                 {
 
                     Success = true,
 
-                    Message = "Itemmaster retrieved successfully",
+                    Message = "Users retrieved successfully",
 
-                    Data = data
+                    Data = data,
+
+                    TotalRecords = data.Count()
 
                 });
 
@@ -71,7 +68,7 @@ namespace Invoice_API.Controllers
 
                     Success = false,
 
-                    Message = "Error retrieving Itemmaster",
+                    Message = "Error retrieving User",
 
                     Error = new ApiError
 
@@ -99,9 +96,9 @@ namespace Invoice_API.Controllers
 
             {
 
-                var item = await _service.GetByIdAsync(id);
+                var user = await _service.GetByIdAsync(id);
 
-                if (item == null)
+                if (user == null)
 
                 {
 
@@ -111,21 +108,21 @@ namespace Invoice_API.Controllers
 
                         Success = false,
 
-                        Message = "Item not found"
+                        Message = "user not found"
 
                     });
 
                 }
 
-                return Ok(new ApiResponse<CategoryDto>
+                return Ok(new ApiResponse<UsersDto>
 
                 {
 
                     Success = true,
 
-                    Message = "Item retrieved successfully",
+                    Message = "User retrieved successfully",
 
-                    Data = item
+                    Data = user
 
                 });
 
@@ -141,7 +138,7 @@ namespace Invoice_API.Controllers
 
                     Success = false,
 
-                    Message = "Error retrieving item",
+                    Message = "Error retrieving user",
 
                     Error = new ApiError
 
@@ -161,7 +158,7 @@ namespace Invoice_API.Controllers
 
         [HttpPost("Create")]
 
-        public async Task<IActionResult> Create(CategoryDto dto)
+        public async Task<IActionResult> Create(UsersDto dto)
 
         {
 
@@ -177,7 +174,7 @@ namespace Invoice_API.Controllers
 
                     Success = true,
 
-                    Message = "Item created successfully",
+                    Message = "user created successfully",
 
                     Data = id
 
@@ -195,7 +192,7 @@ namespace Invoice_API.Controllers
 
                     Success = false,
 
-                    Message = "Error creating item",
+                    Message = "Error creating user",
 
                     Error = new ApiError
 
@@ -215,7 +212,7 @@ namespace Invoice_API.Controllers
 
         [HttpPut("Update/{id}")]
 
-        public async Task<IActionResult> Update(int id, CategoryDto dto)
+        public async Task<IActionResult> Update(int id, UsersDto dto)
 
         {
 
@@ -237,7 +234,7 @@ namespace Invoice_API.Controllers
 
                         Success = false,
 
-                        Message = "Item not found"
+                        Message = "User not found"
 
                     });
 
@@ -249,7 +246,7 @@ namespace Invoice_API.Controllers
 
                     Success = true,
 
-                    Message = "Item Updated successfully"
+                    Message = "User Updated successfully"
 
                 });
 
@@ -265,7 +262,7 @@ namespace Invoice_API.Controllers
 
                     Success = false,
 
-                    Message = "Error updating item",
+                    Message = "Error updating user",
 
                     Error = new ApiError
 
@@ -305,7 +302,7 @@ namespace Invoice_API.Controllers
 
                         Success = false,
 
-                        Message = "Item not found"
+                        Message = "user not found"
 
                     });
 
@@ -317,7 +314,7 @@ namespace Invoice_API.Controllers
 
                     Success = true,
 
-                    Message = "Item deleted successfully"
+                    Message = "user deleted successfully"
 
                 });
 
@@ -333,7 +330,7 @@ namespace Invoice_API.Controllers
 
                     Success = false,
 
-                    Message = "Error deleting item",
+                    Message = "Error deleting user",
 
                     Error = new ApiError
 
@@ -355,13 +352,12 @@ namespace Invoice_API.Controllers
 
         public async Task<IActionResult> GetAllPaged(
 
-        string? Code,
-
-        string? Name,
-
-        int pageNumber = 1,
-
-        int pageSize = 10)
+            string? UserName,
+            string? DisplayName,
+            DateTime? DateOfBirth,
+            string? City,
+            int pageNumber = 1,
+            int pageSize = 10)
 
         {
 
@@ -371,15 +367,15 @@ namespace Invoice_API.Controllers
 
                 var result = await _service.GetAllPagedAsync(
 
-                    Code, Name, pageNumber, pageSize);
+                    UserName,DisplayName,  DateOfBirth, City, pageNumber, pageSize);
 
-                return Ok(new ApiResponse<IEnumerable<CategoryDto>>
+                return Ok(new ApiResponse<IEnumerable<UsersDto>>
 
                 {
 
                     Success = true,
 
-                    Message = "Items retrieved successfully",
+                    Message = "Users retrieved successfully",
 
                     Data = result.Data,
 
@@ -399,7 +395,7 @@ namespace Invoice_API.Controllers
 
                     Success = false,
 
-                    Message = "Error retrieving items",
+                    Message = "Error retrieving users",
 
                     Error = new ApiError
 
