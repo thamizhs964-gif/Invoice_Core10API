@@ -10,15 +10,9 @@ using Microsoft.OpenApi;
 using System.Text;
 //using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Annotations;
-using Invoice_API.Mapper;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-builder.Services.AddScoped<IUsersRepository, UsersRepositories>();
-builder.Services.AddScoped<IUsersService, UsersService>();
-builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(UsersProfile).Assembly));
-
 
 var AllowAngular = "_allowAngular"; builder.Services.AddCors(options =>
 {
@@ -105,7 +99,6 @@ if (app.Environment.IsDevelopment())
 //  app.MapOpenApi();
 //}
 app.UseCors(AllowAngular);
-app.UseAuthorization();
 app.UseAuthorization();
 
 app.MapControllers();

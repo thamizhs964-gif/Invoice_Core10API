@@ -5,7 +5,6 @@ namespace Invoice_API.Data;
 public class AppDbContext : DbContext
 
 {
-
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
 
     {
@@ -14,6 +13,14 @@ public class AppDbContext : DbContext
 
 
     public DbSet<Users> Users { get; set; }
+
+    public DbSet<Itemmaster> Itemmaster { get; set; }
+
+    public DbSet<Category> Category { get; set; }
+
+
+
+
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
