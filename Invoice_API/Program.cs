@@ -2,7 +2,7 @@ using Invoice_API.Contracts;
 using Invoice_API.Data;
 using Invoice_API.Repositories;
 using Invoice_API.Services;
-using InvoiceCoreAPI.Mapper;
+using Invoice_API.Mapper;
 using InvoiceCoreAPI.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
