@@ -10,7 +10,7 @@ public class Category
     [Key]
     public int Id { get; set; }
     [Required]
-    [StringLength (5)]
+    [StringLength(5)]
     public string Code { get; set; }
     [Required]
     [StringLength(25)]
@@ -21,7 +21,7 @@ public class Category
     [StringLength(100)]
     public string? CreatedBy { get; set; }
     public DateTime? CreatedDate { get; set; }
-    [StringLength (100)]
+    [StringLength(100)]
     public string? UpdatedBy { get; set; }
     public DateTime? UpdatedDate { get; set; }
 

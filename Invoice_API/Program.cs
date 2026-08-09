@@ -2,7 +2,7 @@ using Invoice_API.Contracts;
 using Invoice_API.Data;
 using Invoice_API.Repositories;
 using Invoice_API.Services;
-using InvoiceCoreAPI.Mapper;
+using Invoice_API.Mapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -15,13 +15,33 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepositories>();
+builder.Services.AddScoped<IUsersRepository, UsersRepositories>();
+builder.Services.AddScoped<ICustomerRepository, CustomerRepositories>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IUsersService,UsersService>();
+builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(CategoryProfile).Assembly));
+<<<<<<< HEAD
 
 builder.Services.AddScoped<IVendorRepository, VendorRepositories>();
 builder.Services.AddScoped<IVendorService, VendorService>();
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(VendorProfile).Assembly));
 
+=======
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(UsersProfile).Assembly));
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(CustomerProfile).Assembly));
+
+var AllowAngular = "_allowAngular"; builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: AllowAngular,
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:4200")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
+>>>>>>> origin
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -84,15 +104,19 @@ builder.Services.AddSwaggerGen(c => {
 
 var app = builder.Build();
 
-app.UseSwagger();
-app.UseSwaggerUI();
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 
 // Configure the HTTP request pipeline.
 // if (app.Environment.IsDevelopment())
 //{
-  //  app.MapOpenApi();
+//  app.MapOpenApi();
 //}
-
+app.UseCors(AllowAngular);
 app.UseAuthorization();
 
 app.MapControllers();

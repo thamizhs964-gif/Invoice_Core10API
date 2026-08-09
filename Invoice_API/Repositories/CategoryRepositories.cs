@@ -195,7 +195,7 @@ int pageSize)
 
                     UpdatedBy = reader.GetString(7),
 
-                    UpdatedDate = reader.GetDateTime(8) 
+                    UpdatedDate = reader.GetDateTime(8)
 
                 });
 
@@ -228,4 +228,3 @@ int pageSize)
     }
 
 }
-

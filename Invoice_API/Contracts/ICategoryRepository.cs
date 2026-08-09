@@ -29,4 +29,3 @@ public interface ICategoryRepository
     int pageSize);
 
 }
-
