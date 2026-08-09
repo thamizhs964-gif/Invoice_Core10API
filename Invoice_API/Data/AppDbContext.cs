@@ -12,7 +12,6 @@ public class AppDbContext : DbContext
     }
 
 
-    public DbSet<Category> Category { get; set; }
 
     public DbSet<Itemmaster> Itemmaster { get; set; }
 
