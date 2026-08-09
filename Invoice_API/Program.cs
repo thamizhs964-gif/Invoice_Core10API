@@ -13,10 +13,15 @@ using Swashbuckle.AspNetCore.Annotations;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddScoped<ICategoryRepository, CategoryRepositories>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(CategoryProfile).Assembly));
-    
+
+builder.Services.AddScoped<IVendorRepository, VendorRepositories>();
+builder.Services.AddScoped<IVendorService, VendorService>();
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(VendorProfile).Assembly));
+
 // Add services to the container.
 
 builder.Services.AddControllers();
