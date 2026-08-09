@@ -17,19 +17,15 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(buil
 builder.Services.AddScoped<ICategoryRepository, CategoryRepositories>();
 builder.Services.AddScoped<IUsersRepository, UsersRepositories>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepositories>();
+builder.Services.AddScoped<IVendorRepository, VendorRepositories>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IUsersService,UsersService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
-builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(CategoryProfile).Assembly));
-<<<<<<< HEAD
-
-builder.Services.AddScoped<IVendorRepository, VendorRepositories>();
 builder.Services.AddScoped<IVendorService, VendorService>();
-builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(VendorProfile).Assembly));
-
-=======
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(CategoryProfile).Assembly));
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(UsersProfile).Assembly));
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(CustomerProfile).Assembly));
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(VendorProfile).Assembly));
 
 var AllowAngular = "_allowAngular"; builder.Services.AddCors(options =>
 {
@@ -41,7 +37,6 @@ var AllowAngular = "_allowAngular"; builder.Services.AddCors(options =>
                   .AllowAnyMethod();
         });
 });
->>>>>>> origin
 // Add services to the container.
 
 builder.Services.AddControllers();
