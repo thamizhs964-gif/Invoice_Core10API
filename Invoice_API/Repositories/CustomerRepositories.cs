@@ -10,7 +10,7 @@ using System.Diagnostics.Metrics;
 using System.Numerics;
 using System.Reflection.Emit;
 
-namespace InvoiceCoreAPI.Repositories;
+namespace Invoice_API.Repositories;
 
 public class CustomerRepositories : ICustomerRepository
 {

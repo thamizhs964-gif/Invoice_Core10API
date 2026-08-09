@@ -13,8 +13,6 @@ public class AppDbContext : DbContext
     }
 
 
-    public DbSet<Category> Category { get; set; }
-
     public DbSet<Customer> customer { get; set; }
 
 
