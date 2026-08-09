@@ -10,15 +10,7 @@ public class AppDbContext : DbContext
     {
 
     }
-
-
-
-    public DbSet<Itemmaster> Itemmaster { get; set; }
-
-
-
-
-
+    public DbSet<Users> Users { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
 
