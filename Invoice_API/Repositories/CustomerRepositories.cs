@@ -102,7 +102,7 @@ public class CustomerRepositories : ICustomerRepository
 
     public async Task<Customer?> GetByIdAsync(int id)
     {
-        var customers = await _dbContext.customer.FromSqlRaw(
+        var customers = await _dbContext.Customer.FromSqlRaw(
             @"EXEC sp_Customer_GetById
             @Id",
             new SqlParameter("@Id", id))
@@ -112,7 +112,7 @@ public class CustomerRepositories : ICustomerRepository
     }
     public async Task<IEnumerable<Customer>> GetAllAsync()
     {
-        return await _dbContext.customer.FromSqlRaw(
+        return await _dbContext.Customer.FromSqlRaw(
             @"EXEC sp_Customer_GetAll")
             .ToListAsync();
     }
