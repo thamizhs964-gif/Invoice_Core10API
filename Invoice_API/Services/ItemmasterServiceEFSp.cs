@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Invoice_API.Contracts;
+using Invoice_API.Controllers;
 using Invoice_API.DTO;
 using Invoice_API.Entities;
 
@@ -9,10 +10,12 @@ namespace Invoice_API.Services
     {
         private readonly IItemmasterRepository _repository;
         private readonly IMapper _mapper;
-        public ItemmasterServiceEFSp(IItemmasterRepository repository, IMapper mapper)
+        private readonly ILogger<ItemmasterServiceEFSp> _logger;
+        public ItemmasterServiceEFSp(IItemmasterRepository repository, IMapper mapper, ILogger<ItemmasterServiceEFSp> logger)
         {
             _repository = repository;
             _mapper = mapper;
+            _logger = logger;
         }
         public async Task<int> AddAsync(ItemmasterDto dto)
         {
@@ -40,6 +43,7 @@ namespace Invoice_API.Services
         }
         public async Task<PagedResultDto<ItemmasterDto>> GetAllPagedAsync(ItemmasterFilterDto search)
         {
+            _logger.LogInformation("Itemmaster Service Getallpaged Method Called");
             var result = await _repository.GetAllPagedAsync(search);
 
             return new PagedResultDto<ItemmasterDto>
