@@ -17,6 +17,7 @@ public class AppDbContext : DbContext
     public DbSet<Category> Category { get; set; }
     public DbSet<Users> Users { get; set; }
     public DbSet<Vendor> Vendor { get; set; }
+    public DbSet<Itemmaster> Itemmaster { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
