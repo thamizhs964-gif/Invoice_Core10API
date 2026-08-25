@@ -1,0 +1,105 @@
+2026-08-25 13:29:03.601 +05:30 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-25 13:29:04.613 +05:30 [INF] Now listening on: http://localhost:5258
+2026-08-25 13:29:04.873 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-25 13:29:04.881 +05:30 [INF] Hosting environment: Development
+2026-08-25 13:29:04.886 +05:30 [INF] Content root path: E:\Invoice Projects\Invoice Management System\Invoice_API
+2026-08-25 13:29:08.109 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.html - null null
+2026-08-25 13:29:13.286 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.html - 304 null null 5232.048ms
+2026-08-25 13:29:13.430 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/_framework/aspnetcore-browser-refresh.js - null null
+2026-08-25 13:29:13.433 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui.css - null null
+2026-08-25 13:29:13.433 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.css - null null
+2026-08-25 13:29:13.435 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-standalone-preset.js - null null
+2026-08-25 13:29:13.455 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 26.9146ms
+2026-08-25 13:29:13.433 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-bundle.js - null null
+2026-08-25 13:29:13.442 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.js - null null
+2026-08-25 13:29:13.590 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-standalone-preset.js - 304 null null 154.8344ms
+2026-08-25 13:29:13.590 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui.css - 304 null null 156.8641ms
+2026-08-25 13:29:13.590 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.css - 304 null null 156.9694ms
+2026-08-25 13:29:13.616 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.js - 304 null null 174.245ms
+2026-08-25 13:29:13.618 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-bundle.js - 304 null null 185.2652ms
+2026-08-25 13:29:13.636 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/_vs/browserLink - null null
+2026-08-25 13:29:14.187 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/_vs/browserLink - 200 null text/javascript; charset=UTF-8 551.284ms
+2026-08-25 13:29:14.278 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/v1/swagger.json - null null
+2026-08-25 13:29:14.363 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/v1/swagger.json - 200 null application/json;charset=utf-8 84.9042ms
+2026-08-25 13:32:42.842 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/v1/User/Create - application/json 478
+2026-08-25 13:32:42.865 +05:30 [INF] CORS policy execution failed.
+2026-08-25 13:32:42.868 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-08-25 13:32:42.892 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.UserController.Create (Invoice_API)'
+2026-08-25 13:32:43.183 +05:30 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Invoice_API.DTO.UsersCreateDto) on controller Invoice_API.Controllers.UserController (Invoice_API).
+2026-08-25 13:32:47.256 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[Invoice_API.DTO.UsersDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-25 13:32:47.352 +05:30 [INF] Executed action Invoice_API.Controllers.UserController.Create (Invoice_API) in 4138.7265ms
+2026-08-25 13:32:47.361 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.UserController.Create (Invoice_API)'
+2026-08-25 13:32:47.373 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/v1/User/Create - 200 null application/json; charset=utf-8 4531.2631ms
+2026-08-25 13:33:23.505 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/v1/Login - application/json 56
+2026-08-25 13:33:23.518 +05:30 [INF] CORS policy execution failed.
+2026-08-25 13:33:23.520 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-08-25 13:33:23.528 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.LoginController.Login (Invoice_API)'
+2026-08-25 13:33:23.553 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Invoice_API.DTO.LoginRequestDto) on controller Invoice_API.Controllers.LoginController (Invoice_API).
+2026-08-25 13:33:24.449 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice_API.DTO.LoginResponseDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-25 13:33:24.543 +05:30 [INF] Executed action Invoice_API.Controllers.LoginController.Login (Invoice_API) in 979.6603ms
+2026-08-25 13:33:24.578 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.LoginController.Login (Invoice_API)'
+2026-08-25 13:33:24.592 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/v1/Login - 200 null application/json; charset=utf-8 1086.2386ms
+2026-08-25 13:34:17.077 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/v1/User/GetAll - null null
+2026-08-25 13:34:17.293 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.UserController.GetAll (Invoice_API)'
+2026-08-25 13:34:17.320 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice_API.Controllers.UserController (Invoice_API).
+2026-08-25 13:34:17.377 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice_API.DTO.UsersDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-08-25 13:34:17.394 +05:30 [INF] Executed action Invoice_API.Controllers.UserController.GetAll (Invoice_API) in 68.0575ms
+2026-08-25 13:34:17.406 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.UserController.GetAll (Invoice_API)'
+2026-08-25 13:34:17.411 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/User/GetAll - 200 null application/json; charset=utf-8 334.6607ms
+2026-08-25 13:38:19.827 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/v1/User/GetById/1 - null null
+2026-08-25 13:38:19.890 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.UserController.GetById (Invoice_API)'
+2026-08-25 13:38:19.924 +05:30 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Invoice_API.Controllers.UserController (Invoice_API).
+2026-08-25 13:38:19.963 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[Invoice_API.DTO.UsersDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-25 13:38:19.970 +05:30 [INF] Executed action Invoice_API.Controllers.UserController.GetById (Invoice_API) in 39.3803ms
+2026-08-25 13:38:19.974 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.UserController.GetById (Invoice_API)'
+2026-08-25 13:38:19.977 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/User/GetById/1 - 200 null application/json; charset=utf-8 149.9345ms
+2026-08-25 13:38:55.497 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/v1/User/GetPaged - application/json 155
+2026-08-25 13:38:55.526 +05:30 [INF] CORS policy execution failed.
+2026-08-25 13:38:55.529 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-08-25 13:38:55.544 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.UserController.GetPaged (Invoice_API)'
+2026-08-25 13:38:55.573 +05:30 [INF] Route matched with {action = "GetPaged", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaged(Invoice_API.DTO.UsersFilterDto) on controller Invoice_API.Controllers.UserController (Invoice_API).
+2026-08-25 13:38:55.971 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[Invoice_API.DTO.PagedResultDto`1[[Invoice_API.DTO.UsersDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-25 13:38:55.986 +05:30 [INF] Executed action Invoice_API.Controllers.UserController.GetPaged (Invoice_API) in 406.6952ms
+2026-08-25 13:38:55.990 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.UserController.GetPaged (Invoice_API)'
+2026-08-25 13:38:55.993 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/v1/User/GetPaged - 200 null application/json; charset=utf-8 496.9985ms
+2026-08-25 13:40:11.266 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/v1/User/GetPaged - application/json 165
+2026-08-25 13:40:11.285 +05:30 [INF] CORS policy execution failed.
+2026-08-25 13:40:11.297 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-08-25 13:40:11.303 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.UserController.GetPaged (Invoice_API)'
+2026-08-25 13:40:11.310 +05:30 [INF] Route matched with {action = "GetPaged", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaged(Invoice_API.DTO.UsersFilterDto) on controller Invoice_API.Controllers.UserController (Invoice_API).
+2026-08-25 13:40:11.374 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[Invoice_API.DTO.PagedResultDto`1[[Invoice_API.DTO.UsersDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-25 13:40:11.380 +05:30 [INF] Executed action Invoice_API.Controllers.UserController.GetPaged (Invoice_API) in 65.7789ms
+2026-08-25 13:40:11.384 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.UserController.GetPaged (Invoice_API)'
+2026-08-25 13:40:11.390 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/v1/User/GetPaged - 200 null application/json; charset=utf-8 123.6199ms
+2026-08-25 13:41:16.452 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5258/api/v1/User/Update/3 - application/json 463
+2026-08-25 13:41:16.496 +05:30 [INF] CORS policy execution failed.
+2026-08-25 13:41:16.500 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-08-25 13:41:16.505 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.UserController.Update (Invoice_API)'
+2026-08-25 13:41:16.533 +05:30 [INF] Route matched with {action = "Update", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, Invoice_API.DTO.UsersUpdateDto) on controller Invoice_API.Controllers.UserController (Invoice_API).
+2026-08-25 13:41:16.932 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[Invoice_API.DTO.UsersDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-25 13:41:16.939 +05:30 [INF] Executed action Invoice_API.Controllers.UserController.Update (Invoice_API) in 399.9384ms
+2026-08-25 13:41:16.945 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.UserController.Update (Invoice_API)'
+2026-08-25 13:41:16.957 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5258/api/v1/User/Update/3 - 200 null application/json; charset=utf-8 505.0453ms
+2026-08-25 13:41:32.891 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/v1/User/GetById/3 - null null
+2026-08-25 13:41:32.915 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.UserController.GetById (Invoice_API)'
+2026-08-25 13:41:32.921 +05:30 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Invoice_API.Controllers.UserController (Invoice_API).
+2026-08-25 13:41:32.954 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[Invoice_API.DTO.UsersDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-25 13:41:32.959 +05:30 [INF] Executed action Invoice_API.Controllers.UserController.GetById (Invoice_API) in 33.1239ms
+2026-08-25 13:41:32.971 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.UserController.GetById (Invoice_API)'
+2026-08-25 13:41:32.974 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/User/GetById/3 - 200 null application/json; charset=utf-8 83.056ms
+2026-08-25 13:42:18.243 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5258/api/v1/User/Delete/3?updatedBy=string - null null
+2026-08-25 13:42:18.250 +05:30 [INF] CORS policy execution failed.
+2026-08-25 13:42:18.252 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-08-25 13:42:18.260 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.UserController.Delete (Invoice_API)'
+2026-08-25 13:42:18.292 +05:30 [INF] Route matched with {action = "Delete", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32, System.String) on controller Invoice_API.Controllers.UserController (Invoice_API).
+2026-08-25 13:42:18.391 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-08-25 13:42:18.403 +05:30 [INF] Executed action Invoice_API.Controllers.UserController.Delete (Invoice_API) in 106.8148ms
+2026-08-25 13:42:18.414 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.UserController.Delete (Invoice_API)'
+2026-08-25 13:42:18.417 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5258/api/v1/User/Delete/3?updatedBy=string - 200 null application/json; charset=utf-8 173.5383ms
+2026-08-25 13:42:30.942 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/v1/User/GetAll - null null
+2026-08-25 13:42:30.950 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.UserController.GetAll (Invoice_API)'
+2026-08-25 13:42:30.960 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice_API.Controllers.UserController (Invoice_API).
+2026-08-25 13:42:30.969 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice_API.DTO.UsersDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-08-25 13:42:30.976 +05:30 [INF] Executed action Invoice_API.Controllers.UserController.GetAll (Invoice_API) in 13.6899ms
+2026-08-25 13:42:30.978 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.UserController.GetAll (Invoice_API)'
+2026-08-25 13:42:30.981 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/User/GetAll - 200 null application/json; charset=utf-8 38.6455ms

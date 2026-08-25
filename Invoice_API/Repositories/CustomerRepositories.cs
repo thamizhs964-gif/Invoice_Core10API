@@ -9,7 +9,7 @@ using System.Data;
 using System.Diagnostics.Metrics;
 using System.Numerics;
 using System.Reflection.Emit;
-
+ 
 namespace Invoice_API.Repositories;
 
 public class CustomerRepositories : ICustomerRepository
@@ -35,9 +35,7 @@ public class CustomerRepositories : ICustomerRepository
             @Country,
             @ZipCode,
             @GstNo,
-            @IsActive,
-            @IsDeleted,
-            @CreatedBy",
+            @IsActive",
 
             new SqlParameter("@CustomerCode", customer.CustomerCode),
             new SqlParameter("@CustomerName", customer.CustomerName),
@@ -51,9 +49,7 @@ public class CustomerRepositories : ICustomerRepository
             new SqlParameter("@Country", (object?)customer.Country ?? DBNull.Value),
             new SqlParameter("@ZipCode", (object?)customer.ZipCode ?? DBNull.Value),
             new SqlParameter("@GstNo", (object?)customer.GstNo ?? DBNull.Value),
-            new SqlParameter("@IsActive", customer.IsActive),
-            new SqlParameter("@IsDeleted", customer.IsDeleted),
-            new SqlParameter("@CreatedBy", customer.CreatedBy)
+            new SqlParameter("@IsActive", customer.IsActive)
         );
 
         return result;
