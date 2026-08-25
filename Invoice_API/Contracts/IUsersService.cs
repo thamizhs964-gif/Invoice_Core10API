@@ -1,25 +1,35 @@
 ﻿using Invoice_API.DTO;
+using Invoice_API.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace Invoice_API.Contracts;
 
 public interface IUsersService
 {
-    Task<int> AddAsync(UsersDto dto);
+    Task<ApiResponse<IEnumerable<UsersDto>>> GetAllAsync();
 
-    Task<IEnumerable<UsersDto>> GetAllAsync();
+    Task<ApiResponse<UsersDto?>> GetByIdAsync(int id);
 
-    Task<UsersDto?> GetByIdAsync(int id);
+    Task<ApiResponse<UsersDto>> AddAsync(UsersCreateDto dto);
 
-    Task<bool> UpdateAsync(UsersDto dto);
+    Task<ApiResponse<UsersDto>> UpdateAsync(
 
-    Task<bool> DeleteAsync(int id);
+        int id,
 
-    Task<PagedResultDto<UsersDto>> GetAllPagedAsync(
-    string? UserName,
-    string? DisplayName,
-    DateTime? DateOfBirth,
-    string? City,
-    int pageNumber,
-    int pageSize);
+        UsersUpdateDto dto);
+
+    Task<ApiResponse<bool>> DeleteAsync(int id, string updatedBy);
+
+    Task<ApiResponse<PagedResultDto<UsersDto>>> GetAllPagedAsync(
+
+        UsersFilterDto filter);
+
+    Task<UsersDto?> ValidateUserAsync(
+
+        string userName,
+
+        string password);
+
 
 }
+ 
+

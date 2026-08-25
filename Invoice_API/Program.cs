@@ -1,16 +1,19 @@
 using Invoice_API.Contracts;
 using Invoice_API.Data;
+using Invoice_API.Mapper;
+using Invoice_API.Middleware;
 using Invoice_API.Repositories;
 using Invoice_API.Services;
-using Invoice_API.Mapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi;
-using System.Text;
-using Swashbuckle.AspNetCore.Annotations;
 using Serilog;
-using Invoice_API.Middleware;
+using Swashbuckle.AspNetCore.Annotations;
+using System.Data;
+using System.Text;
+using Microsoft.AspNetCore.Mvc;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
@@ -23,14 +26,27 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Host.UseSerilog(); 
 
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<IDbConnection>(sp =>
+
+{
+
+    var configuration = sp.GetRequiredService<IConfiguration>();
+
+    var connectionString =
+
+        configuration.GetConnectionString("DefaultConnection");
+
+    return new SqlConnection(connectionString);
+
+});
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepositories>();
-builder.Services.AddScoped<IUsersRepository, UsersRepositories>();
+builder.Services.AddScoped<IUsersRepository, UsersRepositoriesSpDap>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepositories>();
 builder.Services.AddScoped<IVendorRepository, VendorRepositories>();
 builder.Services.AddScoped<IItemmasterRepository, ItemmasterRepositoriesEFSp>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddScoped<IUsersService,UsersService>();
+builder.Services.AddScoped<IUsersService,UsersServiceSpDap>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IVendorService, VendorService>();
 builder.Services.AddScoped<IItemmasterService, ItemmasterServiceEFSp>();
@@ -39,6 +55,29 @@ builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(UsersProfile).Assembly)
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(CustomerProfile).Assembly));
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(VendorProfile).Assembly));
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(ItemmasterProfile).Assembly));
+
+builder.Services.AddApiVersioning(options =>
+
+{
+
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+
+    options.AssumeDefaultVersionWhenUnspecified = true;
+
+    options.ReportApiVersions = true;
+
+});
+
+builder.Services.AddVersionedApiExplorer(options =>
+
+{
+
+    options.GroupNameFormat = "'v'VVV";
+
+    options.SubstituteApiVersionInUrl = true;
+
+});
+
 
 var AllowAngular = "_allowAngular"; builder.Services.AddCors(options =>
 {
