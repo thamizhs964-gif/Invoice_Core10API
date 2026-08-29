@@ -103,3 +103,42 @@
 2026-08-25 13:42:30.976 +05:30 [INF] Executed action Invoice_API.Controllers.UserController.GetAll (Invoice_API) in 13.6899ms
 2026-08-25 13:42:30.978 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.UserController.GetAll (Invoice_API)'
 2026-08-25 13:42:30.981 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/User/GetAll - 200 null application/json; charset=utf-8 38.6455ms
+2026-08-25 14:02:57.932 +05:30 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-25 14:02:58.597 +05:30 [INF] Now listening on: http://localhost:5258
+2026-08-25 14:02:58.824 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-25 14:02:58.827 +05:30 [INF] Hosting environment: Development
+2026-08-25 14:02:58.830 +05:30 [INF] Content root path: E:\Invoice Projects\Invoice Management System\Invoice_API
+2026-08-25 14:03:00.485 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.html - null null
+2026-08-25 14:03:04.859 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.html - 304 null null 4397.2191ms
+2026-08-25 14:03:04.928 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/_framework/aspnetcore-browser-refresh.js - null null
+2026-08-25 14:03:04.929 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.css - null null
+2026-08-25 14:03:04.932 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-bundle.js - null null
+2026-08-25 14:03:04.944 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 18.9607ms
+2026-08-25 14:03:04.929 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-standalone-preset.js - null null
+2026-08-25 14:03:04.928 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui.css - null null
+2026-08-25 14:03:04.929 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.js - null null
+2026-08-25 14:03:05.070 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.css - 304 null null 146.4824ms
+2026-08-25 14:03:05.070 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui.css - 304 null null 146.4818ms
+2026-08-25 14:03:05.070 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-bundle.js - 304 null null 137.9278ms
+2026-08-25 14:03:05.070 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-standalone-preset.js - 304 null null 144.5919ms
+2026-08-25 14:03:05.072 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.js - 304 null null 143.2895ms
+2026-08-25 14:03:05.142 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/_vs/browserLink - null null
+2026-08-25 14:03:05.339 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/_vs/browserLink - 200 null text/javascript; charset=UTF-8 197.1238ms
+2026-08-25 14:03:05.539 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/v1/swagger.json - null null
+2026-08-25 14:03:05.643 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/v1/swagger.json - 200 null application/json;charset=utf-8 104.315ms
+2026-08-25 14:03:54.598 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/v1/Login - application/json 56
+2026-08-25 14:03:54.641 +05:30 [INF] CORS policy execution failed.
+2026-08-25 14:03:54.650 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-08-25 14:03:54.711 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.LoginController.Login (Invoice_API)'
+2026-08-25 14:03:54.830 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Invoice_API.DTO.LoginRequestDto) on controller Invoice_API.Controllers.LoginController (Invoice_API).
+2026-08-25 14:03:59.399 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice_API.DTO.LoginResponseDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-25 14:03:59.519 +05:30 [INF] Executed action Invoice_API.Controllers.LoginController.Login (Invoice_API) in 4669.6308ms
+2026-08-25 14:03:59.523 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.LoginController.Login (Invoice_API)'
+2026-08-25 14:03:59.541 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/v1/Login - 200 null application/json; charset=utf-8 4943.0637ms
+2026-08-25 14:05:10.042 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/v1/User/GetAll - null null
+2026-08-25 14:05:10.445 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.UserController.GetAll (Invoice_API)'
+2026-08-25 14:05:10.477 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice_API.Controllers.UserController (Invoice_API).
+2026-08-25 14:05:10.575 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice_API.DTO.UsersDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-08-25 14:05:10.603 +05:30 [INF] Executed action Invoice_API.Controllers.UserController.GetAll (Invoice_API) in 121.7014ms
+2026-08-25 14:05:10.610 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.UserController.GetAll (Invoice_API)'
+2026-08-25 14:05:10.613 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/User/GetAll - 200 null application/json; charset=utf-8 571.3399ms
