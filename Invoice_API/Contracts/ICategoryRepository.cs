@@ -1,5 +1,6 @@
-﻿using Invoice_API.Entities;
-using Invoice_API.DTO;
+﻿using Invoice_API.DTO;
+using Invoice_API.Entities;
+using Invoice_API.Models.AI;
 
 
 namespace Invoice_API.Contracts;
@@ -27,5 +28,11 @@ public interface ICategoryRepository
     int pageNumber,
 
     int pageSize);
+
+    Task<Category?> GetByNameAsync(string name);
+    Task<CategoryItemCountResult?> GetCategoryItemCountAsync(
+    string categoryName,
+    bool categoryActiveOnly,
+    bool? itemActiveOnly);
 
 }

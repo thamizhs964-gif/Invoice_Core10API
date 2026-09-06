@@ -4,7 +4,9 @@ using Invoice_API.Mapper;
 using Invoice_API.Middleware;
 using Invoice_API.Repositories;
 using Invoice_API.Services;
+using InvoiceCoreAPI.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -13,7 +15,6 @@ using Serilog;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Data;
 using System.Text;
-using Microsoft.AspNetCore.Mvc;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
@@ -50,11 +51,15 @@ builder.Services.AddScoped<IUsersService,UsersServiceSpDap>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IVendorService, VendorService>();
 builder.Services.AddScoped<IItemmasterService, ItemmasterServiceEFSp>();
+builder.Services.AddScoped<IMockAIProvider, MockAIProvider>();
+builder.Services.AddScoped<IAIService, AIService>();
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(CategoryProfile).Assembly));
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(UsersProfile).Assembly));
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(CustomerProfile).Assembly));
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(VendorProfile).Assembly));
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(ItemmasterProfile).Assembly));
+
+
 
 builder.Services.AddApiVersioning(options =>
 
