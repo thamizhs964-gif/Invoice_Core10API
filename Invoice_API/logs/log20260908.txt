@@ -1,0 +1,390 @@
+2026-09-08 13:11:58.434 +05:30 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-08 13:11:59.674 +05:30 [INF] Now listening on: http://localhost:5258
+2026-09-08 13:11:59.995 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-08 13:12:00.053 +05:30 [INF] Hosting environment: Development
+2026-09-08 13:12:00.060 +05:30 [INF] Content root path: E:\Invoice Projects\Invoice Management System\Invoice_API
+2026-09-08 13:12:08.325 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.html - null null
+2026-09-08 13:12:09.607 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.html - 304 null null 1309.5899ms
+2026-09-08 13:12:09.679 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui.css - null null
+2026-09-08 13:12:09.683 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-bundle.js - null null
+2026-09-08 13:12:09.688 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-standalone-preset.js - null null
+2026-09-08 13:12:09.683 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-08 13:12:09.687 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.css - null null
+2026-09-08 13:12:09.691 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.js - null null
+2026-09-08 13:12:09.801 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 116.8402ms
+2026-09-08 13:12:09.830 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.css - 304 null null 143.6764ms
+2026-09-08 13:12:09.830 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-bundle.js - 304 null null 146.6306ms
+2026-09-08 13:12:09.830 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui.css - 304 null null 155.3199ms
+2026-09-08 13:12:09.830 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-standalone-preset.js - 304 null null 143.9432ms
+2026-09-08 13:12:09.852 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.js - 304 null null 160.9507ms
+2026-09-08 13:12:09.987 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/_vs/browserLink - null null
+2026-09-08 13:12:10.378 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/_vs/browserLink - 200 null text/javascript; charset=UTF-8 391.6193ms
+2026-09-08 13:12:10.511 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/v1/swagger.json - null null
+2026-09-08 13:12:10.640 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/v1/swagger.json - 200 null application/json;charset=utf-8 130.0706ms
+2026-09-08 13:12:40.405 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/v1/Login - application/json 56
+2026-09-08 13:12:40.442 +05:30 [INF] CORS policy execution failed.
+2026-09-08 13:12:40.448 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-09-08 13:12:40.476 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.LoginController.Login (Invoice_API)'
+2026-09-08 13:12:40.575 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Invoice_API.DTO.LoginRequestDto) on controller Invoice_API.Controllers.LoginController (Invoice_API).
+2026-09-08 13:12:42.879 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice_API.DTO.LoginResponseDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-08 13:12:42.963 +05:30 [INF] Executed action Invoice_API.Controllers.LoginController.Login (Invoice_API) in 2370.2502ms
+2026-09-08 13:12:42.968 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.LoginController.Login (Invoice_API)'
+2026-09-08 13:12:42.977 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/v1/Login - 200 null application/json; charset=utf-8 2572.6893ms
+2026-09-08 13:36:27.266 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/v1/Category/GetAll - null null
+2026-09-08 13:36:27.599 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.CategoryController.GetAll (Invoice_API)'
+2026-09-08 13:36:27.676 +05:30 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice_API.Controllers.CategoryController (Invoice_API).
+2026-09-08 13:36:29.501 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-09-08 13:36:32.091 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Category_GetAll
+2026-09-08 13:36:32.302 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice_API.DTO.CategoryDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-08 13:36:32.384 +05:30 [INF] Executed action Invoice_API.Controllers.CategoryController.GetAll (Invoice_API) in 4700.7565ms
+2026-09-08 13:36:32.393 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.CategoryController.GetAll (Invoice_API)'
+2026-09-08 13:36:32.422 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/Category/GetAll - 200 null application/json; charset=utf-8 5170.7083ms
+2026-09-08 13:44:28.296 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/v1/Category/GetAll - null null
+2026-09-08 13:44:28.319 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.CategoryController.GetAll (Invoice_API)'
+2026-09-08 13:44:28.326 +05:30 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice_API.Controllers.CategoryController (Invoice_API).
+2026-09-08 13:44:28.734 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Category_GetAll
+2026-09-08 13:44:28.747 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice_API.DTO.CategoryDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-08 13:44:28.755 +05:30 [INF] Executed action Invoice_API.Controllers.CategoryController.GetAll (Invoice_API) in 424.2786ms
+2026-09-08 13:44:28.759 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.CategoryController.GetAll (Invoice_API)'
+2026-09-08 13:44:28.761 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/Category/GetAll - 200 null application/json; charset=utf-8 464.8102ms
+2026-09-08 13:50:09.694 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/ai/ask - application/json 55
+2026-09-08 13:50:09.721 +05:30 [INF] CORS policy execution failed.
+2026-09-08 13:50:09.724 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-09-08 13:50:09.730 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 13:50:09.763 +05:30 [INF] Route matched with {action = "Ask", controller = "AI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(Invoice_API.Models.AI.AIAskRequest) on controller Invoice_API.Controllers.AIController (Invoice_API).
+2026-09-08 13:50:09.872 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-09-08 13:50:09.951 +05:30 [INF] Executed action Invoice_API.Controllers.AIController.Ask (Invoice_API) in 182.4562ms
+2026-09-08 13:50:09.958 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 13:50:09.962 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/ai/ask - 400 null application/problem+json; charset=utf-8 269.0056ms
+2026-09-08 13:52:16.418 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/ai/ask - application/json 48
+2026-09-08 13:52:16.445 +05:30 [INF] CORS policy execution failed.
+2026-09-08 13:52:16.453 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-09-08 13:52:16.455 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 13:52:16.489 +05:30 [INF] Route matched with {action = "Ask", controller = "AI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(Invoice_API.Models.AI.AIAskRequest) on controller Invoice_API.Controllers.AIController (Invoice_API).
+2026-09-08 13:52:16.502 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-09-08 13:52:16.506 +05:30 [INF] Executed action Invoice_API.Controllers.AIController.Ask (Invoice_API) in 9.2187ms
+2026-09-08 13:52:16.508 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 13:52:16.511 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/ai/ask - 400 null application/problem+json; charset=utf-8 93.1987ms
+2026-09-08 13:52:35.443 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAll - null null
+2026-09-08 13:52:35.484 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.ItemmasterController.GetAll (Invoice_API)'
+2026-09-08 13:52:35.508 +05:30 [INF] Route matched with {action = "GetAll", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice_API.Controllers.ItemmasterController (Invoice_API).
+2026-09-08 13:52:36.085 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetAll
+2026-09-08 13:52:36.192 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'Invoice_API.Data.AppDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method109(Closure, QueryContext, DbDataReader, Int32[])
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method109(Closure, QueryContext, DbDataReader, Int32[])
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-09-08 13:52:36.783 +05:30 [INF] Executing ObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-08 13:52:36.793 +05:30 [INF] Executed action Invoice_API.Controllers.ItemmasterController.GetAll (Invoice_API) in 1279.8484ms
+2026-09-08 13:52:36.798 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.ItemmasterController.GetAll (Invoice_API)'
+2026-09-08 13:52:36.801 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAll - 500 null application/json; charset=utf-8 1357.9572ms
+2026-09-08 14:14:00.469 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAll - null null
+2026-09-08 14:14:00.482 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.ItemmasterController.GetAll (Invoice_API)'
+2026-09-08 14:14:00.486 +05:30 [INF] Route matched with {action = "GetAll", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice_API.Controllers.ItemmasterController (Invoice_API).
+2026-09-08 14:14:00.862 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetAll
+2026-09-08 14:14:00.874 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'Invoice_API.Data.AppDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method109(Closure, QueryContext, DbDataReader, Int32[])
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method109(Closure, QueryContext, DbDataReader, Int32[])
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-09-08 14:14:01.041 +05:30 [INF] Executing ObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-08 14:14:01.045 +05:30 [INF] Executed action Invoice_API.Controllers.ItemmasterController.GetAll (Invoice_API) in 556.1057ms
+2026-09-08 14:14:01.051 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.ItemmasterController.GetAll (Invoice_API)'
+2026-09-08 14:14:01.055 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAll - 500 null application/json; charset=utf-8 586.2222ms
+2026-09-08 14:14:38.710 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAllPaged?PageNumber=1&PageSize=10 - null null
+2026-09-08 14:14:38.722 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.ItemmasterController.GetAllPaged (Invoice_API)'
+2026-09-08 14:14:38.761 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(Invoice_API.DTO.ItemmasterFilterDto) on controller Invoice_API.Controllers.ItemmasterController (Invoice_API).
+2026-09-08 14:14:38.820 +05:30 [INF] Itemmaster Service Getallpaged Method Called
+2026-09-08 14:14:38.828 +05:30 [INF] ItemsMaster Service Repostiory GetAllPaged Async Method Called
+2026-09-08 14:14:39.032 +05:30 [INF] Executing ObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-08 14:14:39.036 +05:30 [INF] Executed action Invoice_API.Controllers.ItemmasterController.GetAllPaged (Invoice_API) in 267.8251ms
+2026-09-08 14:14:39.039 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.ItemmasterController.GetAllPaged (Invoice_API)'
+2026-09-08 14:14:39.043 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAllPaged?PageNumber=1&PageSize=10 - 500 null application/json; charset=utf-8 333.3267ms
+2026-09-08 14:14:50.348 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui.css - null null
+2026-09-08 14:14:50.365 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.css - null null
+2026-09-08 14:14:50.369 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/.well-known/appspecific/com.chrome.devtools.json - null null
+2026-09-08 14:14:50.379 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.css - 304 null null 14.4034ms
+2026-09-08 14:14:50.379 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui.css - 304 null null 31.1101ms
+2026-09-08 14:14:50.393 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 24.2952ms
+2026-09-08 14:14:50.415 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5258/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2026-09-08 14:22:57.346 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAll - null null
+2026-09-08 14:22:57.358 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.ItemmasterController.GetAll (Invoice_API)'
+2026-09-08 14:22:57.359 +05:30 [INF] Route matched with {action = "GetAll", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice_API.Controllers.ItemmasterController (Invoice_API).
+2026-09-08 14:22:57.723 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetAll
+2026-09-08 14:22:57.911 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice_API.DTO.ItemmasterDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-08 14:22:58.046 +05:30 [INF] Executed action Invoice_API.Controllers.ItemmasterController.GetAll (Invoice_API) in 684.8516ms
+2026-09-08 14:22:58.060 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.ItemmasterController.GetAll (Invoice_API)'
+2026-09-08 14:22:58.078 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAll - 200 null application/json; charset=utf-8 735.2449ms
+2026-09-08 14:23:21.571 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAllPaged?PageNumber=1&PageSize=10 - null null
+2026-09-08 14:23:21.584 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.ItemmasterController.GetAllPaged (Invoice_API)'
+2026-09-08 14:23:21.587 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(Invoice_API.DTO.ItemmasterFilterDto) on controller Invoice_API.Controllers.ItemmasterController (Invoice_API).
+2026-09-08 14:23:21.594 +05:30 [INF] Itemmaster Service Getallpaged Method Called
+2026-09-08 14:23:21.622 +05:30 [INF] ItemsMaster Service Repostiory GetAllPaged Async Method Called
+2026-09-08 14:23:21.755 +05:30 [INF] Items retrieved successfully
+2026-09-08 14:23:21.759 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice_API.DTO.ItemmasterDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-08 14:23:21.791 +05:30 [INF] Executed action Invoice_API.Controllers.ItemmasterController.GetAllPaged (Invoice_API) in 199.8223ms
+2026-09-08 14:23:21.799 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.ItemmasterController.GetAllPaged (Invoice_API)'
+2026-09-08 14:23:21.802 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAllPaged?PageNumber=1&PageSize=10 - 200 null application/json; charset=utf-8 231.4602ms
+2026-09-08 14:25:01.084 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAllPaged?PageNumber=2&PageSize=10 - null null
+2026-09-08 14:25:01.127 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.ItemmasterController.GetAllPaged (Invoice_API)'
+2026-09-08 14:25:01.151 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(Invoice_API.DTO.ItemmasterFilterDto) on controller Invoice_API.Controllers.ItemmasterController (Invoice_API).
+2026-09-08 14:25:01.174 +05:30 [INF] Itemmaster Service Getallpaged Method Called
+2026-09-08 14:25:01.176 +05:30 [INF] ItemsMaster Service Repostiory GetAllPaged Async Method Called
+2026-09-08 14:25:01.231 +05:30 [INF] Items retrieved successfully
+2026-09-08 14:25:01.234 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice_API.DTO.ItemmasterDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-08 14:25:01.237 +05:30 [INF] Executed action Invoice_API.Controllers.ItemmasterController.GetAllPaged (Invoice_API) in 63.5086ms
+2026-09-08 14:25:01.239 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.ItemmasterController.GetAllPaged (Invoice_API)'
+2026-09-08 14:25:01.240 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAllPaged?PageNumber=2&PageSize=10 - 200 null application/json; charset=utf-8 156.058ms
+2026-09-08 14:25:10.636 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAllPaged?PageNumber=1&PageSize=10 - null null
+2026-09-08 14:25:10.646 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.ItemmasterController.GetAllPaged (Invoice_API)'
+2026-09-08 14:25:10.651 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(Invoice_API.DTO.ItemmasterFilterDto) on controller Invoice_API.Controllers.ItemmasterController (Invoice_API).
+2026-09-08 14:25:10.655 +05:30 [INF] Itemmaster Service Getallpaged Method Called
+2026-09-08 14:25:10.656 +05:30 [INF] ItemsMaster Service Repostiory GetAllPaged Async Method Called
+2026-09-08 14:25:10.708 +05:30 [INF] Items retrieved successfully
+2026-09-08 14:25:10.710 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice_API.DTO.ItemmasterDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-08 14:25:10.714 +05:30 [INF] Executed action Invoice_API.Controllers.ItemmasterController.GetAllPaged (Invoice_API) in 59.57ms
+2026-09-08 14:25:10.733 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.ItemmasterController.GetAllPaged (Invoice_API)'
+2026-09-08 14:25:10.737 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAllPaged?PageNumber=1&PageSize=10 - 200 null application/json; charset=utf-8 100.8546ms
+2026-09-08 14:25:20.055 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/ai/ask - application/json 48
+2026-09-08 14:25:20.066 +05:30 [INF] CORS policy execution failed.
+2026-09-08 14:25:20.069 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-09-08 14:25:20.108 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 14:25:20.125 +05:30 [INF] Route matched with {action = "Ask", controller = "AI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(Invoice_API.Models.AI.AIAskRequest) on controller Invoice_API.Controllers.AIController (Invoice_API).
+2026-09-08 14:25:20.135 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-09-08 14:25:20.147 +05:30 [INF] Executed action Invoice_API.Controllers.AIController.Ask (Invoice_API) in 19.2093ms
+2026-09-08 14:25:20.152 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 14:25:20.154 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/ai/ask - 400 null application/problem+json; charset=utf-8 99.2186ms
+2026-09-08 14:29:48.069 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/ai/ask - application/json 48
+2026-09-08 14:29:48.106 +05:30 [INF] CORS policy execution failed.
+2026-09-08 14:29:48.112 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-09-08 14:29:48.162 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 14:29:48.168 +05:30 [INF] Route matched with {action = "Ask", controller = "AI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(Invoice_API.Models.AI.AIAskRequest) on controller Invoice_API.Controllers.AIController (Invoice_API).
+2026-09-08 14:29:48.175 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-09-08 14:29:48.178 +05:30 [INF] Executed action Invoice_API.Controllers.AIController.Ask (Invoice_API) in 6.3726ms
+2026-09-08 14:29:48.186 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 14:29:48.188 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/ai/ask - 400 null application/problem+json; charset=utf-8 119.0023ms
+2026-09-08 14:30:25.383 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAllPaged?PageNumber=1&PageSize=10 - null null
+2026-09-08 14:30:25.403 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.ItemmasterController.GetAllPaged (Invoice_API)'
+2026-09-08 14:30:25.406 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(Invoice_API.DTO.ItemmasterFilterDto) on controller Invoice_API.Controllers.ItemmasterController (Invoice_API).
+2026-09-08 14:30:25.415 +05:30 [INF] Itemmaster Service Getallpaged Method Called
+2026-09-08 14:30:25.417 +05:30 [INF] ItemsMaster Service Repostiory GetAllPaged Async Method Called
+2026-09-08 14:30:25.883 +05:30 [INF] Items retrieved successfully
+2026-09-08 14:30:25.906 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice_API.Models.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice_API.DTO.ItemmasterDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-08 14:30:25.919 +05:30 [INF] Executed action Invoice_API.Controllers.ItemmasterController.GetAllPaged (Invoice_API) in 504.9773ms
+2026-09-08 14:30:25.933 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.ItemmasterController.GetAllPaged (Invoice_API)'
+2026-09-08 14:30:25.936 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/api/v1/Itemmaster/GetAllPaged?PageNumber=1&PageSize=10 - 200 null application/json; charset=utf-8 580.8444ms
+2026-09-08 14:38:21.815 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/Login/Login - null null
+2026-09-08 14:38:21.834 +05:30 [INF] CORS policy execution successful.
+2026-09-08 14:38:21.849 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/Login/Login - 204 null null 34.6423ms
+2026-09-08 14:38:21.859 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/Login/Login - application/json 42
+2026-09-08 14:38:21.871 +05:30 [INF] CORS policy execution successful.
+2026-09-08 14:38:21.874 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/Login/Login - 404 0 null 15.1277ms
+2026-09-08 14:38:21.879 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5258/api/Login/Login, Response status code: 404
+2026-09-08 14:38:24.259 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/Login/Login - application/json 42
+2026-09-08 14:38:24.278 +05:30 [INF] CORS policy execution successful.
+2026-09-08 14:38:24.284 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/Login/Login - 404 0 null 25.2985ms
+2026-09-08 14:38:24.298 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5258/api/Login/Login, Response status code: 404
+2026-09-08 14:38:24.479 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/Login/Login - application/json 42
+2026-09-08 14:38:24.518 +05:30 [INF] CORS policy execution successful.
+2026-09-08 14:38:24.537 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/Login/Login - 404 0 null 58.8733ms
+2026-09-08 14:38:24.584 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5258/api/Login/Login, Response status code: 404
+2026-09-08 14:38:26.388 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/Login/Login - application/json 42
+2026-09-08 14:38:26.421 +05:30 [INF] CORS policy execution successful.
+2026-09-08 14:38:26.424 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/Login/Login - 404 0 null 36.3979ms
+2026-09-08 14:38:26.438 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5258/api/Login/Login, Response status code: 404
+2026-09-08 14:38:26.617 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/Login/Login - application/json 42
+2026-09-08 14:38:26.638 +05:30 [INF] CORS policy execution successful.
+2026-09-08 14:38:26.643 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/Login/Login - 404 0 null 25.7514ms
+2026-09-08 14:38:26.662 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5258/api/Login/Login, Response status code: 404
+2026-09-08 14:38:27.714 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5258/api/Login/Login - null null
+2026-09-08 14:38:27.723 +05:30 [INF] CORS policy execution successful.
+2026-09-08 14:38:27.726 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5258/api/Login/Login - 204 null null 11.4302ms
+2026-09-08 14:38:27.735 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/Login/Login - application/json 42
+2026-09-08 14:38:27.742 +05:30 [INF] CORS policy execution successful.
+2026-09-08 14:38:27.744 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/Login/Login - 404 0 null 9.4546ms
+2026-09-08 14:38:27.753 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5258/api/Login/Login, Response status code: 404
+2026-09-08 14:44:49.187 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/ai/ask - application/json 48
+2026-09-08 14:44:49.264 +05:30 [INF] CORS policy execution failed.
+2026-09-08 14:44:49.267 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-09-08 14:44:49.272 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 14:44:49.281 +05:30 [INF] Route matched with {action = "Ask", controller = "AI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(Invoice_API.Models.AI.AIAskRequest) on controller Invoice_API.Controllers.AIController (Invoice_API).
+2026-09-08 14:44:49.310 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-09-08 14:44:49.316 +05:30 [INF] Executed action Invoice_API.Controllers.AIController.Ask (Invoice_API) in 29.8162ms
+2026-09-08 14:44:49.319 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 14:44:49.321 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/ai/ask - 400 null application/problem+json; charset=utf-8 134.9939ms
+2026-09-08 14:50:56.244 +05:30 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-08 14:50:56.633 +05:30 [INF] Now listening on: http://localhost:5258
+2026-09-08 14:50:56.760 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-08 14:50:56.762 +05:30 [INF] Hosting environment: Development
+2026-09-08 14:50:56.766 +05:30 [INF] Content root path: E:\Invoice Projects\Invoice Management System\Invoice_API
+2026-09-08 14:50:58.177 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.html - null null
+2026-09-08 14:51:00.753 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.html - 304 null null 2606.483ms
+2026-09-08 14:51:00.834 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui.css - null null
+2026-09-08 14:51:00.834 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-standalone-preset.js - null null
+2026-09-08 14:51:00.834 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-bundle.js - null null
+2026-09-08 14:51:00.834 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-08 14:51:00.834 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.css - null null
+2026-09-08 14:51:00.865 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.js - null null
+2026-09-08 14:51:00.965 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 165.6533ms
+2026-09-08 14:51:00.992 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.css - 304 null null 195.2358ms
+2026-09-08 14:51:00.992 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-standalone-preset.js - 304 null null 191.4923ms
+2026-09-08 14:51:00.992 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui.css - 304 null null 195.2475ms
+2026-09-08 14:51:00.992 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-bundle.js - 304 null null 192.0382ms
+2026-09-08 14:51:00.992 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.js - 304 null null 157.2944ms
+2026-09-08 14:51:01.053 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/_vs/browserLink - null null
+2026-09-08 14:51:01.120 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.3937ms
+2026-09-08 14:51:01.194 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/v1/swagger.json - null null
+2026-09-08 14:51:01.285 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.5073ms
+2026-09-08 14:51:15.928 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/index.html - null null
+2026-09-08 14:51:16.030 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/index.html - 200 null text/html;charset=utf-8 101.9285ms
+2026-09-08 14:51:16.067 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui.css - null null
+2026-09-08 14:51:16.071 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/index.css - null null
+2026-09-08 14:51:16.071 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-08 14:51:16.072 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui-bundle.js - null null
+2026-09-08 14:51:16.073 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/index.js - null null
+2026-09-08 14:51:16.073 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui-standalone-preset.js - null null
+2026-09-08 14:51:16.073 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui.css - 304 null null 6.9154ms
+2026-09-08 14:51:16.081 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/index.css - 304 null null 10.2986ms
+2026-09-08 14:51:16.086 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 15.8951ms
+2026-09-08 14:51:16.092 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui-bundle.js - 304 null null 19.2667ms
+2026-09-08 14:51:16.101 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/index.js - 304 null null 28.3827ms
+2026-09-08 14:51:16.107 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui-standalone-preset.js - 304 null null 34.5435ms
+2026-09-08 14:51:16.142 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/_vs/browserLink - null null
+2026-09-08 14:51:16.174 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.7138ms
+2026-09-08 14:51:16.464 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/v1/swagger.json - null null
+2026-09-08 14:51:16.502 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/favicon-32x32.png - null null
+2026-09-08 14:51:16.513 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/favicon-32x32.png - 304 null null 10.3366ms
+2026-09-08 14:51:16.525 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.4998ms
+2026-09-08 14:51:46.748 +05:30 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-08 14:51:47.064 +05:30 [INF] Now listening on: http://localhost:5258
+2026-09-08 14:51:47.155 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-08 14:51:47.157 +05:30 [INF] Hosting environment: Development
+2026-09-08 14:51:47.159 +05:30 [INF] Content root path: E:\Invoice Projects\Invoice Management System\Invoice_API
+2026-09-08 14:51:48.931 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/index.html - null null
+2026-09-08 14:51:48.930 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.html - null null
+2026-09-08 14:51:49.487 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/index.html - 304 null null 567.367ms
+2026-09-08 14:51:49.487 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.html - 304 null null 567.3566ms
+2026-09-08 14:51:49.520 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui.css - null null
+2026-09-08 14:51:49.536 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-bundle.js - null null
+2026-09-08 14:51:49.560 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-standalone-preset.js - null null
+2026-09-08 14:51:49.535 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.css - null null
+2026-09-08 14:51:49.531 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui.css - null null
+2026-09-08 14:51:49.564 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-08 14:51:49.608 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 45.76ms
+2026-09-08 14:51:49.614 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-bundle.js - 304 null null 78.837ms
+2026-09-08 14:51:49.614 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui-standalone-preset.js - 304 null null 77.2467ms
+2026-09-08 14:51:49.614 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.css - 304 null null 79.9347ms
+2026-09-08 14:51:49.614 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui.css - 304 null null 83.5311ms
+2026-09-08 14:51:49.614 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/swagger-ui.css - 304 null null 94.9711ms
+2026-09-08 14:51:49.635 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/index.css - null null
+2026-09-08 14:51:49.647 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/_vs/browserLink - null null
+2026-09-08 14:51:49.654 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui-standalone-preset.js - null null
+2026-09-08 14:51:49.674 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui-bundle.js - null null
+2026-09-08 14:51:49.706 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui-standalone-preset.js - 304 null null 52.1029ms
+2026-09-08 14:51:49.685 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/index.js - null null
+2026-09-08 14:51:49.693 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/index.css - 304 null null 57.4076ms
+2026-09-08 14:51:49.718 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/swagger-ui-bundle.js - 304 null null 43.4575ms
+2026-09-08 14:51:49.730 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-08 14:51:49.744 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/index.js - 304 null null 58.6349ms
+2026-09-08 14:51:49.752 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/index.js - null null
+2026-09-08 14:51:49.770 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 40.054ms
+2026-09-08 14:51:49.782 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/_vs/browserLink - 200 null text/javascript; charset=UTF-8 134.3368ms
+2026-09-08 14:51:49.788 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/index.js - 304 null null 36.2886ms
+2026-09-08 14:51:49.798 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/_vs/browserLink - null null
+2026-09-08 14:51:49.846 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.9089ms
+2026-09-08 14:51:49.863 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/Swagger/v1/swagger.json - null null
+2026-09-08 14:51:49.958 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/Swagger/v1/swagger.json - 200 null application/json;charset=utf-8 95.7268ms
+2026-09-08 14:51:49.977 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/v1/swagger.json - null null
+2026-09-08 14:51:50.019 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5258/swagger/favicon-32x32.png - null null
+2026-09-08 14:51:50.031 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/favicon-32x32.png - 304 null null 12.4988ms
+2026-09-08 14:51:50.071 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5258/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 93.5322ms
+2026-09-08 14:52:19.586 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/v1/Login - application/json 56
+2026-09-08 14:52:19.615 +05:30 [INF] CORS policy execution failed.
+2026-09-08 14:52:19.617 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-09-08 14:52:19.634 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.LoginController.Login (Invoice_API)'
+2026-09-08 14:52:19.697 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Invoice_API.DTO.LoginRequestDto) on controller Invoice_API.Controllers.LoginController (Invoice_API).
+2026-09-08 14:52:22.563 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice_API.DTO.LoginResponseDto, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-08 14:52:22.632 +05:30 [INF] Executed action Invoice_API.Controllers.LoginController.Login (Invoice_API) in 2923.7489ms
+2026-09-08 14:52:22.638 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.LoginController.Login (Invoice_API)'
+2026-09-08 14:52:22.646 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/v1/Login - 200 null application/json; charset=utf-8 3059.4535ms
+2026-09-08 14:53:28.769 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/ai/ask - application/json 54
+2026-09-08 14:53:28.927 +05:30 [INF] CORS policy execution failed.
+2026-09-08 14:53:28.934 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-09-08 14:53:28.948 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 14:53:28.973 +05:30 [INF] Route matched with {action = "Ask", controller = "AI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(Invoice_API.Models.AI.AIAskRequest) on controller Invoice_API.Controllers.AIController (Invoice_API).
+2026-09-08 14:53:30.407 +05:30 [INF] Processing AI question: How many active items are in Rice?
+2026-09-08 14:53:30.475 +05:30 [INF] Mock LLM processing question: How many active items are in Rice?
+2026-09-08 14:53:30.514 +05:30 [INF] Mock LLM returned intent: {"intent":"CategoryItemCount","categoryName":"Rice","categoryActiveOnly":true,"itemActiveOnly":true}
+2026-09-08 14:53:30.522 +05:30 [INF] Intent received from Mock LLM: {"intent":"CategoryItemCount","categoryName":"Rice","categoryActiveOnly":true,"itemActiveOnly":true}
+2026-09-08 14:53:33.002 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Category_GetAll
+2026-09-08 14:53:33.259 +05:30 [INF] Database result - Category: Rice, ItemActiveOnly: true, Count: 10
+2026-09-08 14:53:33.264 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice_API.Models.AI.AIAskResponse, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-08 14:53:33.270 +05:30 [INF] Executed action Invoice_API.Controllers.AIController.Ask (Invoice_API) in 4292.6164ms
+2026-09-08 14:53:33.273 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 14:53:33.289 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/ai/ask - 200 null application/json; charset=utf-8 4520.1387ms
+2026-09-08 14:53:57.256 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/ai/ask - application/json 56
+2026-09-08 14:53:57.282 +05:30 [INF] CORS policy execution failed.
+2026-09-08 14:53:57.288 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-09-08 14:53:57.293 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 14:53:57.295 +05:30 [INF] Route matched with {action = "Ask", controller = "AI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(Invoice_API.Models.AI.AIAskRequest) on controller Invoice_API.Controllers.AIController (Invoice_API).
+2026-09-08 14:53:57.299 +05:30 [INF] Processing AI question: How many inactive items are in Rice?
+2026-09-08 14:53:57.300 +05:30 [INF] Mock LLM processing question: How many inactive items are in Rice?
+2026-09-08 14:53:57.301 +05:30 [INF] Mock LLM returned intent: {"intent":"CategoryItemCount","categoryName":"Rice","categoryActiveOnly":true,"itemActiveOnly":false}
+2026-09-08 14:53:57.303 +05:30 [INF] Intent received from Mock LLM: {"intent":"CategoryItemCount","categoryName":"Rice","categoryActiveOnly":true,"itemActiveOnly":false}
+2026-09-08 14:53:57.324 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Category_GetAll
+2026-09-08 14:53:57.349 +05:30 [INF] Database result - Category: Rice, ItemActiveOnly: false, Count: 0
+2026-09-08 14:53:57.352 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice_API.Models.AI.AIAskResponse, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-08 14:53:57.354 +05:30 [INF] Executed action Invoice_API.Controllers.AIController.Ask (Invoice_API) in 56.7952ms
+2026-09-08 14:53:57.357 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 14:53:57.362 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/ai/ask - 200 null application/json; charset=utf-8 106.2165ms
+2026-09-08 14:54:07.202 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/ai/ask - application/json 47
+2026-09-08 14:54:07.236 +05:30 [INF] CORS policy execution failed.
+2026-09-08 14:54:07.238 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-09-08 14:54:07.247 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 14:54:07.253 +05:30 [INF] Route matched with {action = "Ask", controller = "AI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(Invoice_API.Models.AI.AIAskRequest) on controller Invoice_API.Controllers.AIController (Invoice_API).
+2026-09-08 14:54:07.267 +05:30 [INF] Processing AI question: How many items are in Rice?
+2026-09-08 14:54:07.269 +05:30 [INF] Mock LLM processing question: How many items are in Rice?
+2026-09-08 14:54:07.271 +05:30 [INF] Mock LLM returned intent: {"intent":"CategoryItemCount","categoryName":"Rice","categoryActiveOnly":true,"itemActiveOnly":null}
+2026-09-08 14:54:07.274 +05:30 [INF] Intent received from Mock LLM: {"intent":"CategoryItemCount","categoryName":"Rice","categoryActiveOnly":true,"itemActiveOnly":null}
+2026-09-08 14:54:07.382 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Category_GetAll
+2026-09-08 14:54:07.434 +05:30 [INF] Database result - Category: Rice, ItemActiveOnly: null, Count: 10
+2026-09-08 14:54:07.438 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice_API.Models.AI.AIAskResponse, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-08 14:54:07.443 +05:30 [INF] Executed action Invoice_API.Controllers.AIController.Ask (Invoice_API) in 183.2442ms
+2026-09-08 14:54:07.448 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 14:54:07.452 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/ai/ask - 200 null application/json; charset=utf-8 249.8191ms
+2026-09-08 14:54:19.944 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5258/api/ai/ask - application/json 47
+2026-09-08 14:54:20.006 +05:30 [INF] CORS policy execution failed.
+2026-09-08 14:54:20.013 +05:30 [INF] Request origin http://localhost:5258 does not have permission to access the resource.
+2026-09-08 14:54:20.019 +05:30 [INF] Executing endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 14:54:20.040 +05:30 [INF] Route matched with {action = "Ask", controller = "AI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(Invoice_API.Models.AI.AIAskRequest) on controller Invoice_API.Controllers.AIController (Invoice_API).
+2026-09-08 14:54:20.048 +05:30 [INF] Processing AI question: How many items are in Soap?
+2026-09-08 14:54:20.050 +05:30 [INF] Mock LLM processing question: How many items are in Soap?
+2026-09-08 14:54:20.053 +05:30 [INF] Mock LLM returned intent: {"intent":"CategoryItemCount","categoryName":"Soap","categoryActiveOnly":true,"itemActiveOnly":null}
+2026-09-08 14:54:20.058 +05:30 [INF] Intent received from Mock LLM: {"intent":"CategoryItemCount","categoryName":"Soap","categoryActiveOnly":true,"itemActiveOnly":null}
+2026-09-08 14:54:20.070 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Category_GetAll
+2026-09-08 14:54:20.130 +05:30 [INF] Database result - Category: Soap, ItemActiveOnly: null, Count: 10
+2026-09-08 14:54:20.140 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice_API.Models.AI.AIAskResponse, Invoice_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-08 14:54:20.148 +05:30 [INF] Executed action Invoice_API.Controllers.AIController.Ask (Invoice_API) in 101.4054ms
+2026-09-08 14:54:20.151 +05:30 [INF] Executed endpoint 'Invoice_API.Controllers.AIController.Ask (Invoice_API)'
+2026-09-08 14:54:20.153 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5258/api/ai/ask - 200 null application/json; charset=utf-8 210.1979ms
