@@ -7,5 +7,6 @@
   <Project Path="Invoice.DAL/Invoice.DAL.csproj" Id="44b814e6-5ddb-4231-b00b-557a90824599" />
   <Project Path="Invoice.Data/Invoice.Data.csproj" Id="c92c789f-995c-46f7-ae6f-c6099edcc8ce" />
   <Project Path="Invoice.DTOs/Invoice.DTOs.csproj" Id="7e6e37b9-ac8f-43d0-9963-b3fe2b6b878f" />
+  <Project Path="Invoice.Model/Invoice.Model.csproj" Id="dbae0418-9273-4a0d-92bd-31d1f185fe52" />
   <Project Path="Invoice_API/Invoice_API.csproj" />
 </Solution>

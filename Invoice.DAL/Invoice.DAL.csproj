@@ -7,7 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\" />
+    <PackageReference Include="Dapper" Version="2.1.79" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Invoice.Data\Invoice.Data.csproj" />
+    <ProjectReference Include="..\Invoice.DTOs\Invoice.DTOs.csproj" />
+    <ProjectReference Include="..\Invoice.Model\Invoice.Model.csproj" />
   </ItemGroup>
 
 </Project>

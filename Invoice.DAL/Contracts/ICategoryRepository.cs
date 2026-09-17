@@ -1,21 +1,22 @@
-﻿using Invoice.DAL;
-using Invoice.DAL.Contracts;
+﻿using Invoice.DTOs;
+using Invoice.Data.Entities;
+using Invoice.Model.AI;
 
 namespace Invoice.DAL.Contracts;
 
-public class ICategoryRepository
+public interface ICategoryRepository
 {
-    Task<int> AddAsync(Category category);
+    Task<int> AddAsync(CategoryEntity entity);
 
-    Task<IEnumerable<Category>> GetAllAsync();
+    Task<IEnumerable<CategoryEntity>> GetAllAsync();
 
-    Task<Category?> GetByIdAsync(int id);
+    Task<CategoryEntity?> GetByIdAsync(int id);
 
-    Task<bool> UpdateAsync(Category category);
+    Task<bool> UpdateAsync(CategoryEntity entity);
 
     Task<bool> DeleteAsync(int id);
 
-    Task<PagedResultDto<Category>> GetAllPagedAsync(
+    Task<PagedResultDto<CategoryEntity>> GetAllPagedAsync(
 
     string? Code,
 
@@ -25,7 +26,7 @@ public class ICategoryRepository
 
     int pageSize);
 
-    Task<Category?> GetByNameAsync(string name);
+    Task<CategoryEntity?> GetByNameAsync(string name);
     Task<CategoryItemCountResult?> GetCategoryItemCountAsync(
     string categoryName,
     bool categoryActiveOnly,
