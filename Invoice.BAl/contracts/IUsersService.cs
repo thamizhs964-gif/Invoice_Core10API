@@ -1,8 +1,5 @@
 ﻿using Invoice.DTOs;
 using Invoice.Model;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Invoice.BAl.contracts;
 

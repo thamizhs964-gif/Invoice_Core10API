@@ -1,4 +1,6 @@
-﻿using Invoice.DTOs;
+﻿using Invoice.Data.Entities;
+using Invoice.DTOs;
+using Invoice.Model.AI;
 using System;
 using System.Collections.Generic;
 using System.Text;
