@@ -28,7 +28,7 @@ public class UsersRepositoriesSpDap : IUsersRepository
 
         return await _connection.QueryAsync<UsersEntity>(
 
-            "dbo.sp_Users_GetAll",
+            "dbo.sp_User_GetAll",
 
             commandType: CommandType.StoredProcedure);
 
@@ -40,7 +40,7 @@ public class UsersRepositoriesSpDap : IUsersRepository
 
         return await _connection.QueryFirstOrDefaultAsync<UsersEntity>(
 
-            "dbo.sp_Users_GetById",
+            "dbo.sp_User_GetById",
 
             new
 
@@ -62,7 +62,7 @@ public class UsersRepositoriesSpDap : IUsersRepository
 
         return await _connection.QueryFirstOrDefaultAsync<UsersEntity>(
 
-            "dbo.sp_Users_GetByUserName",
+            "dbo.sp_User_GetByUserName",
 
             new
 
@@ -84,7 +84,7 @@ public class UsersRepositoriesSpDap : IUsersRepository
 
         return await _connection.QueryFirstOrDefaultAsync<UsersEntity>(
 
-            "dbo.sp_Users_GetByEmail",
+            "dbo.sp_User_GetByEmail",
 
             new
 
@@ -146,7 +146,7 @@ public class UsersRepositoriesSpDap : IUsersRepository
 
         return await _connection.ExecuteScalarAsync<int>(
 
-            "dbo.sp_Users_Insert",
+            "dbo.sp_User_Insert",
 
             parameters,
 
@@ -204,7 +204,7 @@ public class UsersRepositoriesSpDap : IUsersRepository
 
         var result = await _connection.ExecuteAsync(
 
-            "dbo.sp_Users_Update",
+            "dbo.sp_User_Update",
 
             parameters,
 
@@ -226,7 +226,7 @@ public class UsersRepositoriesSpDap : IUsersRepository
 
         var result = await _connection.QuerySingleAsync<bool>(
 
-            "dbo.sp_Users_Delete",
+            "dbo.sp_User_Delete",
 
             parameters,
 
@@ -242,7 +242,7 @@ public class UsersRepositoriesSpDap : IUsersRepository
 
         var result = await _connection.ExecuteAsync(
 
-            "dbo.sp_Users_Delete",
+            "dbo.sp_User_Delete",
 
             new
 
@@ -266,7 +266,7 @@ public class UsersRepositoriesSpDap : IUsersRepository
 
         using var multi = await _connection.QueryMultipleAsync(
 
-            "dbo.sp_Users_GetPaged",
+            "dbo.sp_User_GetPaged",
 
             new
 
@@ -314,7 +314,7 @@ public class UsersRepositoriesSpDap : IUsersRepository
 
         var result = await _connection.ExecuteAsync(
 
-            "dbo.sp_Users_UpdateLastLogin",
+            "dbo.sp_User_UpdateLastLogin",
 
             new
 
