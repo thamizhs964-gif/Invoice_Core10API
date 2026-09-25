@@ -13,7 +13,10 @@ public interface IVendorRepository
     Task<PagedResultDto<VendorEntity>> GetAllPagedAsync(
         string? VendorCode,
         string? VendorName,
+        string? MobileNo,
         string? City,
         int pageNumber,
         int pageSize);
+    Task<int> GetVendorCountAsync(bool? activeOnly);
+
 }

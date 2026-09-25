@@ -44,12 +44,13 @@ public class CustomerService : ICustomerService
     public async Task<PagedResultDto<CustomerDto>> GetAllPagedAsync(
         string? CustomerCode,
         string? CustomerName,
+        string? MobileNo,
         string? City,
         int PageNumber,
         int PageSize
         )
     {
-        var result = await _repository.GetAllPagedAsync(CustomerCode, CustomerName, City,
+        var result = await _repository.GetAllPagedAsync(CustomerCode, CustomerName, MobileNo, City,
             PageNumber, PageSize);
         return new PagedResultDto<CustomerDto>
         {
@@ -57,5 +58,9 @@ public class CustomerService : ICustomerService
             TotalRecords = result.TotalRecords
 
         };
+    }
+    public async Task<int> GetCustomerCountAsync()
+    {
+        return await _repository.GetCustomerCountAsync();
     }
 }

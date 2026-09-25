@@ -33,8 +33,7 @@ public class CustomerRepositories : ICustomerRepository
             @State,
             @Country,
             @ZipCode,
-            @GstNo,
-            @IsActive",
+            @GstNo",
 
             new SqlParameter("@CustomerCode", entity.CustomerCode),
             new SqlParameter("@CustomerName", entity.CustomerName),
@@ -47,8 +46,7 @@ public class CustomerRepositories : ICustomerRepository
             new SqlParameter("@State", (object?)entity.State ?? DBNull.Value),
             new SqlParameter("@Country", (object?)entity.Country ?? DBNull.Value),
             new SqlParameter("@ZipCode", (object?)entity.ZipCode ?? DBNull.Value),
-            new SqlParameter("@GstNo", (object?)entity.GstNo ?? DBNull.Value),
-            new SqlParameter("@IsActive", entity.IsActive)
+            new SqlParameter("@GstNo", (object?)entity.GstNo ?? DBNull.Value)
         );
 
         return result;
@@ -121,6 +119,7 @@ public class CustomerRepositories : ICustomerRepository
     public async Task<PagedResultDto<CustomerEntity>> GetAllPagedAsync(
         string? CustomerCode,
         string? CustomerName,
+        string? MobileNo,
         string? City,
         int PageNumber,
         int PageSize)
@@ -177,4 +176,17 @@ public class CustomerRepositories : ICustomerRepository
             };
         }
     }
+
+    public async Task<int> GetCustomerCountAsync(bool? activeOnly)
+    {
+        var query = _dbContext.Customers
+            .Where(x => x.IsDeleted != true);
+        if (activeOnly.HasValue)
+        {
+            query = query.Where(x =>
+                x.IsActive == activeOnly.Value);
+        }
+        return await query.CountAsync();
+    }
+
 }

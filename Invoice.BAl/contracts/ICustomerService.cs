@@ -15,8 +15,10 @@ public interface ICustomerService
     Task<PagedResultDto<CustomerDto>> GetAllPagedAsync(
         string? CustomerCode,
         string? CustomerName,
+        string? MobileNo,
         string? City,
         int PageNumber,
         int PageSize
         );
+    Task<int> GetCustomerCountAsync();
 }
