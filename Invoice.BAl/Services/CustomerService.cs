@@ -59,8 +59,5 @@ public class CustomerService : ICustomerService
 
         };
     }
-    public async Task<int> GetCustomerCountAsync()
-    {
-        return await _repository.GetCustomerCountAsync();
-    }
+    
 }

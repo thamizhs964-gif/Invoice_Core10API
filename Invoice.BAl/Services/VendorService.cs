@@ -43,6 +43,7 @@ public class VendorService : IVendorService
     public async Task<PagedResultDto<VendorDto>> GetAllPagedAsync(
         string? VendorCode,
         string? VendorName,
+        string? MobileNo,
         string? City,
         int PageNumber,
         int PageSize)
@@ -50,6 +51,7 @@ public class VendorService : IVendorService
         var result = await _repository.GetAllPagedAsync(
             VendorCode,
             VendorName,
+            MobileNo,
             City,
             PageNumber,
             PageSize);

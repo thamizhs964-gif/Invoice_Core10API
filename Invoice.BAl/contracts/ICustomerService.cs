@@ -20,5 +20,4 @@ public interface ICustomerService
         int PageNumber,
         int PageSize
         );
-    Task<int> GetCustomerCountAsync();
 }

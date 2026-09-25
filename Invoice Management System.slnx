@@ -3,6 +3,7 @@
     <File Path=".gitignore" />
   </Folder>
   <Project Path="Invoice.AI/Invoice.AI.csproj" Id="68d99f73-7b89-49d0-b8d5-dd11df5f9c96" />
+  <Project Path="Invoice.BAl.Test/Invoice.BAl.Test.csproj" Id="a104a2ba-0fa0-4a49-ae18-b1a9b90bfb55" />
   <Project Path="Invoice.BAl/Invoice.BAl.csproj" Id="80f0efe7-8dc6-442a-b201-adfd09a5b6c0" />
   <Project Path="Invoice.DAL.Test/Invoice.DAL.Test.csproj" Id="c87ac0be-8b7c-4a31-bbb4-63b289c8b982" />
   <Project Path="Invoice.DAL/Invoice.DAL.csproj" Id="44b814e6-5ddb-4231-b00b-557a90824599" />

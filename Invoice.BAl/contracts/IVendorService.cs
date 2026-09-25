@@ -23,6 +23,8 @@ public interface IVendorService
 
         string? VendorName,
 
+        string? MobileNo,
+
         string? City,
 
         int pageNumber,
