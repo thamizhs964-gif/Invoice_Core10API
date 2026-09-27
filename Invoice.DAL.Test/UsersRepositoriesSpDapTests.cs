@@ -820,6 +820,7 @@ private SqlConnection CreateConnection()
 
         var filter = new Invoice.DTOs.UsersFilterDto
         {
+            UserName = "TSTUSER",
             IsActive = true,
             PageNumber = 1,
             PageSize = 10
