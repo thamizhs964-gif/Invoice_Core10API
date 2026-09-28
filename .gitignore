@@ -19,4 +19,8 @@ obj/
 **/bin/
 
 **/obj/
+
+TestResults/
+coveragereport/
+CoverageReport/
  
