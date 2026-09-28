@@ -14,9 +14,8 @@ public class VendorRepositoriesTests
 
 {
 
-    private const string ConnectionString =
+    private static string ConnectionString = TestDatabase.ConnectionString;
 
-        "Server=DESKTOP-RRIC29Q\\MSSQLSERVER2025,1435;Database=Invoice_Test;User Id=sa;Password=123456;Encrypt=False;TrustServerCertificate=True";
 
     private static AppDbContext CreateDbContext()
 
