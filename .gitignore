@@ -9,7 +9,7 @@
 *.userosscache
 
 *.sln.docstates
-*Invoice.CoreAPI/logs/.txt
+Invoice_API/logs/*.txt
  
 # Build files
 
