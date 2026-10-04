@@ -2,7 +2,6 @@
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
   </Folder>
-  <Project Path="Invoice.AI/Invoice.AI.csproj" Id="68d99f73-7b89-49d0-b8d5-dd11df5f9c96" />
   <Project Path="Invoice.BAl.Test/Invoice.BAl.Test.csproj" Id="a104a2ba-0fa0-4a49-ae18-b1a9b90bfb55" />
   <Project Path="Invoice.BAl/Invoice.BAl.csproj" Id="80f0efe7-8dc6-442a-b201-adfd09a5b6c0" />
   <Project Path="Invoice.CoreAPI.Test/Invoice.CoreAPI.Test.csproj" Id="319f67a4-cf97-4de8-992c-b7e6bc38a334" />
