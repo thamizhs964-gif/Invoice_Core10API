@@ -1,4 +1,4 @@
-﻿using Invoice.BAl.Services;
+﻿using Invoice.BAL.Services;
 using Invoice.DAL.Contracts;
 using Invoice.Data.Entities;
 using Invoice.DTOs;

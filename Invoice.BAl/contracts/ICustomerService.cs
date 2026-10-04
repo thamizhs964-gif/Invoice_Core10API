@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Invoice.BAl.contracts;
+namespace Invoice.BAL.contracts;
 
 public interface ICustomerService
 {

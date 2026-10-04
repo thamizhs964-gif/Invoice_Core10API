@@ -1,7 +1,7 @@
 ﻿using Invoice.DTOs;
 using Invoice.Model;
 
-namespace Invoice.BAl.contracts;
+namespace Invoice.BAL.contracts;
 
 public interface IUsersService
 {

@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Invoice.BAl.contracts;
+using Invoice.BAL.contracts;
 using Invoice.DAL.Contracts;
 using Invoice.Data.Entities;
 using Invoice.DTOs;
@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Invoice.BAl.Services;
+namespace Invoice.BAL.Services;
 
 public class CustomerService : ICustomerService
 {

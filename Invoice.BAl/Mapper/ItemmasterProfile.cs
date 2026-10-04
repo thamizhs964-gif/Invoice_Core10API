@@ -3,7 +3,7 @@ using Invoice.Data.Entities;
 using Invoice.DTOs;
 
 
-namespace Invoice.BAl.Mapper;
+namespace Invoice.BAL.Mapper;
 
 public class ItemmasterProfile : Profile
 {

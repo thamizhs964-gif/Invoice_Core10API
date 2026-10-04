@@ -1,4 +1,4 @@
-﻿using Invoice.BAl.contracts;
+﻿using Invoice.BAL.contracts;
 using Invoice.DTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

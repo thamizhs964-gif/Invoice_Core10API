@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
-using Invoice.BAl.contracts;
+using Invoice.BAL.contracts;
 using Invoice.DAL.Contracts;
 using Invoice.Data.Entities;
 using Invoice.DTOs;
 using Microsoft.Extensions.Logging;
 
 
-namespace Invoice.BAl.Services;
+namespace Invoice.BAL.Services;
 
 public class ItemmasterServiceEFSp : IItemmasterService
 {
