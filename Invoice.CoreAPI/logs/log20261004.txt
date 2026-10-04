@@ -915,3 +915,163 @@ EXEC sp_Customer_Delete @Id
 2026-10-04 19:17:38.030 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CustomerController.Delete (Invoice.CoreAPI) in 48.1991ms
 2026-10-04 19:17:38.030 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CustomerController.Delete (Invoice.CoreAPI)'
 2026-10-04 19:17:38.031 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5164/api/v1/Customer/Delete/1902 - 200 null application/json; charset=utf-8 74.6542ms
+2026-10-04 20:56:59.925 +05:30 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-04 20:57:00.782 +05:30 [INF] Now listening on: http://localhost:5164
+2026-10-04 20:57:01.173 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-04 20:57:01.174 +05:30 [INF] Hosting environment: Development
+2026-10-04 20:57:01.174 +05:30 [INF] Content root path: E:\Invoice Projects\Invoice Management System\Invoice.CoreAPI
+2026-10-04 20:57:04.873 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/index.html - null null
+2026-10-04 20:57:06.030 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/index.html - 304 null null 1280.1775ms
+2026-10-04 20:57:06.148 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/index.css - null null
+2026-10-04 20:57:06.150 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui.css - null null
+2026-10-04 20:57:06.152 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/_framework/aspnetcore-browser-refresh.js - null null
+2026-10-04 20:57:06.157 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-bundle.js - null null
+2026-10-04 20:57:06.198 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-standalone-preset.js - null null
+2026-10-04 20:57:06.199 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/index.js - null null
+2026-10-04 20:57:06.236 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/_framework/aspnetcore-browser-refresh.js - 200 14935 application/javascript; charset=utf-8 83.6313ms
+2026-10-04 20:57:06.236 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/index.js - 304 null null 36.9361ms
+2026-10-04 20:57:06.288 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-bundle.js - 304 null null 131.6527ms
+2026-10-04 20:57:06.288 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-standalone-preset.js - 304 null null 90.5591ms
+2026-10-04 20:57:06.288 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui.css - 304 null null 138.2049ms
+2026-10-04 20:57:06.288 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/index.css - 304 null null 145.0663ms
+2026-10-04 20:57:06.329 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/_vs/browserLink - null null
+2026-10-04 20:57:06.988 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/_vs/browserLink - 200 null text/javascript; charset=UTF-8 659.5345ms
+2026-10-04 20:57:07.131 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/swagger/v1/swagger.json - null null
+2026-10-04 20:57:07.217 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 85.6198ms
+2026-10-04 20:58:44.107 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5164/api/invoice-ai/ask - application/json 54
+2026-10-04 20:58:47.076 +05:30 [INF] Executing endpoint 'Invoice.Coreapi.Controllers.InvoiceAIController.Ask (Invoice.CoreAPI)'
+2026-10-04 20:58:47.188 +05:30 [INF] Route matched with {action = "Ask", controller = "InvoiceAI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(Invoice.AI.Models.AskRequest, System.Threading.CancellationToken) on controller Invoice.Coreapi.Controllers.InvoiceAIController (Invoice.CoreAPI).
+2026-10-04 20:58:50.976 +05:30 [INF] Start processing HTTP request POST http://localhost:11434/api/chat
+2026-10-04 20:58:50.980 +05:30 [INF] Sending HTTP request POST http://localhost:11434/api/chat
+2026-10-04 20:58:53.243 +05:30 [INF] Received HTTP response headers after 2256.9967ms - 404
+2026-10-04 20:58:53.244 +05:30 [INF] End processing HTTP request after 2272.9578ms - 404
+2026-10-04 20:58:53.732 +05:30 [ERR] Error while processing AI request
+System.InvalidOperationException: Ollama returned 404: {"error":"model 'qwen2.5:3b-instruct' not found"}
+   at Invoice.AI.Ollama.OllamaClient.ChatJsonAsync(String systemPrompt, String userMessage, Object jsonSchema, CancellationToken ct) in E:\Invoice Projects\Invoice Management System\Invoice.AI\Ollama\OllamaClient.cs:line 55
+   at Invoice.AI.Intents.IntentExtractor.ExtractAsync(String question, AskMode mode, CancellationToken ct) in E:\Invoice Projects\Invoice Management System\Invoice.AI\Intents\IntentExtractor.cs:line 41
+   at Invoice.AI.Services.AIOrchestrator.AskAsync(String question, AskMode mode, CancellationToken ct) in E:\Invoice Projects\Invoice Management System\Invoice.AI\Services\AIOrchestrator.cs:line 48
+   at Invoice.Coreapi.Controllers.InvoiceAIController.HandleAsync(AskRequest request, AskMode mode, CancellationToken ct) in E:\Invoice Projects\Invoice Management System\Invoice.CoreAPI\Controllers\InvoiceAIController.cs:line 62
+2026-10-04 20:58:53.854 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType4`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-04 20:58:53.887 +05:30 [INF] Executed action Invoice.Coreapi.Controllers.InvoiceAIController.Ask (Invoice.CoreAPI) in 6688.8798ms
+2026-10-04 20:58:53.888 +05:30 [INF] Executed endpoint 'Invoice.Coreapi.Controllers.InvoiceAIController.Ask (Invoice.CoreAPI)'
+2026-10-04 20:58:53.894 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5164/api/invoice-ai/ask - 500 null application/json; charset=utf-8 9786.7202ms
+2026-10-04 21:07:27.194 +05:30 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-04 21:07:27.717 +05:30 [INF] Now listening on: http://localhost:5164
+2026-10-04 21:07:27.910 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-04 21:07:27.910 +05:30 [INF] Hosting environment: Development
+2026-10-04 21:07:27.910 +05:30 [INF] Content root path: E:\Invoice Projects\Invoice Management System\Invoice.CoreAPI
+2026-10-04 21:07:29.711 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/index.html - null null
+2026-10-04 21:07:30.839 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/index.html - 304 null null 1306.6852ms
+2026-10-04 21:07:30.967 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui.css - null null
+2026-10-04 21:07:30.971 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/_framework/aspnetcore-browser-refresh.js - null null
+2026-10-04 21:07:30.990 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-bundle.js - null null
+2026-10-04 21:07:30.991 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/index.js - null null
+2026-10-04 21:07:30.999 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/index.css - null null
+2026-10-04 21:07:31.006 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-standalone-preset.js - null null
+2026-10-04 21:07:31.023 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/index.js - 304 null null 31.5887ms
+2026-10-04 21:07:31.070 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/_vs/browserLink - null null
+2026-10-04 21:07:31.075 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/_framework/aspnetcore-browser-refresh.js - 200 14935 application/javascript; charset=utf-8 112.9076ms
+2026-10-04 21:07:31.175 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-standalone-preset.js - 304 null null 168.7983ms
+2026-10-04 21:07:31.175 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui.css - 304 null null 245.5809ms
+2026-10-04 21:07:31.175 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-bundle.js - 304 null null 188.8341ms
+2026-10-04 21:07:31.176 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/index.css - 304 null null 178.3893ms
+2026-10-04 21:07:31.283 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/_vs/browserLink - 200 null text/javascript; charset=UTF-8 213.7455ms
+2026-10-04 21:07:31.405 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/swagger/v1/swagger.json - null null
+2026-10-04 21:07:31.492 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 87.2147ms
+2026-10-04 21:08:04.156 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5164/api/invoice-ai/ask - application/json 51
+2026-10-04 21:08:04.519 +05:30 [INF] Executing endpoint 'Invoice.Coreapi.Controllers.InvoiceAIController.Ask (Invoice.CoreAPI)'
+2026-10-04 21:08:04.583 +05:30 [INF] Route matched with {action = "Ask", controller = "InvoiceAI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(Invoice.AI.Models.AskRequest, System.Threading.CancellationToken) on controller Invoice.Coreapi.Controllers.InvoiceAIController (Invoice.CoreAPI).
+2026-10-04 21:08:04.716 +05:30 [INF] Start processing HTTP request POST http://localhost:11434/api/chat
+2026-10-04 21:08:04.718 +05:30 [INF] Sending HTTP request POST http://localhost:11434/api/chat
+2026-10-04 21:10:19.656 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/index.html - null null
+2026-10-04 21:10:21.635 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/index.html - 304 null null 2081.5004ms
+2026-10-04 21:10:22.417 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/_framework/aspnetcore-browser-refresh.js - null null
+2026-10-04 21:10:22.609 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/index.css - null null
+2026-10-04 21:10:23.714 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui.css - null null
+2026-10-04 21:10:24.040 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-bundle.js - null null
+2026-10-04 21:10:24.042 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/index.css - 304 null null 1432.9661ms
+2026-10-04 21:10:24.049 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-standalone-preset.js - null null
+2026-10-04 21:10:24.049 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-bundle.js - 304 null null 2.5018ms
+2026-10-04 21:10:24.050 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/_framework/aspnetcore-browser-refresh.js - 200 14935 application/javascript; charset=utf-8 1643.1302ms
+2026-10-04 21:10:24.042 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui.css - 304 null null 333.2359ms
+2026-10-04 21:10:24.098 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-standalone-preset.js - 304 null null 48.3051ms
+2026-10-04 21:10:24.412 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/index.js - null null
+2026-10-04 21:10:24.420 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/index.js - 304 null null 7.879ms
+2026-10-04 21:10:24.451 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/_vs/browserLink - null null
+2026-10-04 21:10:28.828 +05:30 [ERR] Error while processing AI request
+System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.InitialFillAsync(Boolean async)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.SocketsHttpHandler.<SendAsync>g__CreateHandlerAndSendAsync|115_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Invoice.AI.Ollama.OllamaClient.ChatJsonAsync(String systemPrompt, String userMessage, Object jsonSchema, CancellationToken ct) in E:\Invoice Projects\Invoice Management System\Invoice.AI\Ollama\OllamaClient.cs:line 50
+   at Invoice.AI.Intents.IntentExtractor.ExtractAsync(String question, AskMode mode, CancellationToken ct) in E:\Invoice Projects\Invoice Management System\Invoice.AI\Intents\IntentExtractor.cs:line 41
+   at Invoice.AI.Services.AIOrchestrator.AskAsync(String question, AskMode mode, CancellationToken ct) in E:\Invoice Projects\Invoice Management System\Invoice.AI\Services\AIOrchestrator.cs:line 48
+   at Invoice.Coreapi.Controllers.InvoiceAIController.HandleAsync(AskRequest request, AskMode mode, CancellationToken ct) in E:\Invoice Projects\Invoice Management System\Invoice.CoreAPI\Controllers\InvoiceAIController.cs:line 62
+2026-10-04 21:10:29.258 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType4`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-04 21:10:29.698 +05:30 [INF] Executed action Invoice.Coreapi.Controllers.InvoiceAIController.Ask (Invoice.CoreAPI) in 144971.803ms
+2026-10-04 21:10:29.747 +05:30 [INF] Executed endpoint 'Invoice.Coreapi.Controllers.InvoiceAIController.Ask (Invoice.CoreAPI)'
+2026-10-04 21:10:29.893 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5164/api/invoice-ai/ask - 499 null application/json; charset=utf-8 145735.4507ms
+2026-10-04 21:10:30.339 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5888.1499ms
+2026-10-04 21:10:30.554 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/swagger/v1/swagger.json - null null
+2026-10-04 21:10:30.807 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/favicon-32x32.png - null null
+2026-10-04 21:10:30.939 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/favicon-32x32.png - 304 null null 131.7156ms
+2026-10-04 21:10:31.165 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 612.2193ms
+2026-10-04 21:10:56.030 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5164/api/invoice-ai/ask - application/json 54
+2026-10-04 21:10:56.190 +05:30 [INF] Executing endpoint 'Invoice.Coreapi.Controllers.InvoiceAIController.Ask (Invoice.CoreAPI)'
+2026-10-04 21:10:56.207 +05:30 [INF] Route matched with {action = "Ask", controller = "InvoiceAI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(Invoice.AI.Models.AskRequest, System.Threading.CancellationToken) on controller Invoice.Coreapi.Controllers.InvoiceAIController (Invoice.CoreAPI).
+2026-10-04 21:10:56.262 +05:30 [INF] Start processing HTTP request POST http://localhost:11434/api/chat
+2026-10-04 21:10:56.263 +05:30 [INF] Sending HTTP request POST http://localhost:11434/api/chat
+2026-10-04 21:12:30.305 +05:30 [INF] Received HTTP response headers after 93674.4907ms - 200
+2026-10-04 21:12:30.388 +05:30 [INF] End processing HTTP request after 94125.2202ms - 200
+2026-10-04 21:12:30.614 +05:30 [INF] Ollama timings [qwen2.5:7b-instruct]: total 90.5s | load 0.1s | prompt 618 tokens in 11.7s | output 32 tokens in 76.6s (0.4 tokens/sec)
+2026-10-04 21:12:30.674 +05:30 [INF] Ollama raw output for [How many active items are in Rice?]: {"intents":[{"intent":"CategoryItemCount","phrase":"How many active items are in Rice","categoryName":"Rice","activeFilter":"active"}]}
+2026-10-04 21:12:31.420 +05:30 [INF] AI answered in 95171 ms ("Single"): There are 2 active items in the Rice category.
+2026-10-04 21:12:31.482 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice.AI.Models.AIAnswer, Invoice.AI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-04 21:12:31.708 +05:30 [INF] Executed action Invoice.Coreapi.Controllers.InvoiceAIController.Ask (Invoice.CoreAPI) in 95499.3247ms
+2026-10-04 21:12:31.712 +05:30 [INF] Executed endpoint 'Invoice.Coreapi.Controllers.InvoiceAIController.Ask (Invoice.CoreAPI)'
+2026-10-04 21:12:31.729 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5164/api/invoice-ai/ask - 200 null application/json; charset=utf-8 95710.3181ms
+2026-10-04 21:14:19.403 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5164/api/invoice-ai/ask-multi - application/json 77
+2026-10-04 21:14:19.540 +05:30 [INF] Executing endpoint 'Invoice.Coreapi.Controllers.InvoiceAIController.AskMulti (Invoice.CoreAPI)'
+2026-10-04 21:14:19.725 +05:30 [INF] Route matched with {action = "AskMulti", controller = "InvoiceAI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AskMulti(Invoice.AI.Models.AskRequest, System.Threading.CancellationToken) on controller Invoice.Coreapi.Controllers.InvoiceAIController (Invoice.CoreAPI).
+2026-10-04 21:14:19.822 +05:30 [INF] Start processing HTTP request POST http://localhost:11434/api/chat
+2026-10-04 21:14:19.822 +05:30 [INF] Sending HTTP request POST http://localhost:11434/api/chat
+2026-10-04 21:17:33.834 +05:30 [INF] Received HTTP response headers after 193985.9407ms - 200
+2026-10-04 21:17:33.878 +05:30 [INF] End processing HTTP request after 194057.3414ms - 200
+2026-10-04 21:17:33.930 +05:30 [INF] Ollama timings [qwen2.5:7b-instruct]: total 191.6s | load 0.2s | prompt 633 tokens in 16.1s | output 38 tokens in 174.6s (0.2 tokens/sec)
+2026-10-04 21:17:33.937 +05:30 [INF] Ollama raw output for [How many active customers and inactive vendors are there?]: {"intents":[{"intent":"CustomerCount","phrase":"How many active customers","activeFilter":"active"},{"intent":"VendorCount","phrase":"inactive vendors","activeFilter":"inactive"}]}
+2026-10-04 21:17:34.041 +05:30 [INF] AI answered in 194233 ms ("Multi"): There are 4 active customers. There is 1 inactive vendor.
+2026-10-04 21:17:34.074 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice.AI.Models.AIAnswer, Invoice.AI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-04 21:17:34.174 +05:30 [INF] Executed action Invoice.Coreapi.Controllers.InvoiceAIController.AskMulti (Invoice.CoreAPI) in 194446.0941ms
+2026-10-04 21:17:34.178 +05:30 [INF] Executed endpoint 'Invoice.Coreapi.Controllers.InvoiceAIController.AskMulti (Invoice.CoreAPI)'
+2026-10-04 21:17:34.190 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5164/api/invoice-ai/ask-multi - 200 null application/json; charset=utf-8 194797.3348ms
+2026-10-04 21:19:26.456 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5164/api/invoice-ai/ask-multi - application/json 77
+2026-10-04 21:19:26.522 +05:30 [INF] Executing endpoint 'Invoice.Coreapi.Controllers.InvoiceAIController.AskMulti (Invoice.CoreAPI)'
+2026-10-04 21:19:26.539 +05:30 [INF] Route matched with {action = "AskMulti", controller = "InvoiceAI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AskMulti(Invoice.AI.Models.AskRequest, System.Threading.CancellationToken) on controller Invoice.Coreapi.Controllers.InvoiceAIController (Invoice.CoreAPI).
+2026-10-04 21:19:26.648 +05:30 [INF] Start processing HTTP request POST http://localhost:11434/api/chat
+2026-10-04 21:19:26.650 +05:30 [INF] Sending HTTP request POST http://localhost:11434/api/chat
+2026-10-04 21:23:02.390 +05:30 [INF] Received HTTP response headers after 215676.0492ms - 200
+2026-10-04 21:23:02.697 +05:30 [INF] End processing HTTP request after 216049.8845ms - 200
+2026-10-04 21:23:03.474 +05:30 [INF] Ollama timings [qwen2.5:7b-instruct]: total 212.6s | load 0.5s | prompt 633 tokens in 11.9s | output 38 tokens in 199.8s (0.2 tokens/sec)
+2026-10-04 21:23:03.524 +05:30 [INF] Ollama raw output for [How many active customers and inactive vendors are there?]: {"intents":[{"intent":"CustomerCount","phrase":"How many active customers","activeFilter":"active"},{"intent":"VendorCount","phrase":"inactive vendors","activeFilter":"inactive"}]}
+2026-10-04 21:23:03.955 +05:30 [INF] AI answered in 217331 ms ("Multi"): There are 4 active customers. There is 1 inactive vendor.
+2026-10-04 21:23:04.108 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice.AI.Models.AIAnswer, Invoice.AI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-04 21:23:04.256 +05:30 [INF] Executed action Invoice.Coreapi.Controllers.InvoiceAIController.AskMulti (Invoice.CoreAPI) in 217714.3957ms
+2026-10-04 21:23:04.269 +05:30 [INF] Executed endpoint 'Invoice.Coreapi.Controllers.InvoiceAIController.AskMulti (Invoice.CoreAPI)'
+2026-10-04 21:23:04.392 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5164/api/invoice-ai/ask-multi - 200 null application/json; charset=utf-8 217912.6289ms

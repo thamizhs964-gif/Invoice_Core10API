@@ -14,7 +14,7 @@ using Microsoft.OpenApi;
 using Serilog;
 using System.Data;
 using System.Text;
-
+using Invoice.AI;
 Log.Logger = new LoggerConfiguration()
 
     .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
@@ -343,6 +343,7 @@ builder.Services
 
 builder.Services.AddAuthorization();
 
+builder.Services.AddInvoiceAI(builder.Configuration);
 
 // ============================================================
 
@@ -351,6 +352,7 @@ builder.Services.AddAuthorization();
 // ============================================================
 
 var app = builder.Build();
+
 
 
 app.UseExceptionLogging();
