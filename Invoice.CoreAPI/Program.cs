@@ -1,7 +1,7 @@
 using Asp.Versioning;
-using Invoice.BAl.contracts;
-using Invoice.BAl.Mapper;
-using Invoice.BAl.Services;
+using Invoice.BAL.contracts;
+using Invoice.BAL.Mapper;
+using Invoice.BAL.Services;
 using Invoice.CoreAPI.Middleware;
 using Invoice.DAL.Contracts;
 using Invoice.DAL.Repositories;
