@@ -1,7 +1,11 @@
 using Asp.Versioning;
+using Invoice.AI;
 using Invoice.BAl.contracts;
 using Invoice.BAl.Mapper;
 using Invoice.BAl.Services;
+using Invoice.BAL.Contracts;
+using Invoice.BAL.Mapper;
+using Invoice.BAL.Services;
 using Invoice.CoreAPI.Middleware;
 using Invoice.DAL.Contracts;
 using Invoice.DAL.Repositories;
@@ -14,7 +18,6 @@ using Microsoft.OpenApi;
 using Serilog;
 using System.Data;
 using System.Text;
-using Invoice.AI;
 Log.Logger = new LoggerConfiguration()
 
     .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
@@ -129,8 +132,47 @@ builder.Services.AddAutoMapper(cfg =>
 
     cfg.AddProfile<UsersProfile>();
 
+    cfg.AddProfile<PurchaseOrderProfile>();
+    
+    cfg.AddProfile<ReceiptProfile>();
+    
+    cfg.AddProfile<SalesInvoiceProfile>();
+    
+    cfg.AddProfile<StockProfile>();
+
 });
 
+// ============================================================
+//  Purchase Order Repository / Service
+// ============================================================
+builder.Services.AddScoped<IPurchaseOrderRepository, PurchaseOrderRepositoryEFSp>();
+builder.Services.AddScoped<IPurchaseOrderDetailRepository, PurchaseOrderDetailRepositoryEFSp>();
+builder.Services.AddScoped<IPurchaseOrderService, PurchaseOrderServiceEFSp>();
+
+// ============================================================
+//  Transaction runner (header + details saved atomically)
+// ============================================================
+builder.Services.AddScoped<ITransactionRunner, EfTransactionRunner>();
+
+// ============================================================
+//  Receipt (Goods Receipt) Repository / Service
+// ============================================================
+builder.Services.AddScoped<IReceiptRepository, ReceiptRepositoryEFSp>();
+builder.Services.AddScoped<IReceiptDetailRepository, ReceiptDetailRepositoryEFSp>();
+builder.Services.AddScoped<IReceiptService, ReceiptServiceEFSp>();
+
+// ============================================================
+//  Sales Invoice Repository / Service
+// ============================================================
+builder.Services.AddScoped<ISalesInvoiceRepository, SalesInvoiceRepositoryEFSp>();
+builder.Services.AddScoped<ISalesInvoiceDetailRepository, SalesInvoiceDetailRepositoryEFSp>();
+builder.Services.AddScoped<ISalesInvoiceService, SalesInvoiceServiceEFSp>();
+
+// ============================================================
+//  Stock (read only)
+// ============================================================
+builder.Services.AddScoped<IStockRepository, StockRepositoryEFSp>();
+builder.Services.AddScoped<IStockService, StockServiceEFSp>();
 // ============================================================
 
 // Category - Repository / Service
@@ -409,4 +451,5 @@ app.MapControllers();
 // ============================================================
 
 app.Run();
+
 
