@@ -1,0 +1,66 @@
+2026-10-10 11:43:07.354 +05:30 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-10 11:43:07.877 +05:30 [INF] Now listening on: http://localhost:5164
+2026-10-10 11:43:08.071 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-10 11:43:08.072 +05:30 [INF] Hosting environment: Development
+2026-10-10 11:43:08.072 +05:30 [INF] Content root path: E:\Invoice Projects\Invoice Management System\Invoice.CoreAPI
+2026-10-10 11:43:13.994 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/index.html - null null
+2026-10-10 11:43:14.580 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/index.html - 304 null null 603.4122ms
+2026-10-10 11:43:14.627 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/index.css - null null
+2026-10-10 11:43:14.627 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui.css - null null
+2026-10-10 11:43:14.635 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-bundle.js - null null
+2026-10-10 11:43:14.638 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-standalone-preset.js - null null
+2026-10-10 11:43:14.675 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/_framework/aspnetcore-browser-refresh.js - null null
+2026-10-10 11:43:14.712 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/index.js - null null
+2026-10-10 11:43:14.744 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/index.js - 304 null null 32.1369ms
+2026-10-10 11:43:14.752 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/_framework/aspnetcore-browser-refresh.js - 200 14935 application/javascript; charset=utf-8 112.8188ms
+2026-10-10 11:43:14.796 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-standalone-preset.js - 304 null null 158.5939ms
+2026-10-10 11:43:14.796 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/index.css - 304 null null 174.5389ms
+2026-10-10 11:43:14.796 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui.css - 304 null null 174.5812ms
+2026-10-10 11:43:14.796 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-bundle.js - 304 null null 161.389ms
+2026-10-10 11:43:14.811 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/_vs/browserLink - null null
+2026-10-10 11:43:14.896 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/_vs/browserLink - 200 null text/javascript; charset=UTF-8 85.8635ms
+2026-10-10 11:43:14.970 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/swagger/v1/swagger.json - null null
+2026-10-10 11:43:15.009 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.5579ms
+2026-10-10 11:44:12.944 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5164/api/Login - application/json 56
+2026-10-10 11:44:14.838 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-10-10 11:44:14.890 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Invoice.DTOs.LoginRequestDto) on controller Invoice.CoreAPI.Controllers.LoginController (Invoice.CoreAPI).
+2026-10-10 11:44:18.283 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType6`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice.DTOs.LoginResponseDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-10 11:44:18.331 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI) in 3434.55ms
+2026-10-10 11:44:18.332 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-10-10 11:44:18.335 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5164/api/Login - 200 null application/json; charset=utf-8 5391.6898ms
+2026-10-10 11:44:43.204 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/api/v1/Category/GetAllPaged?pageNumber=1&pageSize=10 - null null
+2026-10-10 11:44:43.377 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CategoryController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-10 11:44:43.389 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(System.String, System.String, Int32, Int32) on controller Invoice.CoreAPI.Controllers.CategoryController (Invoice.CoreAPI).
+2026-10-10 11:44:44.908 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-10-10 11:44:47.038 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.CategoryDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-10 11:44:47.075 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CategoryController.GetAllPaged (Invoice.CoreAPI) in 3685.3198ms
+2026-10-10 11:44:47.075 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CategoryController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-10 11:44:47.106 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/api/v1/Category/GetAllPaged?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 3902.8801ms
+2026-10-10 11:46:10.958 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/api/v1/Customer/GetAllPaged?pageNumber=1&pageSize=10 - null null
+2026-10-10 11:46:10.968 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CustomerController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-10 11:46:10.982 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(System.String, System.String, System.String, System.String, Int32, Int32) on controller Invoice.CoreAPI.Controllers.CustomerController (Invoice.CoreAPI).
+2026-10-10 11:46:11.132 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.PagedResultDto`1[[Invoice.DTOs.CustomerDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-10 11:46:11.153 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CustomerController.GetAllPaged (Invoice.CoreAPI) in 170.5796ms
+2026-10-10 11:46:11.154 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CustomerController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-10 11:46:11.155 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/api/v1/Customer/GetAllPaged?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 232.9351ms
+2026-10-10 11:46:33.304 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/api/v1/Itemmaster/GetAllPaged?PageNumber=1&PageSize=10 - null null
+2026-10-10 11:46:33.309 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-10 11:46:33.340 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(Invoice.DTOs.ItemmasterFilterDto) on controller Invoice.CoreAPI.Controllers.ItemmasterController (Invoice.CoreAPI).
+2026-10-10 11:46:33.587 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.PagedResultDto`1[[Invoice.DTOs.ItemmasterDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-10 11:46:33.634 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.ItemmasterController.GetAllPaged (Invoice.CoreAPI) in 292.8035ms
+2026-10-10 11:46:33.634 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-10 11:46:33.634 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/api/v1/Itemmaster/GetAllPaged?PageNumber=1&PageSize=10 - 200 null application/json; charset=utf-8 330.4561ms
+2026-10-10 11:46:58.050 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/api/v1/User/GetPaged?PageNumber=1&PageSize=10 - null null
+2026-10-10 11:46:58.061 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.UserController.GetPaged (Invoice.CoreAPI)'
+2026-10-10 11:46:58.147 +05:30 [INF] Route matched with {action = "GetPaged", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaged(Invoice.DTOs.UsersFilterDto) on controller Invoice.CoreAPI.Controllers.UserController (Invoice.CoreAPI).
+2026-10-10 11:46:58.220 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.PagedResultDto`1[[Invoice.DTOs.UsersDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-10 11:46:58.228 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.UserController.GetPaged (Invoice.CoreAPI) in 80.5463ms
+2026-10-10 11:46:58.228 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.UserController.GetPaged (Invoice.CoreAPI)'
+2026-10-10 11:46:58.228 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/api/v1/User/GetPaged?PageNumber=1&PageSize=10 - 200 null application/json; charset=utf-8 178.6382ms
+2026-10-10 11:47:15.336 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/api/v1/Vendor/GetAllPaged?pageNumber=1&pageSize=10 - null null
+2026-10-10 11:47:15.338 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.VendorController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-10 11:47:15.395 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Vendor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(System.String, System.String, System.String, System.String, Int32, Int32) on controller Invoice.CoreAPI.Controllers.VendorController (Invoice.CoreAPI).
+2026-10-10 11:47:15.469 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.PagedResultDto`1[[Invoice.DTOs.VendorDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-10 11:47:15.478 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.VendorController.GetAllPaged (Invoice.CoreAPI) in 82.3364ms
+2026-10-10 11:47:15.478 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.VendorController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-10 11:47:15.478 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/api/v1/Vendor/GetAllPaged?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 142.0765ms
