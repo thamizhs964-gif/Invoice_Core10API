@@ -1,0 +1,49 @@
+2026-10-11 10:17:17.306 +05:30 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-11 10:17:18.071 +05:30 [INF] Now listening on: http://localhost:5164
+2026-10-11 10:17:18.426 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-11 10:17:18.427 +05:30 [INF] Hosting environment: Development
+2026-10-11 10:17:18.427 +05:30 [INF] Content root path: E:\Invoice Projects\Invoice Management System\Invoice.CoreAPI
+2026-10-11 10:17:24.441 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger - null null
+2026-10-11 10:17:25.149 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger - 301 null null 748.7997ms
+2026-10-11 10:17:25.155 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/index.html - null null
+2026-10-11 10:17:25.494 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui.css - null null
+2026-10-11 10:17:25.496 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/index.css - null null
+2026-10-11 10:17:25.498 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/index.html - 200 null text/html;charset=utf-8 343.6566ms
+2026-10-11 10:17:25.498 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-bundle.js - null null
+2026-10-11 10:17:25.503 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-standalone-preset.js - null null
+2026-10-11 10:17:25.503 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/index.js - null null
+2026-10-11 10:17:25.504 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/_vs/browserLink - null null
+2026-10-11 10:17:25.508 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/index.js - 200 null application/javascript;charset=utf-8 4.2195ms
+2026-10-11 10:17:25.513 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/_framework/aspnetcore-browser-refresh.js - null null
+2026-10-11 10:17:25.517 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/_framework/aspnetcore-browser-refresh.js - 200 14935 application/javascript; charset=utf-8 4.5318ms
+2026-10-11 10:17:25.595 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/index.css - 200 152 text/css 98.2882ms
+2026-10-11 10:17:25.595 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui.css - 200 26499 text/css 100.8001ms
+2026-10-11 10:17:25.601 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-standalone-preset.js - 200 77731 text/javascript 97.8316ms
+2026-10-11 10:17:25.646 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/swagger-ui-bundle.js - 200 421507 text/javascript 147.2663ms
+2026-10-11 10:17:25.671 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/_vs/browserLink - 200 null text/javascript; charset=UTF-8 167.5841ms
+2026-10-11 10:17:25.970 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/swagger/v1/swagger.json - null null
+2026-10-11 10:17:26.022 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5164/Swagger/favicon-32x32.png - null null
+2026-10-11 10:17:26.026 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/Swagger/favicon-32x32.png - 200 628 image/png 4.6553ms
+2026-10-11 10:17:26.060 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5164/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.2344ms
+2026-10-11 10:18:21.392 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5164/api/Login - application/json 56
+2026-10-11 10:18:23.867 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-10-11 10:18:23.937 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Invoice.DTOs.LoginRequestDto) on controller Invoice.CoreAPI.Controllers.LoginController (Invoice.CoreAPI).
+2026-10-11 10:18:27.902 +05:30 [ERR] Error occurred during login.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'dbo.sp_User_GetByUserName'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at Invoice.DAL.Repositories.UsersRepositoriesSpDap.GetByUserNameAsync(String userName) in E:\Invoice Projects\Invoice Management System\Invoice.DAL\Repositories\UsersRepositoriesSpDap.cs:line 63
+   at Invoice.BAl.Services.UsersServiceSpDap.ValidateUserAsync(String userName, String password) in E:\Invoice Projects\Invoice Management System\Invoice.BAl\Services\UsersServiceSpDap.cs:line 414
+   at Invoice.CoreAPI.Controllers.LoginController.Login(LoginRequestDto request) in E:\Invoice Projects\Invoice Management System\Invoice.CoreAPI\Controllers\LoginController.cs:line 82
+ClientConnectionId:f666d33a-bb3b-4af5-8cd3-c87a62cf937d
+Error Number:2812,State:62,Class:16
+2026-10-11 10:18:28.187 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType5`2[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-11 10:18:28.253 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI) in 4281.124ms
+2026-10-11 10:18:28.254 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-10-11 10:18:28.257 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5164/api/Login - 500 null application/json; charset=utf-8 6865.6065ms
