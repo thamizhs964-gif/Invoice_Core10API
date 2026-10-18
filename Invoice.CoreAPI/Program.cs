@@ -222,6 +222,11 @@ builder.Services.AddScoped<IVendorService, VendorService>();
 builder.Services.AddScoped<IUsersRepository, UsersRepositoriesSpDap>();
 
 builder.Services.AddScoped<IUsersService, UsersServiceSpDap>();
+ 
+// ============================================================
+//  Master count Service 
+// ============================================================
+builder.Services.AddScoped<IMasterCountService, MasterCountService>();
 
 
 // ============================================================
