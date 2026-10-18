@@ -181,8 +181,8 @@ public class VendorRepositories : IVendorRepository
     }
     public async Task<int> GetVendorCountAsync(bool? activeOnly)
     {
-        // Read directly from the DbSet to ensure seeded EF data is included
-        var vendors = await _dbContext.Vendors.AsNoTracking().ToListAsync();
+        // Use GetAllAsync so repository behaviour matches existing tests
+        var vendors = await GetAllAsync();
         var query = vendors.AsEnumerable();
         if (activeOnly.HasValue)
         {
