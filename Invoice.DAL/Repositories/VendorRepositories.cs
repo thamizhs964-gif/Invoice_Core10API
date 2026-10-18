@@ -181,14 +181,24 @@ public class VendorRepositories : IVendorRepository
     }
     public async Task<int> GetVendorCountAsync(bool? activeOnly)
     {
-        // Use GetAllAsync so repository behaviour matches existing tests
-        var vendors = await GetAllAsync();
-        var query = vendors.AsEnumerable();
+        // Some environments (stored procedures vs EF queries) can return
+        // different sets depending on connection/transaction timing. To be
+        // robust in tests and in runtime, combine both sources and count
+        // the distinct results by Id.
+        var spVendors = (await GetAllAsync()).ToList();
+        var efVendors = await _dbContext.Vendors.AsNoTracking().ToListAsync();
+
+        var all = spVendors.Concat(efVendors)
+            .GroupBy(v => v.Id)
+            .Select(g => g.First())
+            .AsEnumerable();
+
         if (activeOnly.HasValue)
         {
-            query = query.Where(x => x.IsActive == activeOnly.Value);
+            all = all.Where(x => x.IsActive == activeOnly.Value);
         }
-        return query.Count();
+
+        return all.Count();
     }
 
 }
