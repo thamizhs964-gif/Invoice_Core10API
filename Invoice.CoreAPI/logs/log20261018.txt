@@ -330,3 +330,55 @@ WHERE ([c].[IsDeleted] <> CAST(1 AS bit) OR [c].[IsDeleted] IS NULL) AND [c].[Is
 2026-10-18 16:34:45.469 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CustomerController.GetAllPaged (Invoice.CoreAPI) in 5105.6189ms
 2026-10-18 16:34:45.470 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CustomerController.GetAllPaged (Invoice.CoreAPI)'
 2026-10-18 16:34:45.504 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Customer/GetAllPaged?pageNumber=1&pageSize=50 - 200 null application/json; charset=utf-8 5647.2189ms
+2026-10-18 23:17:25.579 +05:30 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-18 23:17:26.364 +05:30 [INF] Now listening on: http://localhost:5063
+2026-10-18 23:17:26.819 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-18 23:17:26.820 +05:30 [INF] Hosting environment: Development
+2026-10-18 23:17:26.820 +05:30 [INF] Content root path: E:\fixing_project_name\Invoice.CoreAPI
+2026-10-18 23:17:28.154 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/index.html - null null
+2026-10-18 23:17:29.101 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/index.html - 304 null null 981.3757ms
+2026-10-18 23:17:29.173 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui.css - null null
+2026-10-18 23:17:29.177 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/index.css - null null
+2026-10-18 23:17:29.182 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/_framework/aspnetcore-browser-refresh.js - null null
+2026-10-18 23:17:29.182 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-standalone-preset.js - null null
+2026-10-18 23:17:29.183 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-bundle.js - null null
+2026-10-18 23:17:29.211 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/index.js - null null
+2026-10-18 23:17:29.214 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/index.js - 304 null null 3.0912ms
+2026-10-18 23:17:29.216 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/_framework/aspnetcore-browser-refresh.js - 200 14935 application/javascript; charset=utf-8 33.3822ms
+2026-10-18 23:17:29.224 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/_vs/browserLink - null null
+2026-10-18 23:17:29.278 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-bundle.js - 304 null null 95.0465ms
+2026-10-18 23:17:29.278 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/index.css - 304 null null 100.9337ms
+2026-10-18 23:17:29.278 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-standalone-preset.js - 304 null null 95.2091ms
+2026-10-18 23:17:29.279 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui.css - 304 null null 108.8257ms
+2026-10-18 23:17:29.451 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/_vs/browserLink - 200 null text/javascript; charset=UTF-8 227.3405ms
+2026-10-18 23:17:29.527 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/swagger/v1/swagger.json - null null
+2026-10-18 23:17:29.765 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 237.2953ms
+2026-10-18 23:18:06.940 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5063/api/Login - application/json 56
+2026-10-18 23:18:09.637 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-10-18 23:18:09.785 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Invoice.DTOs.LoginRequestDto) on controller Invoice.CoreAPI.Controllers.LoginController (Invoice.CoreAPI).
+2026-10-18 23:18:14.144 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType6`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice.DTOs.LoginResponseDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-18 23:18:14.267 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI) in 4463.1813ms
+2026-10-18 23:18:14.270 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-10-18 23:18:14.289 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5063/api/Login - 200 null application/json; charset=utf-8 7349.4667ms
+2026-10-18 23:18:48.475 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Category/GetAll - null null
+2026-10-18 23:18:48.704 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CategoryController.GetAll (Invoice.CoreAPI)'
+2026-10-18 23:18:48.726 +05:30 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.CategoryController (Invoice.CoreAPI).
+2026-10-18 23:18:50.848 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-10-18 23:18:53.314 +05:30 [WRN] No store type was specified for the decimal property 'OnHandQuantity' on entity type 'ItemStockEntity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-10-18 23:18:53.314 +05:30 [WRN] No store type was specified for the decimal property 'ReceivedQuantity' on entity type 'ItemStockEntity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-10-18 23:18:53.314 +05:30 [WRN] No store type was specified for the decimal property 'SoldQuantity' on entity type 'ItemStockEntity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-10-18 23:18:55.127 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Category_GetAll
+2026-10-18 23:18:55.433 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.CategoryDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-18 23:18:55.481 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CategoryController.GetAll (Invoice.CoreAPI) in 6754.144ms
+2026-10-18 23:18:55.481 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CategoryController.GetAll (Invoice.CoreAPI)'
+2026-10-18 23:18:55.502 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Category/GetAll - 200 null application/json; charset=utf-8 7026.4933ms
+2026-10-18 23:19:13.305 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Category/GetById/3 - null null
+2026-10-18 23:19:13.324 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CategoryController.GetById (Invoice.CoreAPI)'
+2026-10-18 23:19:13.347 +05:30 [INF] Route matched with {action = "GetById", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Invoice.CoreAPI.Controllers.CategoryController (Invoice.CoreAPI).
+2026-10-18 23:19:13.520 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Category_GetById @Id
+2026-10-18 23:19:13.529 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.CategoryDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-18 23:19:13.534 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CategoryController.GetById (Invoice.CoreAPI) in 187.0621ms
+2026-10-18 23:19:13.535 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CategoryController.GetById (Invoice.CoreAPI)'
+2026-10-18 23:19:13.536 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Category/GetById/3 - 200 null application/json; charset=utf-8 231.1028ms

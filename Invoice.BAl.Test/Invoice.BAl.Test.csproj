@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Invoice.BAl\Invoice.BAl.csproj" />
+    <ProjectReference Include="..\Invoice.BAl\Invoice.BAL.csproj" />
     <ProjectReference Include="..\Invoice.DAL\Invoice.DAL.csproj" />
   </ItemGroup>
 

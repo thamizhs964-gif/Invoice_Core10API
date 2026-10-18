@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Invoice.BAl.Mapper;
-using Invoice.BAl.Services;
+using Invoice.BAL.Mapper;
+using Invoice.BAL.Services;
 using Invoice.DAL.Contracts;
 using Invoice.Data.Entities;
 using Invoice.DTOs;

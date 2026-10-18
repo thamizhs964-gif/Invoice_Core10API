@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Invoice.BAL.Contracts;
-using Invoice.BAl.contracts;
+using Invoice.BAL.contracts;
 using Invoice.CoreAPI.Controllers;
 using Invoice.DTOs;
 using Invoice.Model;

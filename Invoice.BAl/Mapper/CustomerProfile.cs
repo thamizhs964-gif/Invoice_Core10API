@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Invoice.BAl.Mapper;
+namespace Invoice.BAL.Mapper;
 
 public class CustomerProfile : Profile
 {

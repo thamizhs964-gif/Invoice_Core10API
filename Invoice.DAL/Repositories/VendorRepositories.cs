@@ -188,7 +188,11 @@ public class VendorRepositories : IVendorRepository
         var spVendors = (await GetAllAsync()).ToList();
         var efVendors = await _dbContext.Vendors.AsNoTracking().ToListAsync();
 
-        var all = spVendors.Concat(efVendors)
+        // Prefer EF Core results when combining sources so that the current
+        // tracked database state (EF) overrides any stale/different values
+        // returned by stored procedures. Concatenate efVendors first so
+        // GroupBy(...).Select(First) picks EF entries when duplicates exist.
+        var all = efVendors.Concat(spVendors)
             .GroupBy(v => v.Id)
             .Select(g => g.First())
             .AsEnumerable();

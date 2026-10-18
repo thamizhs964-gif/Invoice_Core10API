@@ -2,7 +2,7 @@
 using Invoice.DTOs;
 using AutoMapper;
 
-namespace Invoice.BAl.Mapper;
+namespace Invoice.BAL.Mapper;
 
 public class CategoryProfile : Profile
 {

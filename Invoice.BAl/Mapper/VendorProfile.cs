@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
 
-namespace Invoice.BAl.Mapper;
+namespace Invoice.BAL.Mapper;
 
 public class VendorProfile : Profile
 {

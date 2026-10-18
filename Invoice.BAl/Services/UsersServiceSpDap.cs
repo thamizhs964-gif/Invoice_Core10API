@@ -1,11 +1,11 @@
-﻿using Invoice.BAl.contracts;
+﻿using Invoice.BAL.contracts;
 using Invoice.DAL.Contracts;
 using Invoice.Data.Entities;
 using Invoice.DTOs;
 using Invoice.Model;
 using Microsoft.AspNetCore.Identity;
 
-namespace Invoice.BAl.Services;
+namespace Invoice.BAL.Services;
 
 public class UsersServiceSpDap : IUsersService
 {
