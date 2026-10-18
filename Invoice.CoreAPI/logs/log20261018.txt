@@ -296,3 +296,37 @@ WHERE ([c].[IsDeleted] <> CAST(1 AS bit) OR [c].[IsDeleted] IS NULL) AND [c].[Is
 2026-10-18 14:24:56.401 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.MasterCountController.Customers (Invoice.CoreAPI) in 16.8989ms
 2026-10-18 14:24:56.401 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.MasterCountController.Customers (Invoice.CoreAPI)'
 2026-10-18 14:24:56.402 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/MasterCount/Customers?isActive=false - 200 null application/json; charset=utf-8 22.4109ms
+2026-10-18 16:33:53.375 +05:30 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-18 16:33:54.038 +05:30 [INF] Now listening on: http://localhost:5063
+2026-10-18 16:33:54.816 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-18 16:33:54.816 +05:30 [INF] Hosting environment: Development
+2026-10-18 16:33:54.816 +05:30 [INF] Content root path: E:\Invoice Projects\Invoice Management System\Invoice.CoreAPI
+2026-10-18 16:33:55.655 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/index.html - null null
+2026-10-18 16:33:56.225 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/index.html - 304 null null 609.3894ms
+2026-10-18 16:33:56.261 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui.css - null null
+2026-10-18 16:33:56.269 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/index.css - null null
+2026-10-18 16:33:56.298 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-bundle.js - null null
+2026-10-18 16:33:56.325 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/_framework/aspnetcore-browser-refresh.js - null null
+2026-10-18 16:33:56.325 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-standalone-preset.js - null null
+2026-10-18 16:33:56.332 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/index.js - null null
+2026-10-18 16:33:56.335 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/index.js - 304 null null 7.1519ms
+2026-10-18 16:33:56.338 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/_framework/aspnetcore-browser-refresh.js - 200 14935 application/javascript; charset=utf-8 38.7715ms
+2026-10-18 16:33:56.374 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui.css - 304 null null 115.6636ms
+2026-10-18 16:33:56.374 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-standalone-preset.js - 304 null null 48.9413ms
+2026-10-18 16:33:56.374 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/index.css - 304 null null 104.9622ms
+2026-10-18 16:33:56.374 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-bundle.js - 304 null null 75.9998ms
+2026-10-18 16:33:56.388 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/_vs/browserLink - null null
+2026-10-18 16:33:56.507 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/_vs/browserLink - 200 null text/javascript; charset=UTF-8 118.7491ms
+2026-10-18 16:33:56.739 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/swagger/v1/swagger.json - null null
+2026-10-18 16:33:56.870 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 131.7119ms
+2026-10-18 16:34:39.866 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Customer/GetAllPaged?pageNumber=1&pageSize=50 - null null
+2026-10-18 16:34:40.254 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CustomerController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-18 16:34:40.353 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(System.String, System.String, System.String, System.String, Int32, Int32) on controller Invoice.CoreAPI.Controllers.CustomerController (Invoice.CoreAPI).
+2026-10-18 16:34:41.226 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-10-18 16:34:43.652 +05:30 [WRN] No store type was specified for the decimal property 'OnHandQuantity' on entity type 'ItemStockEntity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-10-18 16:34:43.652 +05:30 [WRN] No store type was specified for the decimal property 'ReceivedQuantity' on entity type 'ItemStockEntity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-10-18 16:34:43.652 +05:30 [WRN] No store type was specified for the decimal property 'SoldQuantity' on entity type 'ItemStockEntity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-10-18 16:34:45.381 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.PagedResultDto`1[[Invoice.DTOs.CustomerDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-18 16:34:45.469 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CustomerController.GetAllPaged (Invoice.CoreAPI) in 5105.6189ms
+2026-10-18 16:34:45.470 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CustomerController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-18 16:34:45.504 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Customer/GetAllPaged?pageNumber=1&pageSize=50 - 200 null application/json; charset=utf-8 5647.2189ms
