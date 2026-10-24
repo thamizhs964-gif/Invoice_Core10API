@@ -478,24 +478,27 @@ END
 GO
 
 
-CREATE OR ALTER PROCEDURE dbo.sp_Customer_Insert
+
+
+CREATE OR ALTER PROCEDURE [dbo].[sp_Customer_Insert]
+(
     @CustomerCode VARCHAR(20),
     @CustomerName NVARCHAR(100),
-    @ContactPerson NVARCHAR(100) = NULL,
-    @MobileNo VARCHAR(20) = NULL,
-    @Email VARCHAR(100) = NULL,
-    @Address1 NVARCHAR(200) = NULL,
-    @Address2 NVARCHAR(200) = NULL,
-    @City NVARCHAR(100) = NULL,
-    @State NVARCHAR(100) = NULL,
-    @Country NVARCHAR(100) = NULL,
-    @ZipCode VARCHAR(20) = NULL,
-    @GstNo VARCHAR(50) = NULL
+    @ContactPerson NVARCHAR(100),
+    @MobileNo VARCHAR(20),
+    @Email VARCHAR(100),
+    @Address1 NVARCHAR(200),
+    @Address2 NVARCHAR(200),
+    @City NVARCHAR(100),
+    @State NVARCHAR(100),
+    @Country NVARCHAR(100),
+    @ZipCode VARCHAR(20),
+    @GstNo VARCHAR(50),
+    @IsActive BIT
+)
 AS
 BEGIN
-    SET NOCOUNT ON;
-
-    INSERT INTO dbo.Customer
+    INSERT INTO Customer
     (
         CustomerCode,
         CustomerName,
@@ -505,16 +508,14 @@ BEGIN
         Address1,
         Address2,
         City,
-        State,
+        [State],
         Country,
         ZipCode,
         GstNo,
         IsActive,
         IsDeleted,
         CreatedBy,
-        CreatedDate,
-        UpdatedBy,
-        UpdatedDate
+        CreatedDate
     )
     VALUES
     (
@@ -533,12 +534,11 @@ BEGIN
         1,
         0,
         SYSTEM_USER,
-        GETDATE(),
-        NULL,
-        NULL
-    );
+        GETDATE());
+
 END
 GO
+
 
 
 CREATE OR ALTER PROCEDURE dbo.sp_Customer_Update
@@ -1631,65 +1631,62 @@ END
 GO
 
 
-CREATE OR ALTER PROCEDURE dbo.sp_Vendor_Insert
-    @VendorCode VARCHAR(20),
-    @VendorName NVARCHAR(100),
-    @ContactPerson NVARCHAR(100) = NULL,
-    @MobileNo VARCHAR(20) = NULL,
-    @Email VARCHAR(100) = NULL,
-    @Address1 NVARCHAR(200) = NULL,
-    @Address2 NVARCHAR(200) = NULL,
-    @City NVARCHAR(100) = NULL,
-    @State NVARCHAR(100) = NULL,
-    @Country NVARCHAR(100) = NULL,
-    @ZipCode VARCHAR(20) = NULL,
-    @GstNo VARCHAR(50) = NULL
-AS
-BEGIN
-    SET NOCOUNT ON;
+CREATE OR ALTER PROCEDURE [dbo].[sp_Vendor_insert]
+(
+ @VendorCode varchar(20),
+ @VendorName nvarchar(100),
+ @ContactPerson nvarchar(100),
+ @MobileNo varchar(100),
+ @Email varchar(100),
+ @Address1 nvarchar(200),
+ @Address2 nvarchar(200),
+ @City nvarchar(100),
+ @State nvarchar(100),
+ @Country nvarchar(100),
+ @ZipCode varchar(20),
+ @GstNo varchar(50),
+ @IsActive bit
+ )
+ as
+   begin 
+         insert into Vendor
+         (
+          VendorCode,
+          VendorName,
+          ContactPerson,
+          MobileNo,
+          Email,
+          Address1,
+          Address2,
+          City,
+          State,
+          Country,
+          ZipCode,
+          GstNo,
+          IsActive,
+          IsDeleted,
+          CreatedBy,
+          CreatedDate
+         )
+         values
+         (
+           @VendorCode,
+           @VendorName,
+           @ContactPerson,
+           @MobileNo,
+           @Email,
+           @Address1,
+           @Address2,
+           @City,
+           @State,
+           @Country,
+           @ZipCode,
+           @GstNo,
+           @IsActive,
+           0,
+         SYSTEM_USER,
+         GETDATE());
 
-    INSERT INTO dbo.Vendor
-    (
-        VendorCode,
-        VendorName,
-        ContactPerson,
-        MobileNo,
-        Email,
-        Address1,
-        Address2,
-        City,
-        State,
-        Country,
-        ZipCode,
-        GstNo,
-        IsActive,
-        IsDeleted,
-        CreatedBy,
-        CreatedDate,
-        UpdatedBy,
-        UpdatedDate
-    )
-    VALUES
-    (
-        @VendorCode,
-        @VendorName,
-        @ContactPerson,
-        @MobileNo,
-        @Email,
-        @Address1,
-        @Address2,
-        @City,
-        @State,
-        @Country,
-        @ZipCode,
-        @GstNo,
-        1,
-        0,
-        SYSTEM_USER,
-        GETDATE(),
-        NULL,
-        NULL
-    );
 END
 GO
 

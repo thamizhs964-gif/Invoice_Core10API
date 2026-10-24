@@ -45,14 +45,10 @@ public class CategoryRepositories : ICategoryRepository
         command.CommandType = CommandType.StoredProcedure;
 
 
-        command.Parameters.Add(
-
-            new SqlParameter("@Code", category.Code));
+        command.Parameters.Add(new SqlParameter("@Code", category.Code));
 
 
-        command.Parameters.Add(
-
-            new SqlParameter("@Name", category.Name));
+        command.Parameters.Add(new SqlParameter("@Name", category.Name));
 
 
         command.Parameters.Add(

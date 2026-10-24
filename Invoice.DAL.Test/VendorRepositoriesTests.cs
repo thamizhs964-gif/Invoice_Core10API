@@ -449,7 +449,9 @@ public class VendorRepositoriesTests
 
             ZipCode = "600010",
 
-            GstNo = "VGSTADD"
+            GstNo = "VGSTADD",
+
+            IsActive = true,
 
         };
 

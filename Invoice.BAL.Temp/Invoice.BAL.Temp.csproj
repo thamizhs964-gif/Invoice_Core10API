@@ -4,6 +4,9 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <RootNamespace>Invoice.BAL</RootNamespace>
+    <AssemblyTitle>Invoice.BAL</AssemblyTitle>
+    <AssemblyName>Invoice.BAL</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
