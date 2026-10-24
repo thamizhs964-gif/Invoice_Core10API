@@ -16,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Invoice.BAL.Temp\Invoice.BAL.Temp.csproj" />
     <ProjectReference Include="..\Invoice.CoreAPI\Invoice.CoreAPI.csproj" />
     <ProjectReference Include="..\Invoice.DTOs\Invoice.DTOs.csproj" />
   </ItemGroup>
