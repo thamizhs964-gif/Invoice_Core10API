@@ -5,8 +5,8 @@
   <Project Path="IMS.MCP.Server/IMS.MCP.Server.csproj" Id="856156c7-ad47-4fc0-85b7-62ebd4aabf84" />
   <Project Path="Invoice.AI.Test/Invoice.AI.Test.csproj" Id="0cfe6715-5da1-4e11-af73-d1086949ad71" />
   <Project Path="Invoice.AI/Invoice.AI.csproj" />
-  <Project Path="Invoice.BAL.Temp/Invoice.BAL.Temp.csproj" Id="550bfb9a-92d2-45e8-b588-821db3e4eddd" />
-  <Project Path="Invoice.BAL.Test.Temp/Invoice.BAL.Test.Temp.csproj" Id="3a64783d-6f4b-4f2c-bc9e-caabc7e43835" />
+  <Project Path="Invoice.BAL.Test/Invoice.BAL.Test.csproj" Id="46c5894f-e7f2-4b6a-ac0a-e30988e4b066" />
+  <Project Path="Invoice.BAL/Invoice.BAL.csproj" Id="156bec7b-96b3-44ad-9053-94c455ef83c6" />
   <Project Path="Invoice.CoreAPI.Test/Invoice.CoreAPI.Test.csproj" Id="319f67a4-cf97-4de8-992c-b7e6bc38a334" />
   <Project Path="Invoice.CoreAPI/Invoice.CoreAPI.csproj" Id="c7cac638-8219-4fe7-9508-0285a5d7a4ad" />
   <Project Path="Invoice.DAL.Test/Invoice.DAL.Test.csproj" Id="c87ac0be-8b7c-4a31-bbb4-63b289c8b982" />
