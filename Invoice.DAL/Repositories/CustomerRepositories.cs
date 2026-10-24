@@ -33,7 +33,8 @@ public class CustomerRepositories : ICustomerRepository
             @State,
             @Country,
             @ZipCode,
-            @GstNo",
+            @GstNo,
+            @IsActive",
 
             new SqlParameter("@CustomerCode", entity.CustomerCode),
             new SqlParameter("@CustomerName", entity.CustomerName),
@@ -46,7 +47,8 @@ public class CustomerRepositories : ICustomerRepository
             new SqlParameter("@State", (object?)entity.State ?? DBNull.Value),
             new SqlParameter("@Country", (object?)entity.Country ?? DBNull.Value),
             new SqlParameter("@ZipCode", (object?)entity.ZipCode ?? DBNull.Value),
-            new SqlParameter("@GstNo", (object?)entity.GstNo ?? DBNull.Value)
+            new SqlParameter("@GstNo", (object?)entity.GstNo ?? DBNull.Value),
+            new SqlParameter("@IsActive", (object?)entity.IsActive?? DBNull.Value)
         );
 
         return result;

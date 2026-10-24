@@ -9,7 +9,7 @@ using Invoice.DTOs;
 using Moq;
 using Xunit;
 
-namespace Invoice.BAl.Test
+namespace Invoice.BAL.Test
 {
     public class MasterCountServiceTests
     {

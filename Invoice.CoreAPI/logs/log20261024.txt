@@ -1,0 +1,502 @@
+2026-10-24 08:23:08.566 +05:30 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-24 08:23:09.385 +05:30 [INF] Now listening on: http://localhost:5063
+2026-10-24 08:23:09.905 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-24 08:23:09.905 +05:30 [INF] Hosting environment: Development
+2026-10-24 08:23:09.906 +05:30 [INF] Content root path: E:\fixing_project_name\Invoice.CoreAPI
+2026-10-24 08:54:08.621 +05:30 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-24 08:54:09.435 +05:30 [INF] Now listening on: http://localhost:5063
+2026-10-24 08:54:09.839 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-24 08:54:09.840 +05:30 [INF] Hosting environment: Development
+2026-10-24 08:54:09.840 +05:30 [INF] Content root path: E:\fixing_project_name\Invoice.CoreAPI
+2026-10-24 08:54:12.241 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/index.html - null null
+2026-10-24 08:54:13.153 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/index.html - 304 null null 949.9571ms
+2026-10-24 08:54:13.210 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui.css - null null
+2026-10-24 08:54:13.218 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/index.css - null null
+2026-10-24 08:54:13.218 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/_framework/aspnetcore-browser-refresh.js - null null
+2026-10-24 08:54:13.259 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-bundle.js - null null
+2026-10-24 08:54:13.259 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-standalone-preset.js - null null
+2026-10-24 08:54:13.267 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/index.js - null null
+2026-10-24 08:54:13.273 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/index.js - 304 null null 4.0992ms
+2026-10-24 08:54:13.274 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/_framework/aspnetcore-browser-refresh.js - 200 14935 application/javascript; charset=utf-8 55.6818ms
+2026-10-24 08:54:13.330 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/index.css - 304 null null 112.1405ms
+2026-10-24 08:54:13.330 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui.css - 304 null null 123.117ms
+2026-10-24 08:54:13.330 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-standalone-preset.js - 304 null null 70.4835ms
+2026-10-24 08:54:13.330 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-bundle.js - 304 null null 70.4911ms
+2026-10-24 08:54:13.347 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/_vs/browserLink - null null
+2026-10-24 08:54:13.558 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/_vs/browserLink - 200 null text/javascript; charset=UTF-8 212.0525ms
+2026-10-24 08:54:13.625 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/swagger/v1/swagger.json - null null
+2026-10-24 08:54:13.759 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 133.9346ms
+2026-10-24 08:54:46.322 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5063/api/Login - application/json 56
+2026-10-24 08:54:48.875 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-10-24 08:54:48.978 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Invoice.DTOs.LoginRequestDto) on controller Invoice.CoreAPI.Controllers.LoginController (Invoice.CoreAPI).
+2026-10-24 08:54:52.599 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType6`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice.DTOs.LoginResponseDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-24 08:54:52.677 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI) in 3691.0327ms
+2026-10-24 08:54:52.678 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-10-24 08:54:52.682 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5063/api/Login - 200 null application/json; charset=utf-8 6361.2804ms
+2026-10-24 08:55:16.237 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Category/GetAll - null null
+2026-10-24 08:55:16.408 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CategoryController.GetAll (Invoice.CoreAPI)'
+2026-10-24 08:55:16.425 +05:30 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.CategoryController (Invoice.CoreAPI).
+2026-10-24 08:55:18.260 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-10-24 08:55:20.390 +05:30 [WRN] No store type was specified for the decimal property 'OnHandQuantity' on entity type 'ItemStockEntity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-10-24 08:55:20.391 +05:30 [WRN] No store type was specified for the decimal property 'ReceivedQuantity' on entity type 'ItemStockEntity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-10-24 08:55:20.391 +05:30 [WRN] No store type was specified for the decimal property 'SoldQuantity' on entity type 'ItemStockEntity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-10-24 08:55:22.065 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Category_GetAll
+2026-10-24 08:55:22.376 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.CategoryDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 08:55:22.421 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CategoryController.GetAll (Invoice.CoreAPI) in 5995.595ms
+2026-10-24 08:55:22.421 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CategoryController.GetAll (Invoice.CoreAPI)'
+2026-10-24 08:55:22.457 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Category/GetAll - 200 null application/json; charset=utf-8 6257.736ms
+2026-10-24 08:55:42.001 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Category/GetById/2 - null null
+2026-10-24 08:55:42.077 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CategoryController.GetById (Invoice.CoreAPI)'
+2026-10-24 08:55:42.102 +05:30 [INF] Route matched with {action = "GetById", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Invoice.CoreAPI.Controllers.CategoryController (Invoice.CoreAPI).
+2026-10-24 08:55:42.185 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Category_GetById @Id
+2026-10-24 08:55:42.199 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.CategoryDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-24 08:55:42.207 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CategoryController.GetById (Invoice.CoreAPI) in 104.131ms
+2026-10-24 08:55:42.207 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CategoryController.GetById (Invoice.CoreAPI)'
+2026-10-24 08:55:42.208 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Category/GetById/2 - 200 null application/json; charset=utf-8 207.358ms
+2026-10-24 08:56:20.404 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5063/api/v1/Category/Create - application/json 236
+2026-10-24 08:56:20.411 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CategoryController.Create (Invoice.CoreAPI)'
+2026-10-24 08:56:20.460 +05:30 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Invoice.DTOs.CategoryDto) on controller Invoice.CoreAPI.Controllers.CategoryController (Invoice.CoreAPI).
+2026-10-24 08:56:20.817 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 08:56:20.821 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CategoryController.Create (Invoice.CoreAPI) in 360.8096ms
+2026-10-24 08:56:20.821 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CategoryController.Create (Invoice.CoreAPI)'
+2026-10-24 08:56:20.822 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5063/api/v1/Category/Create - 200 null application/json; charset=utf-8 418.0956ms
+2026-10-24 08:57:02.023 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Category/GetAll - null null
+2026-10-24 08:57:02.025 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CategoryController.GetAll (Invoice.CoreAPI)'
+2026-10-24 08:57:02.025 +05:30 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.CategoryController (Invoice.CoreAPI).
+2026-10-24 08:57:02.044 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Category_GetAll
+2026-10-24 08:57:02.052 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.CategoryDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 08:57:02.053 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CategoryController.GetAll (Invoice.CoreAPI) in 27.6308ms
+2026-10-24 08:57:02.053 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CategoryController.GetAll (Invoice.CoreAPI)'
+2026-10-24 08:57:02.054 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Category/GetAll - 200 null application/json; charset=utf-8 31.6178ms
+2026-10-24 08:57:55.164 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5063/api/v1/Category/Update/12 - application/json 230
+2026-10-24 08:57:55.165 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CategoryController.Update (Invoice.CoreAPI)'
+2026-10-24 08:57:55.200 +05:30 [INF] Route matched with {action = "Update", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, Invoice.DTOs.CategoryDto) on controller Invoice.CoreAPI.Controllers.CategoryController (Invoice.CoreAPI).
+2026-10-24 08:57:55.349 +05:30 [INF] Executed DbCommand (66ms) [Parameters=[@Id='?' (DbType = Int32), @Code='?' (Size = 5), @name='?' (Size = 3), Description='?' (Size = 6), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Category_Update
+
+            @Id,
+
+            @Code,
+
+            @name,
+
+            @Description,
+
+            @IsActive
+2026-10-24 08:57:55.354 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 08:57:55.358 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CategoryController.Update (Invoice.CoreAPI) in 157.4346ms
+2026-10-24 08:57:55.358 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CategoryController.Update (Invoice.CoreAPI)'
+2026-10-24 08:57:55.359 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5063/api/v1/Category/Update/12 - 200 null application/json; charset=utf-8 195.1439ms
+2026-10-24 08:58:09.147 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5063/api/v1/Category/Delete/12 - null null
+2026-10-24 08:58:09.151 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CategoryController.Delete (Invoice.CoreAPI)'
+2026-10-24 08:58:09.220 +05:30 [INF] Route matched with {action = "Delete", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller Invoice.CoreAPI.Controllers.CategoryController (Invoice.CoreAPI).
+2026-10-24 08:58:09.292 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Category_Delete @Id
+2026-10-24 08:58:09.292 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 08:58:09.293 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CategoryController.Delete (Invoice.CoreAPI) in 73.226ms
+2026-10-24 08:58:09.294 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CategoryController.Delete (Invoice.CoreAPI)'
+2026-10-24 08:58:09.297 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5063/api/v1/Category/Delete/12 - 200 null application/json; charset=utf-8 147.7795ms
+2026-10-24 08:58:17.669 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Category/GetAllPaged?pageNumber=1&pageSize=10 - null null
+2026-10-24 08:58:17.694 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CategoryController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-24 08:58:17.709 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(System.String, System.String, Int32, Int32) on controller Invoice.CoreAPI.Controllers.CategoryController (Invoice.CoreAPI).
+2026-10-24 08:58:17.783 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.CategoryDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 08:58:17.784 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CategoryController.GetAllPaged (Invoice.CoreAPI) in 74.9792ms
+2026-10-24 08:58:17.785 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CategoryController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-24 08:58:17.785 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Category/GetAllPaged?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 116.148ms
+2026-10-24 08:58:34.657 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Category/TestException - null null
+2026-10-24 08:58:34.659 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CategoryController.TestException (Invoice.CoreAPI)'
+2026-10-24 08:58:34.664 +05:30 [INF] Route matched with {action = "TestException", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestException() on controller Invoice.CoreAPI.Controllers.CategoryController (Invoice.CoreAPI).
+2026-10-24 09:00:24.098 +05:30 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-24 09:00:24.762 +05:30 [INF] Now listening on: http://localhost:5063
+2026-10-24 09:00:25.058 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-24 09:00:25.058 +05:30 [INF] Hosting environment: Development
+2026-10-24 09:00:25.058 +05:30 [INF] Content root path: E:\fixing_project_name\Invoice.CoreAPI
+2026-10-24 09:00:26.304 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/index.html - null null
+2026-10-24 09:00:27.076 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/index.html - 304 null null 809.2672ms
+2026-10-24 09:00:27.140 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui.css - null null
+2026-10-24 09:00:27.140 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/_framework/aspnetcore-browser-refresh.js - null null
+2026-10-24 09:00:27.140 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/index.css - null null
+2026-10-24 09:00:27.150 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-bundle.js - null null
+2026-10-24 09:00:27.150 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-standalone-preset.js - null null
+2026-10-24 09:00:27.150 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/index.js - null null
+2026-10-24 09:00:27.152 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/_framework/aspnetcore-browser-refresh.js - 200 14935 application/javascript; charset=utf-8 26.404ms
+2026-10-24 09:00:27.153 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/index.js - 304 null null 3.1764ms
+2026-10-24 09:00:27.265 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-standalone-preset.js - 304 null null 115.4504ms
+2026-10-24 09:00:27.265 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui.css - 304 null null 142.7552ms
+2026-10-24 09:00:27.265 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-bundle.js - 304 null null 115.4509ms
+2026-10-24 09:00:27.265 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/index.css - 304 null null 136.7277ms
+2026-10-24 09:00:27.284 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/_vs/browserLink - null null
+2026-10-24 09:00:27.406 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.8637ms
+2026-10-24 09:00:27.489 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/swagger/v1/swagger.json - null null
+2026-10-24 09:00:27.534 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/favicon-32x32.png - null null
+2026-10-24 09:00:27.551 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/favicon-32x32.png - 200 628 image/png 16.1253ms
+2026-10-24 09:00:27.626 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 136.7664ms
+2026-10-24 09:00:37.639 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Customer/GetAll - null null
+2026-10-24 09:00:38.067 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CustomerController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:00:38.151 +05:30 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.CustomerController (Invoice.CoreAPI).
+2026-10-24 09:00:39.045 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-10-24 09:00:41.374 +05:30 [WRN] No store type was specified for the decimal property 'OnHandQuantity' on entity type 'ItemStockEntity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-10-24 09:00:41.375 +05:30 [WRN] No store type was specified for the decimal property 'ReceivedQuantity' on entity type 'ItemStockEntity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-10-24 09:00:41.375 +05:30 [WRN] No store type was specified for the decimal property 'SoldQuantity' on entity type 'ItemStockEntity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-10-24 09:00:43.658 +05:30 [INF] Executed DbCommand (165ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Customer_GetAll
+2026-10-24 09:00:44.105 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.CustomerDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:00:44.195 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CustomerController.GetAll (Invoice.CoreAPI) in 6032.0133ms
+2026-10-24 09:00:44.198 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CustomerController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:00:44.239 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Customer/GetAll - 200 null application/json; charset=utf-8 6600.5881ms
+2026-10-24 09:01:00.156 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Customer/GetById/15 - null null
+2026-10-24 09:01:00.169 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CustomerController.GetById (Invoice.CoreAPI)'
+2026-10-24 09:01:00.233 +05:30 [INF] Route matched with {action = "GetById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Invoice.CoreAPI.Controllers.CustomerController (Invoice.CoreAPI).
+2026-10-24 09:01:00.451 +05:30 [INF] Executed DbCommand (89ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Customer_GetById
+            @Id
+2026-10-24 09:01:00.460 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.CustomerDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-24 09:01:00.466 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CustomerController.GetById (Invoice.CoreAPI) in 232.4219ms
+2026-10-24 09:01:00.466 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CustomerController.GetById (Invoice.CoreAPI)'
+2026-10-24 09:01:00.467 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Customer/GetById/15 - 200 null application/json; charset=utf-8 310.929ms
+2026-10-24 09:01:13.489 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5063/api/v1/Customer/Create - application/json 480
+2026-10-24 09:01:13.500 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CustomerController.Create (Invoice.CoreAPI)'
+2026-10-24 09:01:13.530 +05:30 [INF] Route matched with {action = "Create", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Invoice.DTOs.CustomerDto) on controller Invoice.CoreAPI.Controllers.CustomerController (Invoice.CoreAPI).
+2026-10-24 09:01:14.002 +05:30 [INF] Executed DbCommand (61ms) [Parameters=[@CustomerCode='?' (Size = 6), @CustomerName='?' (Size = 6), @ContactPerson='?' (Size = 6), @MobileNo='?' (Size = 6), @Email='?' (Size = 6), @Address1='?' (Size = 6), @Address2='?' (Size = 6), @City='?' (Size = 6), @State='?' (Size = 6), @Country='?' (Size = 6), @ZipCode='?' (Size = 6), @GstNo='?' (Size = 6), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Customer_Insert
+            @CustomerCode,
+            @CustomerName,
+            @ContactPerson,
+            @MobileNo,
+            @Email,
+            @Address1,
+            @Address2,
+            @City,
+            @State,
+            @Country,
+            @ZipCode,
+            @GstNo,
+            @IsActive
+2026-10-24 09:01:14.011 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:01:14.019 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CustomerController.Create (Invoice.CoreAPI) in 488.1539ms
+2026-10-24 09:01:14.019 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CustomerController.Create (Invoice.CoreAPI)'
+2026-10-24 09:01:14.020 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5063/api/v1/Customer/Create - 200 null application/json; charset=utf-8 530.8347ms
+2026-10-24 09:01:23.524 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Customer/GetAll - null null
+2026-10-24 09:01:23.526 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CustomerController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:01:23.527 +05:30 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.CustomerController (Invoice.CoreAPI).
+2026-10-24 09:01:23.547 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Customer_GetAll
+2026-10-24 09:01:23.556 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.CustomerDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:01:23.557 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CustomerController.GetAll (Invoice.CoreAPI) in 30.3829ms
+2026-10-24 09:01:23.558 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CustomerController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:01:23.559 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Customer/GetAll - 200 null application/json; charset=utf-8 34.9894ms
+2026-10-24 09:01:59.587 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5063/api/v1/Customer/Update/27 - application/json 481
+2026-10-24 09:01:59.590 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CustomerController.Update (Invoice.CoreAPI)'
+2026-10-24 09:01:59.630 +05:30 [INF] Route matched with {action = "Update", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, Invoice.DTOs.CustomerDto) on controller Invoice.CoreAPI.Controllers.CustomerController (Invoice.CoreAPI).
+2026-10-24 09:01:59.733 +05:30 [INF] Executed DbCommand (86ms) [Parameters=[@Id='?' (DbType = Int32), @CustomerCode='?' (Size = 5), @CustomerName='?' (Size = 7), @ContactPerson='?' (Size = 6), @MobileNo='?' (Size = 6), @Email='?' (Size = 6), @Address1='?' (Size = 6), @Address2='?' (Size = 6), @City='?' (Size = 6), @State='?' (Size = 6), @Country='?' (Size = 6), @ZipCode='?' (Size = 6), @GstNo='?' (Size = 6), @IsActive='?' (DbType = Boolean), @IsDeleted='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Customer_Update
+    @Id,
+    @CustomerCode,
+    @CustomerName,
+    @ContactPerson,
+    @MobileNo,
+    @Email,
+    @Address1,
+    @Address2,
+    @City,
+    @State,
+    @Country,
+    @ZipCode,
+    @GstNo,
+    @IsActive,
+    @IsDeleted
+2026-10-24 09:01:59.735 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:01:59.737 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CustomerController.Update (Invoice.CoreAPI) in 106.7456ms
+2026-10-24 09:01:59.738 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CustomerController.Update (Invoice.CoreAPI)'
+2026-10-24 09:01:59.738 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5063/api/v1/Customer/Update/27 - 200 null application/json; charset=utf-8 151.231ms
+2026-10-24 09:02:12.675 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Customer/GetAll - null null
+2026-10-24 09:02:12.677 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CustomerController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:02:12.677 +05:30 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.CustomerController (Invoice.CoreAPI).
+2026-10-24 09:02:12.690 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Customer_GetAll
+2026-10-24 09:02:12.694 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.CustomerDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:02:12.695 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CustomerController.GetAll (Invoice.CoreAPI) in 17.6234ms
+2026-10-24 09:02:12.695 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CustomerController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:02:12.696 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Customer/GetAll - 200 null application/json; charset=utf-8 20.4841ms
+2026-10-24 09:02:26.853 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5063/api/v1/Customer/Delete/27 - null null
+2026-10-24 09:02:26.854 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CustomerController.Delete (Invoice.CoreAPI)'
+2026-10-24 09:02:26.878 +05:30 [INF] Route matched with {action = "Delete", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller Invoice.CoreAPI.Controllers.CustomerController (Invoice.CoreAPI).
+2026-10-24 09:02:26.957 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Customer_Delete @Id
+2026-10-24 09:02:26.958 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:02:26.959 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CustomerController.Delete (Invoice.CoreAPI) in 80.5727ms
+2026-10-24 09:02:26.959 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CustomerController.Delete (Invoice.CoreAPI)'
+2026-10-24 09:02:26.959 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5063/api/v1/Customer/Delete/27 - 200 null application/json; charset=utf-8 106.1164ms
+2026-10-24 09:02:38.406 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Customer/GetAllPaged?pageNumber=1&pageSize=10 - null null
+2026-10-24 09:02:38.427 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.CustomerController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-24 09:02:38.458 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(System.String, System.String, System.String, System.String, Int32, Int32) on controller Invoice.CoreAPI.Controllers.CustomerController (Invoice.CoreAPI).
+2026-10-24 09:02:38.517 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.PagedResultDto`1[[Invoice.DTOs.CustomerDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-24 09:02:38.524 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.CustomerController.GetAllPaged (Invoice.CoreAPI) in 65.5683ms
+2026-10-24 09:02:38.524 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.CustomerController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-24 09:02:38.525 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Customer/GetAllPaged?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 118.8984ms
+2026-10-24 09:03:21.018 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetAllPaged?IsActive=true&PageNumber=1&PageSize=10 - null null
+2026-10-24 09:03:21.019 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-24 09:03:21.041 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(Invoice.DTOs.ItemmasterFilterDto) on controller Invoice.CoreAPI.Controllers.ItemmasterController (Invoice.CoreAPI).
+2026-10-24 09:03:21.190 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.PagedResultDto`1[[Invoice.DTOs.ItemmasterDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-24 09:03:21.237 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.ItemmasterController.GetAllPaged (Invoice.CoreAPI) in 196.4283ms
+2026-10-24 09:03:21.237 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-24 09:03:21.238 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetAllPaged?IsActive=true&PageNumber=1&PageSize=10 - 200 null application/json; charset=utf-8 219.8287ms
+2026-10-24 09:03:36.444 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetAll - null null
+2026-10-24 09:03:36.447 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:03:36.468 +05:30 [INF] Route matched with {action = "GetAll", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.ItemmasterController (Invoice.CoreAPI).
+2026-10-24 09:03:36.534 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetAll
+2026-10-24 09:03:36.620 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.ItemmasterDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:03:36.629 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.ItemmasterController.GetAll (Invoice.CoreAPI) in 160.8308ms
+2026-10-24 09:03:36.629 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:03:36.629 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetAll - 200 null application/json; charset=utf-8 184.9599ms
+2026-10-24 09:03:49.810 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetById/11 - null null
+2026-10-24 09:03:49.811 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetById (Invoice.CoreAPI)'
+2026-10-24 09:03:49.846 +05:30 [INF] Route matched with {action = "GetById", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Invoice.CoreAPI.Controllers.ItemmasterController (Invoice.CoreAPI).
+2026-10-24 09:03:49.931 +05:30 [INF] Executed DbCommand (51ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetById @Id
+2026-10-24 09:03:49.949 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.ItemmasterDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-24 09:03:49.964 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.ItemmasterController.GetById (Invoice.CoreAPI) in 118.5748ms
+2026-10-24 09:03:49.965 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetById (Invoice.CoreAPI)'
+2026-10-24 09:03:49.965 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetById/11 - 200 null application/json; charset=utf-8 155.5553ms
+2026-10-24 09:04:02.280 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5063/api/v1/Itemmaster/Create - application/json 368
+2026-10-24 09:04:02.281 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.Create (Invoice.CoreAPI)'
+2026-10-24 09:04:02.314 +05:30 [INF] Route matched with {action = "Create", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Invoice.DTOs.ItemmasterDto) on controller Invoice.CoreAPI.Controllers.ItemmasterController (Invoice.CoreAPI).
+2026-10-24 09:04:02.395 +05:30 [INF] Executed DbCommand (50ms) [Parameters=[@CategoryId='?' (DbType = Int32), @ItemBarCode='?' (Size = 6), @Itemcode='?' (Size = 6), @Itemname='?' (Size = 6), @Description='?' (Size = 6), @Uom='?' (Size = 6), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_Insert
+            @CategoryId,
+            @ItemBarCode,
+            @ItemCode,
+            @ItemName,
+            @Description,
+            @Uom,
+            @Rate,
+            @Minimumstock,
+            @Maximumstock,
+            @IsActive
+2026-10-24 09:04:02.396 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:04:02.397 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.ItemmasterController.Create (Invoice.CoreAPI) in 81.8586ms
+2026-10-24 09:04:02.397 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.Create (Invoice.CoreAPI)'
+2026-10-24 09:04:02.397 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5063/api/v1/Itemmaster/Create - 200 null application/json; charset=utf-8 117.5013ms
+2026-10-24 09:04:10.609 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetAll - null null
+2026-10-24 09:04:10.612 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:04:10.612 +05:30 [INF] Route matched with {action = "GetAll", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.ItemmasterController (Invoice.CoreAPI).
+2026-10-24 09:04:10.643 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetAll
+2026-10-24 09:04:10.645 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.ItemmasterDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:04:10.646 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.ItemmasterController.GetAll (Invoice.CoreAPI) in 33.7395ms
+2026-10-24 09:04:10.646 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:04:10.647 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetAll - 200 null application/json; charset=utf-8 37.7231ms
+2026-10-24 09:04:33.279 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetAll - null null
+2026-10-24 09:04:33.285 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:04:33.285 +05:30 [INF] Route matched with {action = "GetAll", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.ItemmasterController (Invoice.CoreAPI).
+2026-10-24 09:04:33.324 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetAll
+2026-10-24 09:04:33.326 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.ItemmasterDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:04:33.327 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.ItemmasterController.GetAll (Invoice.CoreAPI) in 41.4816ms
+2026-10-24 09:04:33.327 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:04:33.327 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetAll - 200 null application/json; charset=utf-8 48.7573ms
+2026-10-24 09:12:17.210 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5063/api/v1/Itemmaster/Update/62 - application/json 369
+2026-10-24 09:12:17.276 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.Update (Invoice.CoreAPI)'
+2026-10-24 09:12:17.301 +05:30 [INF] Route matched with {action = "Update", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, Invoice.DTOs.ItemmasterDto) on controller Invoice.CoreAPI.Controllers.ItemmasterController (Invoice.CoreAPI).
+2026-10-24 09:12:17.643 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@Id='?' (DbType = Int32), @CategoryId='?' (DbType = Int32), @ItemBarCode='?' (Size = 6), @Itemcode='?' (Size = 6), @Itemname='?' (Size = 6), Description='?' (Size = 6), @Uom='?' (Size = 6), @Rate='?' (DbType = Decimal), @Minimumstock='?' (DbType = Decimal), @Maximumstock='?' (DbType = Decimal), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_Update
+            @Id,
+            @CategoryId,
+            @ItemBarCode,
+            @Itemcode,
+            @Itemname,
+            @Description,
+            @Uom,
+            @Rate,
+            @Minimumstock,
+            @Maximumstock,
+            @IsActive
+2026-10-24 09:12:17.644 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:12:17.645 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.ItemmasterController.Update (Invoice.CoreAPI) in 344.2533ms
+2026-10-24 09:12:17.645 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.Update (Invoice.CoreAPI)'
+2026-10-24 09:12:17.646 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5063/api/v1/Itemmaster/Update/62 - 200 null application/json; charset=utf-8 437.6969ms
+2026-10-24 09:12:28.024 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetAll - null null
+2026-10-24 09:12:28.030 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:12:28.031 +05:30 [INF] Route matched with {action = "GetAll", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.ItemmasterController (Invoice.CoreAPI).
+2026-10-24 09:12:28.060 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetAll
+2026-10-24 09:12:28.068 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.ItemmasterDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:12:28.070 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.ItemmasterController.GetAll (Invoice.CoreAPI) in 39.0564ms
+2026-10-24 09:12:28.070 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:12:28.071 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetAll - 200 null application/json; charset=utf-8 49.5676ms
+2026-10-24 09:13:33.897 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5063/api/v1/Itemmaster/Delete/62 - null null
+2026-10-24 09:13:33.899 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.Delete (Invoice.CoreAPI)'
+2026-10-24 09:13:34.041 +05:30 [INF] Route matched with {action = "Delete", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller Invoice.CoreAPI.Controllers.ItemmasterController (Invoice.CoreAPI).
+2026-10-24 09:13:34.078 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_Delete @Id
+2026-10-24 09:13:34.079 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:13:34.081 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.ItemmasterController.Delete (Invoice.CoreAPI) in 40.2193ms
+2026-10-24 09:13:34.081 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.Delete (Invoice.CoreAPI)'
+2026-10-24 09:13:34.082 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5063/api/v1/Itemmaster/Delete/62 - 200 null application/json; charset=utf-8 184.7583ms
+2026-10-24 09:13:43.356 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetAll - null null
+2026-10-24 09:13:43.357 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:13:43.358 +05:30 [INF] Route matched with {action = "GetAll", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.ItemmasterController (Invoice.CoreAPI).
+2026-10-24 09:13:43.416 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetAll
+2026-10-24 09:13:43.419 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.ItemmasterDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:13:43.444 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.ItemmasterController.GetAll (Invoice.CoreAPI) in 86.2313ms
+2026-10-24 09:13:43.445 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:13:43.445 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetAll - 200 null application/json; charset=utf-8 89.7264ms
+2026-10-24 09:13:58.502 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetActiveItemCountByCategory/1 - null null
+2026-10-24 09:13:58.504 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetActiveItemCountByCategory (Invoice.CoreAPI)'
+2026-10-24 09:13:58.588 +05:30 [INF] Route matched with {action = "GetActiveItemCountByCategory", controller = "Itemmaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetActiveItemCountByCategory(Int32) on controller Invoice.CoreAPI.Controllers.ItemmasterController (Invoice.CoreAPI).
+2026-10-24 09:13:58.603 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetAll
+2026-10-24 09:13:58.605 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:13:58.605 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.ItemmasterController.GetActiveItemCountByCategory (Invoice.CoreAPI) in 17.1233ms
+2026-10-24 09:13:58.605 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.ItemmasterController.GetActiveItemCountByCategory (Invoice.CoreAPI)'
+2026-10-24 09:13:58.605 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Itemmaster/GetActiveItemCountByCategory/1 - 200 null application/json; charset=utf-8 103.7578ms
+2026-10-24 09:14:23.270 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/User/GetAll - null null
+2026-10-24 09:14:23.273 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.UserController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:14:23.295 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.UserController (Invoice.CoreAPI).
+2026-10-24 09:14:24.462 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.UsersDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:14:24.496 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.UserController.GetAll (Invoice.CoreAPI) in 1200.7978ms
+2026-10-24 09:14:24.496 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.UserController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:14:24.497 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/User/GetAll - 200 null application/json; charset=utf-8 1226.9621ms
+2026-10-24 09:14:38.293 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/User/GetById/5 - null null
+2026-10-24 09:14:38.309 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.UserController.GetById (Invoice.CoreAPI)'
+2026-10-24 09:14:38.330 +05:30 [INF] Route matched with {action = "GetById", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Invoice.CoreAPI.Controllers.UserController (Invoice.CoreAPI).
+2026-10-24 09:14:38.379 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.UsersDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-24 09:14:38.382 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.UserController.GetById (Invoice.CoreAPI) in 51.4897ms
+2026-10-24 09:14:38.382 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.UserController.GetById (Invoice.CoreAPI)'
+2026-10-24 09:14:38.382 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/User/GetById/5 - 200 null application/json; charset=utf-8 89.5689ms
+2026-10-24 09:15:34.342 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5063/api/v1/User/Create - application/json 456
+2026-10-24 09:15:34.347 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.UserController.Create (Invoice.CoreAPI)'
+2026-10-24 09:15:34.428 +05:30 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Invoice.DTOs.UsersCreateDto) on controller Invoice.CoreAPI.Controllers.UserController (Invoice.CoreAPI).
+2026-10-24 09:15:34.732 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.UsersDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-24 09:15:34.733 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.UserController.Create (Invoice.CoreAPI) in 305.5715ms
+2026-10-24 09:15:34.734 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.UserController.Create (Invoice.CoreAPI)'
+2026-10-24 09:15:34.734 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5063/api/v1/User/Create - 200 null application/json; charset=utf-8 392.9974ms
+2026-10-24 09:15:55.526 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/User/GetAll - null null
+2026-10-24 09:15:55.528 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.UserController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:15:55.528 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.UserController (Invoice.CoreAPI).
+2026-10-24 09:15:55.538 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.UsersDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:15:55.539 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.UserController.GetAll (Invoice.CoreAPI) in 10.8268ms
+2026-10-24 09:15:55.541 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.UserController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:15:55.545 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/User/GetAll - 200 null application/json; charset=utf-8 19.0549ms
+2026-10-24 09:16:43.968 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5063/api/v1/User/Update/7 - application/json 447
+2026-10-24 09:16:43.969 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.UserController.Update (Invoice.CoreAPI)'
+2026-10-24 09:16:44.053 +05:30 [INF] Route matched with {action = "Update", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, Invoice.DTOs.UsersUpdateDto) on controller Invoice.CoreAPI.Controllers.UserController (Invoice.CoreAPI).
+2026-10-24 09:16:44.319 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.UsersDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-24 09:16:44.319 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.UserController.Update (Invoice.CoreAPI) in 266.249ms
+2026-10-24 09:16:44.320 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.UserController.Update (Invoice.CoreAPI)'
+2026-10-24 09:16:44.320 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5063/api/v1/User/Update/7 - 200 null application/json; charset=utf-8 352.4133ms
+2026-10-24 09:17:29.037 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5063/api/v1/User/Delete/7?UpdatedBy=str - null null
+2026-10-24 09:17:29.092 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.UserController.Delete (Invoice.CoreAPI)'
+2026-10-24 09:17:29.121 +05:30 [INF] Route matched with {action = "Delete", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32, System.String) on controller Invoice.CoreAPI.Controllers.UserController (Invoice.CoreAPI).
+2026-10-24 09:17:29.163 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:17:29.171 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.UserController.Delete (Invoice.CoreAPI) in 49.1128ms
+2026-10-24 09:17:29.171 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.UserController.Delete (Invoice.CoreAPI)'
+2026-10-24 09:17:29.171 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5063/api/v1/User/Delete/7?UpdatedBy=str - 200 null application/json; charset=utf-8 134.8514ms
+2026-10-24 09:17:48.656 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/User/GetAll - null null
+2026-10-24 09:17:48.658 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.UserController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:17:48.658 +05:30 [INF] Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.UserController (Invoice.CoreAPI).
+2026-10-24 09:17:48.705 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.UsersDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:17:48.705 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.UserController.GetAll (Invoice.CoreAPI) in 46.9099ms
+2026-10-24 09:17:48.706 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.UserController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:17:48.706 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/User/GetAll - 200 null application/json; charset=utf-8 50.8359ms
+2026-10-24 09:18:07.662 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/User/GetPaged?IsActive=true&PageNumber=1&PageSize=10 - null null
+2026-10-24 09:18:07.664 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.UserController.GetPaged (Invoice.CoreAPI)'
+2026-10-24 09:18:07.708 +05:30 [INF] Route matched with {action = "GetPaged", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaged(Invoice.DTOs.UsersFilterDto) on controller Invoice.CoreAPI.Controllers.UserController (Invoice.CoreAPI).
+2026-10-24 09:18:07.868 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.PagedResultDto`1[[Invoice.DTOs.UsersDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-24 09:18:07.876 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.UserController.GetPaged (Invoice.CoreAPI) in 168.0059ms
+2026-10-24 09:18:07.876 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.UserController.GetPaged (Invoice.CoreAPI)'
+2026-10-24 09:18:07.877 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/User/GetPaged?IsActive=true&PageNumber=1&PageSize=10 - 200 null application/json; charset=utf-8 216.1609ms
+2026-10-24 09:18:25.360 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Vendor/GetAll - null null
+2026-10-24 09:18:25.363 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.VendorController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:18:25.403 +05:30 [INF] Route matched with {action = "GetAll", controller = "Vendor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.VendorController (Invoice.CoreAPI).
+2026-10-24 09:18:25.468 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Vendor_GetAll
+2026-10-24 09:18:25.557 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.VendorDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:18:25.581 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.VendorController.GetAll (Invoice.CoreAPI) in 177.7272ms
+2026-10-24 09:18:25.581 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.VendorController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:18:25.581 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Vendor/GetAll - 200 null application/json; charset=utf-8 221.4222ms
+2026-10-24 09:18:41.818 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Vendor/GetById/30 - null null
+2026-10-24 09:18:41.826 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.VendorController.GetById (Invoice.CoreAPI)'
+2026-10-24 09:18:41.858 +05:30 [INF] Route matched with {action = "GetById", controller = "Vendor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller Invoice.CoreAPI.Controllers.VendorController (Invoice.CoreAPI).
+2026-10-24 09:18:41.922 +05:30 [INF] Executed DbCommand (39ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Vendor_GetById @Id
+2026-10-24 09:18:41.933 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.VendorDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-24 09:18:41.938 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.VendorController.GetById (Invoice.CoreAPI) in 80.0708ms
+2026-10-24 09:18:41.938 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.VendorController.GetById (Invoice.CoreAPI)'
+2026-10-24 09:18:41.938 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Vendor/GetById/30 - 200 null application/json; charset=utf-8 120.8243ms
+2026-10-24 09:19:27.313 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5063/api/v1/Vendor/Create - application/json 479
+2026-10-24 09:19:27.315 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.VendorController.Create (Invoice.CoreAPI)'
+2026-10-24 09:19:27.391 +05:30 [INF] Route matched with {action = "Create", controller = "Vendor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Invoice.DTOs.VendorDto) on controller Invoice.CoreAPI.Controllers.VendorController (Invoice.CoreAPI).
+2026-10-24 09:19:27.461 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[@VendorCode='?' (Size = 5), @VendorName='?' (Size = 4), @ContactPerson='?' (Size = 8), @MobileNo='?' (Size = 10), @Email='?' (Size = 6), @Address1='?' (Size = 6), @Address2='?' (Size = 6), @City='?' (Size = 6), @State='?' (Size = 6), @Country='?' (Size = 6), @ZipCode='?' (Size = 6), @GstNo='?' (Size = 6), @IsActive='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Vendor_Insert
+        @VendorCode,
+        @VendorName,
+        @ContactPerson,
+        @MobileNo,
+        @Email,
+        @Address1,
+        @Address2,
+        @City,
+        @State,
+        @Country,
+        @ZipCode,
+        @GstNo,
+        @IsActive
+2026-10-24 09:19:27.462 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:19:27.462 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.VendorController.Create (Invoice.CoreAPI) in 70.8622ms
+2026-10-24 09:19:27.462 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.VendorController.Create (Invoice.CoreAPI)'
+2026-10-24 09:19:27.462 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5063/api/v1/Vendor/Create - 200 null application/json; charset=utf-8 149.9563ms
+2026-10-24 09:19:46.287 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Vendor/GetAll - null null
+2026-10-24 09:19:46.288 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.VendorController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:19:46.288 +05:30 [INF] Route matched with {action = "GetAll", controller = "Vendor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.VendorController (Invoice.CoreAPI).
+2026-10-24 09:19:46.296 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Vendor_GetAll
+2026-10-24 09:19:46.297 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.VendorDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:19:46.299 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.VendorController.GetAll (Invoice.CoreAPI) in 10.5024ms
+2026-10-24 09:19:46.299 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.VendorController.GetAll (Invoice.CoreAPI)'
+2026-10-24 09:19:46.300 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Vendor/GetAll - 200 null application/json; charset=utf-8 12.7003ms
+2026-10-24 09:20:16.359 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5063/api/v1/Vendor/Update/36 - application/json 489
+2026-10-24 09:20:16.400 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.VendorController.Update (Invoice.CoreAPI)'
+2026-10-24 09:20:16.433 +05:30 [INF] Route matched with {action = "Update", controller = "Vendor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, Invoice.DTOs.VendorDto) on controller Invoice.CoreAPI.Controllers.VendorController (Invoice.CoreAPI).
+2026-10-24 09:20:16.488 +05:30 [INF] Executed DbCommand (48ms) [Parameters=[@Id='?' (DbType = Int32), @VendorCode='?' (Size = 5), @VendorName='?' (Size = 4), @ContactPerson='?' (Size = 8), @MobileNo='?' (Size = 10), @Email='?' (Size = 16), @Address1='?' (Size = 6), @Address2='?' (Size = 6), @City='?' (Size = 6), @State='?' (Size = 6), @Country='?' (Size = 6), @ZipCode='?' (Size = 6), @GstNo='?' (Size = 6), @IsActive='?' (DbType = Boolean), @IsDeleted='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Vendor_Update
+        @Id,
+        @VendorCode,
+        @VendorName,
+        @ContactPerson,
+        @MobileNo,
+        @Email,
+        @Address1,
+        @Address2,
+        @City,
+        @State,
+        @Country,
+        @ZipCode,
+        @GstNo,
+        @IsActive,
+        @IsDeleted
+2026-10-24 09:20:16.492 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:20:16.493 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.VendorController.Update (Invoice.CoreAPI) in 59.8587ms
+2026-10-24 09:20:16.494 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.VendorController.Update (Invoice.CoreAPI)'
+2026-10-24 09:20:16.494 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5063/api/v1/Vendor/Update/36 - 200 null application/json; charset=utf-8 135.2297ms
+2026-10-24 09:20:32.179 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5063/api/v1/Vendor/Delete/36 - null null
+2026-10-24 09:20:32.184 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.VendorController.Delete (Invoice.CoreAPI)'
+2026-10-24 09:20:32.206 +05:30 [INF] Route matched with {action = "Delete", controller = "Vendor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller Invoice.CoreAPI.Controllers.VendorController (Invoice.CoreAPI).
+2026-10-24 09:20:32.257 +05:30 [INF] Executed DbCommand (39ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Vendor_Delete @Id
+2026-10-24 09:20:32.259 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-24 09:20:32.260 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.VendorController.Delete (Invoice.CoreAPI) in 53.9448ms
+2026-10-24 09:20:32.260 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.VendorController.Delete (Invoice.CoreAPI)'
+2026-10-24 09:20:32.261 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5063/api/v1/Vendor/Delete/36 - 200 null application/json; charset=utf-8 82.4159ms
+2026-10-24 09:20:45.026 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Vendor/GetAllPaged?pageNumber=1&pageSize=10 - null null
+2026-10-24 09:20:45.030 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.VendorController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-24 09:20:45.067 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "Vendor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(System.String, System.String, System.String, System.String, Int32, Int32) on controller Invoice.CoreAPI.Controllers.VendorController (Invoice.CoreAPI).
+2026-10-24 09:20:45.129 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.PagedResultDto`1[[Invoice.DTOs.VendorDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-24 09:20:45.134 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.VendorController.GetAllPaged (Invoice.CoreAPI) in 66.3847ms
+2026-10-24 09:20:45.134 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.VendorController.GetAllPaged (Invoice.CoreAPI)'
+2026-10-24 09:20:45.134 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Vendor/GetAllPaged?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 108.0112ms
