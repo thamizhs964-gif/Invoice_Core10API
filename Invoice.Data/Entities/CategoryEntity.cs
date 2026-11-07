@@ -20,7 +20,7 @@ public class CategoryEntity
     public string Name { get; set; }
     [StringLength(100)]
     public string? Description { get; set; }
-    public bool IsActive { get; set; }
+    public bool Isactive { get; set; }
     [StringLength(100)]
     public string? CreatedBy { get; set; }
     public DateTime? CreatedDate { get; set; }

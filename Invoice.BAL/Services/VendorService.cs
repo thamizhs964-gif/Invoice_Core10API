@@ -45,6 +45,7 @@ public class VendorService : IVendorService
         string? VendorName,
         string? MobileNo,
         string? City,
+        string? Isactive,
         int PageNumber,
         int PageSize)
     {
@@ -53,6 +54,7 @@ public class VendorService : IVendorService
             VendorName,
             MobileNo,
             City,
+            Isactive,
             PageNumber,
             PageSize);
 

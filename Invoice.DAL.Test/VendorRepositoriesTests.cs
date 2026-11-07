@@ -621,6 +621,8 @@ public class VendorRepositoriesTests
 
             null,
 
+            null,
+
             1,
 
             2);
@@ -654,6 +656,8 @@ public class VendorRepositoriesTests
         var result = await repository.GetAllPagedAsync(
 
             "TSTV001",
+
+            null,
 
             null,
 
@@ -705,6 +709,8 @@ public class VendorRepositoriesTests
 
             null,
 
+            null,
+
             1,
 
             10);
@@ -748,6 +754,8 @@ public class VendorRepositoriesTests
             null,
 
             "Chennai",
+
+            null,
 
             1,
 

@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using Invoice.BAL.contracts;
+using Invoice.BAL.Contracts;
 using Invoice.DAL.Contracts;
 using Invoice.Data.Entities;
 using Invoice.DTOs;
-
 namespace Invoice.BAL.Services;
 
 public class CategoryService : ICategoryService
@@ -39,14 +39,10 @@ public class CategoryService : ICategoryService
     {
         return await _repository.DeleteAsync(id);
     }
-    public async Task<PagedResultDto<CategoryDto>> GetAllPagedAsync(
-string? CategoryId,
-string? itemName,
-int pageNumber,
-int pageSize)
+    public async Task<PagedResultDto<CategoryDto>> GetAllPagedAsync(string? Code, string? Name, bool? IsActive, int pageNumber, int pageSize)
     {
         var result = await _repository.GetAllPagedAsync(
-            CategoryId, itemName, pageNumber, pageSize);
+            Code, Name, IsActive, pageNumber, pageSize);
 
         return new PagedResultDto<CategoryDto>
         {
@@ -55,3 +51,4 @@ int pageSize)
         };
     }
 }
+

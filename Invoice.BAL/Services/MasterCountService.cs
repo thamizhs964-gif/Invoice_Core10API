@@ -57,7 +57,7 @@ public class MasterCountService : IMasterCountService
     // ---------------- counts ----------------
 
     public async Task<int> CountCategoriesAsync(bool? isActive)
-        => (await _categories.GetAllAsync()).Count(c => isActive == null || c.IsActive == isActive);
+        => (await _categories.GetAllAsync()).Count(c => isActive == null || c.Isactive == isActive);
 
     public async Task<int?> CountItemsInCategoryAsync(string categoryName, bool? isActive)
     {

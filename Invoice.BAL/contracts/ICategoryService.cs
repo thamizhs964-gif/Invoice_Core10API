@@ -1,33 +1,13 @@
-﻿using Invoice.Data.Entities;
-using Invoice.DTOs;
-using Invoice.Model.AI;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Invoice.BAL.contracts;
+﻿using Invoice.DTOs;
+namespace Invoice.BAL.Contracts;
 
 public interface ICategoryService
 {
-    Task<int> AddAsync(CategoryDto entity);
-
+    Task<int> AddAsync(CategoryDto dto);
     Task<IEnumerable<CategoryDto>> GetAllAsync();
-
     Task<CategoryDto?> GetByIdAsync(int id);
-
-    Task<bool> UpdateAsync(CategoryDto category);
-
+    Task<bool> UpdateAsync(CategoryDto dto);
     Task<bool> DeleteAsync(int id);
 
-    Task<PagedResultDto<CategoryDto>> GetAllPagedAsync(
-
-string? Code,
-
-string? Name,
-
-int pageNumber,
-
-int pageSize);
-
-
+    Task<PagedResultDto<CategoryDto>> GetAllPagedAsync(string? Code, string? Name, bool? IsActive, int pageNumber, int pageSize);
 }

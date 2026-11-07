@@ -1,11 +1,10 @@
-﻿using Invoice.BAL.contracts;
+﻿using Invoice.BAL.Contracts;
 using Invoice.CoreAPI.Controllers;
 using Invoice.DTOs;
 using Invoice.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-
 using Moq;
 
 namespace Invoice.CoreAPI.Test;
@@ -634,6 +633,7 @@ public class CategoryControllerTests
             .Setup(x => x.GetAllPagedAsync(
                 "RI",
                 null,
+                null,
                 1,
                 5))
             .ReturnsAsync(pagedResult);
@@ -641,6 +641,7 @@ public class CategoryControllerTests
         // Act
         var result = await _controller.GetAllPaged(
             "RI",
+            null,
             null,
             1,
             5);
@@ -666,6 +667,7 @@ public class CategoryControllerTests
             x => x.GetAllPagedAsync(
                 "RI",
                 null,
+                null,
                 1,
                 5),
             Times.Once);
@@ -676,6 +678,7 @@ public class CategoryControllerTests
     {
         // Act
         var result = await _controller.GetAllPaged(
+            null,
             null,
             null,
             0,
@@ -698,6 +701,7 @@ public class CategoryControllerTests
             x => x.GetAllPagedAsync(
                 It.IsAny<string?>(),
                 It.IsAny<string?>(),
+                It.IsAny<bool?>(),
                 It.IsAny<int>(),
                 It.IsAny<int>()),
             Times.Never);
@@ -708,6 +712,7 @@ public class CategoryControllerTests
     {
         // Act
         var result = await _controller.GetAllPaged(
+            null,
             null,
             null,
             1,
@@ -730,6 +735,7 @@ public class CategoryControllerTests
             x => x.GetAllPagedAsync(
                 It.IsAny<string?>(),
                 It.IsAny<string?>(),
+                It.IsAny<bool?>(),
                 It.IsAny<int>(),
                 It.IsAny<int>()),
             Times.Never);
@@ -743,6 +749,7 @@ public class CategoryControllerTests
             .Setup(x => x.GetAllPagedAsync(
                 "RI",
                 null,
+                null,
                 1,
                 10))
             .ThrowsAsync(
@@ -751,6 +758,7 @@ public class CategoryControllerTests
         // Act
         var result = await _controller.GetAllPaged(
             "RI",
+            null,
             null,
             1,
             10);

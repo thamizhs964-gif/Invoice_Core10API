@@ -40,7 +40,7 @@ public class CategoryRepositoriesTests
                 Code = "RI001",
                 Name = "Rice",
                 Description = "All types of rice",
-                IsActive = true,
+                Isactive = true,
                 CreatedBy = "TestUser",
                 CreatedDate = DateTime.UtcNow
             },
@@ -49,7 +49,7 @@ public class CategoryRepositoriesTests
                 Code = "VE001",
                 Name = "Vegetables",
                 Description = "Fresh vegetables",
-                IsActive = true,
+                Isactive = true,
                 CreatedBy = "TestUser",
                 CreatedDate = DateTime.UtcNow
             },
@@ -58,7 +58,7 @@ public class CategoryRepositoriesTests
                 Code = "SN001",
                 Name = "Snacks",
                 Description = "All types of snacks",
-                IsActive = false,
+                Isactive = false,
                 CreatedBy = "TestUser",
                 CreatedDate = DateTime.UtcNow
             }
@@ -112,11 +112,11 @@ public class CategoryRepositoriesTests
 
         Assert.Equal(
             2,
-            testCategories.Count(x => x.IsActive == true));
+            testCategories.Count(x => x.Isactive == true));
 
         Assert.Single(
             testCategories,
-            x => x.IsActive == false);
+            x => x.Isactive == false);
     }
 
     [Fact]
@@ -138,7 +138,7 @@ public class CategoryRepositoriesTests
         Assert.Equal(category.Id, result.Id);
         Assert.Equal("RI001", result.Code);
         Assert.Equal("Rice", result.Name);
-        Assert.True(result.IsActive == true);
+        Assert.True(result.Isactive == true);
     }
 
     [Fact]
@@ -185,7 +185,7 @@ public class CategoryRepositoriesTests
             Code = "FR001",
             Name = "Fruits",
             Description = "Fresh fruits",
-            IsActive = true,
+            Isactive = true,
             CreatedBy = "TestUser",
             CreatedDate = DateTime.UtcNow
         };
@@ -207,7 +207,7 @@ public class CategoryRepositoriesTests
         Assert.Equal("FR001", savedCategory.Code);
         Assert.Equal("Fruits", savedCategory.Name);
         Assert.Equal("Fresh fruits", savedCategory.Description);
-        Assert.True(savedCategory.IsActive == true);
+        Assert.True(savedCategory.Isactive == true);
 
         // Cleanup test data.
         context.Categories.Remove(savedCategory);
@@ -299,7 +299,7 @@ public class CategoryRepositoriesTests
                 (x.Code == "RI001" ||
                  x.Code == "VE001" ||
                  x.Code == "SN001") &&
-                x.IsActive == true);
+                x.Isactive == true);
 
         Assert.Equal(2, count);
     }

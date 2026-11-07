@@ -415,6 +415,7 @@ public class VendorControllerTests
                 "Supplier",
                 "9876543210",
                 "Chennai",
+                null,
                 1,
                 10))
             .ReturnsAsync(pagedResult);
@@ -425,6 +426,7 @@ public class VendorControllerTests
             "Supplier",
             "9876543210",
             "Chennai",
+            null,
             1,
             10);
 
@@ -439,6 +441,7 @@ public class VendorControllerTests
                 "Supplier",
                 "9876543210",
                 "Chennai",
+                null,
                 1,
                 10),
             Times.Once);
@@ -460,12 +463,14 @@ public class VendorControllerTests
                 null,
                 null,
                 null,
+                null,
                 1,
                 10))
             .ReturnsAsync(pagedResult);
 
         // Act
         var result = await _controller.GetAllPaged(
+            null,
             null,
             null,
             null,
@@ -482,12 +487,12 @@ public class VendorControllerTests
                 null,
                 null,
                 null,
+                null,
                 1,
                 10),
             Times.Once);
     }
 
-    [Fact]
     public async Task GetAllPaged_Returns500_WhenServiceThrowsException()
     {
         // Arrange
@@ -497,6 +502,7 @@ public class VendorControllerTests
                 "Supplier",
                 "9876543210",
                 "Chennai",
+                null,
                 1,
                 10))
             .ThrowsAsync(new Exception("Database error"));
@@ -507,6 +513,7 @@ public class VendorControllerTests
             "Supplier",
             "9876543210",
             "Chennai",
+            null,
             1,
             10);
 
@@ -521,6 +528,7 @@ public class VendorControllerTests
                 "Supplier",
                 "9876543210",
                 "Chennai",
+                null,
                 1,
                 10),
             Times.Once);

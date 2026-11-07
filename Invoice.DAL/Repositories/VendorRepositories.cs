@@ -117,6 +117,7 @@ public class VendorRepositories : IVendorRepository
     string? VendorName,
     string? MobileNo,
     string? City,
+    string? IsActive,
     int PageNumber,
     int PageSize)
     {

@@ -82,9 +82,9 @@ namespace Invoice.BAL.Test
         {
             var categories = new List<CategoryEntity>
             {
-                new CategoryEntity { IsActive = true },
-                new CategoryEntity { IsActive = false },
-                new CategoryEntity { IsActive = true }
+                new CategoryEntity { Isactive = true },
+                new CategoryEntity { Isactive = false },
+                new CategoryEntity { Isactive = true }
             };
 
             _categoriesMock.Setup(x => x.GetAllAsync()).ReturnsAsync(categories);
