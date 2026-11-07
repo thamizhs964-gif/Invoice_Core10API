@@ -98,7 +98,7 @@ public static class TxTestHelper
             Code = "TXCAT",
             Name = "TX Test Category",
             Description = "TX tests",
-            IsActive = true,
+            Isactive = true,
             CreatedBy = TestUser,
             CreatedDate = DateTime.UtcNow
         };

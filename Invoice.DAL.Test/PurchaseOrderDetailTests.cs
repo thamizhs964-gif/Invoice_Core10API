@@ -144,7 +144,7 @@ public class PurchaseOrderDetailTests
             Code = "POC01",
             Name = "PO Test Category",
             Description = "Purchase Order Test Category",
-            IsActive = true,
+            Isactive = true,
             CreatedBy = "POD_TEST",
             CreatedDate = DateTime.Now
         };

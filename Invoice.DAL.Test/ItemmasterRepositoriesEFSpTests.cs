@@ -66,7 +66,7 @@ public class ItemmasterRepositoryTests
             Code = "TST01",
             Name = "Test Rice",
             Description = "Test rice category",
-            IsActive = true,
+            Isactive = true,
             CreatedBy = "TestUser",
             CreatedDate = DateTime.UtcNow
         };
@@ -76,7 +76,7 @@ public class ItemmasterRepositoryTests
             Code = "TST02",
             Name = "Test Vegetables",
             Description = "Test vegetable category",
-            IsActive = true,
+            Isactive = true,
             CreatedBy = "TestUser",
             CreatedDate = DateTime.UtcNow
         };

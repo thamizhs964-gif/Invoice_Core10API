@@ -7,7 +7,6 @@ using Invoice.DTOs;
 using Microsoft.Extensions.Logging;
 using Moq;
 using System.Timers;
-
 namespace Invoice.BAL.Test.Services;
 
 public class CategoryServiceTests
@@ -35,7 +34,6 @@ public class CategoryServiceTests
     private readonly Mock<ICategoryRepository> _repositoryMock;
     private readonly IMapper _mapper;
     private readonly CategoryService _service;
-
 
     [Fact]
     public async Task AddAsync_ShouldMapDtoAndReturnRepositoryId()
@@ -168,6 +166,7 @@ public class CategoryServiceTests
             .Setup(x => x.GetAllPagedAsync(
                 "CAT",
                 "Rice",
+                true,
                 1,
                 2))
             .ReturnsAsync(repositoryResult);
@@ -175,6 +174,7 @@ public class CategoryServiceTests
         var result = await _service.GetAllPagedAsync(
             "CAT",
             "Rice",
+            true,
             1,
             2);
 
@@ -186,8 +186,10 @@ public class CategoryServiceTests
             x => x.GetAllPagedAsync(
                 "CAT",
                 "Rice",
+                true,
                 1,
                 2),
             Times.Once);
     }
 }
+
