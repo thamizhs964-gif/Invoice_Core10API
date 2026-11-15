@@ -194,6 +194,14 @@ builder.Services.AddScoped<IUsersService, UsersServiceSpDap>();
 
 builder.Services.AddScoped<IMasterCountService, MasterCountService>();
 
+//=============================================================
+//  PDF Report Service
+//=============================================================
+QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
+builder.Services.AddSingleton<IDocumentPdfService, DocumentPdfService>();
+builder.Services.AddScoped<IDocumentPrintService, DocumentPrintService>();
+
+
 // ============================================================
 // Swagger
 // ============================================================
