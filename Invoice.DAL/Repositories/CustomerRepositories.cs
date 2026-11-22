@@ -123,6 +123,7 @@ public class CustomerRepositories : ICustomerRepository
         string? CustomerName,
         string? MobileNo,
         string? City,
+        bool? IsActive,
         int PageNumber,
         int PageSize)
     {
@@ -134,7 +135,9 @@ public class CustomerRepositories : ICustomerRepository
             command.CommandType = CommandType.StoredProcedure;
             command.Parameters.Add(new SqlParameter("@CustomerCode", (object?)CustomerCode ?? DBNull.Value));
             command.Parameters.Add(new SqlParameter("@CustomerName", (object?)CustomerName ?? DBNull.Value));
+            command.Parameters.Add(new SqlParameter("@MobileNo", (object?)MobileNo ?? DBNull.Value));
             command.Parameters.Add(new SqlParameter("@City", (object?)City ?? DBNull.Value));
+            command.Parameters.Add(new SqlParameter("@IsActive", (object?)IsActive ?? DBNull.Value));
             command.Parameters.Add(new SqlParameter("@PageNumber", PageNumber));
             command.Parameters.Add(new SqlParameter("@PageSize", PageSize));
 

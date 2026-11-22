@@ -17,6 +17,7 @@ public interface ICustomerService
         string? CustomerName,
         string? MobileNo,
         string? City,
+        bool? IsActive,
         int PageNumber,
         int PageSize
         );

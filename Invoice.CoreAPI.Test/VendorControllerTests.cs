@@ -392,14 +392,16 @@ public class VendorControllerTests
                 Id = 1,
                 VendorCode = "V001",
                 VendorName = "ABC Supplier",
-                City = "Chennai"
+                City = "Chennai",
+                IsActive = true
             },
             new VendorDto
             {
                 Id = 2,
                 VendorCode = "V002",
                 VendorName = "XYZ Supplier",
-                City = "Chennai"
+                City = "Chennai",
+                IsActive = false
             }
         };
 

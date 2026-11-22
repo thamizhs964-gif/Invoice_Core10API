@@ -3812,3 +3812,152 @@ EXEC dbo.sp_Stock_GetAll
 2026-11-15 14:29:32.737 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.StockController.GetAll (Invoice.CoreAPI) in 85.5151ms
 2026-11-15 14:29:32.737 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.StockController.GetAll (Invoice.CoreAPI)'
 2026-11-15 14:29:32.737 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Stock/GetAll - 200 null application/json; charset=utf-8 86.7374ms
+2026-11-15 20:15:34.569 +05:30 [INF] User profile is available. Using 'C:\Users\Acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-11-15 20:15:35.121 +05:30 [INF] Now listening on: http://localhost:5063
+2026-11-15 20:15:35.442 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-11-15 20:15:35.442 +05:30 [INF] Hosting environment: Development
+2026-11-15 20:15:35.442 +05:30 [INF] Content root path: E:\fixing_project_name\Invoice.CoreAPI
+2026-11-15 20:15:38.115 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/index.html - null null
+2026-11-15 20:15:38.607 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/index.html - 304 null null 503.4011ms
+2026-11-15 20:15:38.671 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui.css - null null
+2026-11-15 20:15:38.671 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-bundle.js - null null
+2026-11-15 20:15:38.671 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/index.css - null null
+2026-11-15 20:15:38.671 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/index.js - null null
+2026-11-15 20:15:38.671 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-standalone-preset.js - null null
+2026-11-15 20:15:38.699 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/_framework/aspnetcore-browser-refresh.js - null null
+2026-11-15 20:15:38.723 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/index.js - 304 null null 30.6891ms
+2026-11-15 20:15:38.761 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/_vs/browserLink - null null
+2026-11-15 20:15:38.762 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/_framework/aspnetcore-browser-refresh.js - 200 14935 application/javascript; charset=utf-8 62.5577ms
+2026-11-15 20:15:38.800 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/index.css - 304 null null 132.7866ms
+2026-11-15 20:15:38.800 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui.css - 304 null null 132.8272ms
+2026-11-15 20:15:38.800 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-bundle.js - 304 null null 128.6492ms
+2026-11-15 20:15:38.801 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/Swagger/swagger-ui-standalone-preset.js - 304 null null 128.8911ms
+2026-11-15 20:15:38.909 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/_vs/browserLink - 200 null text/javascript; charset=UTF-8 147.5101ms
+2026-11-15 20:15:39.032 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/swagger/v1/swagger.json - null null
+2026-11-15 20:15:39.150 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 117.1734ms
+2026-11-15 20:16:50.202 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5063/api/v1/Login - application/json 56
+2026-11-15 20:16:50.431 +05:30 [INF] CORS policy execution failed.
+2026-11-15 20:16:50.432 +05:30 [INF] Request origin http://localhost:5063 does not have permission to access the resource.
+2026-11-15 20:16:50.559 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-11-15 20:16:50.651 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Invoice.DTOs.LoginRequestDto) on controller Invoice.CoreAPI.Controllers.LoginController (Invoice.CoreAPI).
+2026-11-15 20:16:52.859 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType6`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice.DTOs.LoginResponseDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-11-15 20:16:52.955 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI) in 2288.2404ms
+2026-11-15 20:16:52.956 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-11-15 20:16:52.966 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5063/api/v1/Login - 200 null application/json; charset=utf-8 2763.6424ms
+2026-11-15 20:17:22.855 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/PurchaseOrder/GetAll - null null
+2026-11-15 20:17:23.032 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.PurchaseOrderController.GetAll (Invoice.CoreAPI)'
+2026-11-15 20:17:23.053 +05:30 [INF] Route matched with {action = "GetAll", controller = "PurchaseOrder"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.PurchaseOrderController (Invoice.CoreAPI).
+2026-11-15 20:17:23.940 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-11-15 20:17:25.895 +05:30 [WRN] No store type was specified for the decimal property 'OnHandQuantity' on entity type 'ItemStockEntity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-11-15 20:17:25.895 +05:30 [WRN] No store type was specified for the decimal property 'ReceivedQuantity' on entity type 'ItemStockEntity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-11-15 20:17:25.895 +05:30 [WRN] No store type was specified for the decimal property 'SoldQuantity' on entity type 'ItemStockEntity'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-11-15 20:17:27.493 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC dbo.sp_PurchaseOrder_GetAll
+2026-11-15 20:17:27.611 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@PurchaseOrderId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC dbo.sp_PurchaseOrderDetail_GetByPurchaseOrderId @PurchaseOrderId
+2026-11-15 20:17:27.622 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@PurchaseOrderId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC dbo.sp_PurchaseOrderDetail_GetByPurchaseOrderId @PurchaseOrderId
+2026-11-15 20:17:27.626 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@PurchaseOrderId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC dbo.sp_PurchaseOrderDetail_GetByPurchaseOrderId @PurchaseOrderId
+2026-11-15 20:17:27.682 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.PurchaseOrderDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-11-15 20:17:27.727 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.PurchaseOrderController.GetAll (Invoice.CoreAPI) in 4673.3016ms
+2026-11-15 20:17:27.727 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.PurchaseOrderController.GetAll (Invoice.CoreAPI)'
+2026-11-15 20:17:27.757 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/PurchaseOrder/GetAll - 200 null application/json; charset=utf-8 4902.3239ms
+2026-11-15 20:17:44.743 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/PurchaseOrder/3/pdf - null null
+2026-11-15 20:17:44.757 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.PurchaseOrderController.GetPdf (Invoice.CoreAPI)'
+2026-11-15 20:17:44.778 +05:30 [INF] Route matched with {action = "GetPdf", controller = "PurchaseOrder"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPdf(Int32) on controller Invoice.CoreAPI.Controllers.PurchaseOrderController (Invoice.CoreAPI).
+2026-11-15 20:17:45.003 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC dbo.sp_PurchaseOrder_GetById @Id
+2026-11-15 20:17:45.013 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@PurchaseOrderId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC dbo.sp_PurchaseOrderDetail_GetByPurchaseOrderId @PurchaseOrderId
+2026-11-15 20:17:45.071 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Vendor_GetById @Id
+2026-11-15 20:17:45.150 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetById @Id
+2026-11-15 20:17:45.166 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetById @Id
+2026-11-15 20:17:45.170 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetById @Id
+2026-11-15 20:17:46.257 +05:30 [INF] Executing FileContentResult, sending file with download name 'PurchaseOrder-3.pdf' ...
+2026-11-15 20:17:46.273 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.PurchaseOrderController.GetPdf (Invoice.CoreAPI) in 1494.8399ms
+2026-11-15 20:17:46.273 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.PurchaseOrderController.GetPdf (Invoice.CoreAPI)'
+2026-11-15 20:17:46.274 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/PurchaseOrder/3/pdf - 200 47065 application/pdf 1531.3945ms
+2026-11-15 20:19:38.615 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5063/api/v1/login - null null
+2026-11-15 20:19:38.635 +05:30 [INF] CORS policy execution successful.
+2026-11-15 20:19:38.644 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5063/api/v1/login - 204 null null 31.2448ms
+2026-11-15 20:19:38.648 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5063/api/v1/login - application/json 47
+2026-11-15 20:19:38.650 +05:30 [INF] CORS policy execution successful.
+2026-11-15 20:19:38.736 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '29-07-2026 3.33.47 PM', Current time (UTC): '15-11-2026 2.49.38 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-11-15 20:19:38.857 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '29-07-2026 3.33.47 PM', Current time (UTC): '15-11-2026 2.49.38 PM'.
+2026-11-15 20:19:38.857 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-11-15 20:19:38.861 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Invoice.DTOs.LoginRequestDto) on controller Invoice.CoreAPI.Controllers.LoginController (Invoice.CoreAPI).
+2026-11-15 20:19:39.098 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType6`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice.DTOs.LoginResponseDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-11-15 20:19:39.101 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI) in 239.0939ms
+2026-11-15 20:19:39.101 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-11-15 20:19:39.101 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5063/api/v1/login - 200 null application/json; charset=utf-8 453.698ms
+2026-11-15 20:19:39.303 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5063/api/v1/login - application/json 47
+2026-11-15 20:19:39.304 +05:30 [INF] CORS policy execution successful.
+2026-11-15 20:19:39.305 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-11-15 20:19:39.305 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Invoice.DTOs.LoginRequestDto) on controller Invoice.CoreAPI.Controllers.LoginController (Invoice.CoreAPI).
+2026-11-15 20:19:39.510 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType6`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[Invoice.DTOs.LoginResponseDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-11-15 20:19:39.511 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI) in 205.2162ms
+2026-11-15 20:19:39.511 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.LoginController.Login (Invoice.CoreAPI)'
+2026-11-15 20:19:39.511 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5063/api/v1/login - 200 null application/json; charset=utf-8 208.2596ms
+2026-11-15 20:19:46.550 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5063/api/v1/Vendor/GetAll - null null
+2026-11-15 20:19:46.551 +05:30 [INF] CORS policy execution successful.
+2026-11-15 20:19:46.552 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5063/api/v1/Vendor/GetAll - 204 null null 1.2574ms
+2026-11-15 20:19:46.554 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/Vendor/GetAll - null null
+2026-11-15 20:19:46.558 +05:30 [INF] CORS policy execution successful.
+2026-11-15 20:19:46.564 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.VendorController.GetAll (Invoice.CoreAPI)'
+2026-11-15 20:19:46.583 +05:30 [INF] Route matched with {action = "GetAll", controller = "Vendor"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Invoice.CoreAPI.Controllers.VendorController (Invoice.CoreAPI).
+2026-11-15 20:19:46.736 +05:30 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Vendor_GetAll
+2026-11-15 20:19:46.970 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Invoice.DTOs.VendorDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-11-15 20:19:47.000 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.VendorController.GetAll (Invoice.CoreAPI) in 417.2042ms
+2026-11-15 20:19:47.001 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.VendorController.GetAll (Invoice.CoreAPI)'
+2026-11-15 20:19:47.001 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/Vendor/GetAll - 200 null application/json; charset=utf-8 446.8036ms
+2026-11-15 20:19:47.007 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5063/api/v1/PurchaseOrder/GetAllPaged?pageNumber=1&pageSize=10 - null null
+2026-11-15 20:19:47.034 +05:30 [INF] CORS policy execution successful.
+2026-11-15 20:19:47.034 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5063/api/v1/PurchaseOrder/GetAllPaged?pageNumber=1&pageSize=10 - 204 null null 26.8558ms
+2026-11-15 20:19:47.039 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/PurchaseOrder/GetAllPaged?pageNumber=1&pageSize=10 - null null
+2026-11-15 20:19:47.040 +05:30 [INF] CORS policy execution successful.
+2026-11-15 20:19:47.041 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.PurchaseOrderController.GetAllPaged (Invoice.CoreAPI)'
+2026-11-15 20:19:47.080 +05:30 [INF] Route matched with {action = "GetAllPaged", controller = "PurchaseOrder"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPaged(System.String, System.Nullable`1[System.Int32], System.String, Int32, Int32) on controller Invoice.CoreAPI.Controllers.PurchaseOrderController (Invoice.CoreAPI).
+2026-11-15 20:19:47.268 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@PurchaseOrderId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC dbo.sp_PurchaseOrderDetail_GetByPurchaseOrderId @PurchaseOrderId
+2026-11-15 20:19:47.271 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@PurchaseOrderId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC dbo.sp_PurchaseOrderDetail_GetByPurchaseOrderId @PurchaseOrderId
+2026-11-15 20:19:47.273 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@PurchaseOrderId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC dbo.sp_PurchaseOrderDetail_GetByPurchaseOrderId @PurchaseOrderId
+2026-11-15 20:19:47.275 +05:30 [INF] Executing OkObjectResult, writing value of type 'Invoice.Model.ApiResponse`1[[Invoice.DTOs.PagedResultDto`1[[Invoice.DTOs.PurchaseOrderDto, Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Invoice.DTOs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-11-15 20:19:47.320 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.PurchaseOrderController.GetAllPaged (Invoice.CoreAPI) in 239.5845ms
+2026-11-15 20:19:47.320 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.PurchaseOrderController.GetAllPaged (Invoice.CoreAPI)'
+2026-11-15 20:19:47.321 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/PurchaseOrder/GetAllPaged?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 282.0013ms
+2026-11-15 20:19:53.459 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5063/api/v1/PurchaseOrder/3/pdf - null null
+2026-11-15 20:19:53.460 +05:30 [INF] CORS policy execution successful.
+2026-11-15 20:19:53.461 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5063/api/v1/PurchaseOrder/3/pdf - 204 null null 1.3799ms
+2026-11-15 20:19:53.467 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5063/api/v1/PurchaseOrder/3/pdf - null null
+2026-11-15 20:19:53.468 +05:30 [INF] CORS policy execution successful.
+2026-11-15 20:19:53.469 +05:30 [INF] Executing endpoint 'Invoice.CoreAPI.Controllers.PurchaseOrderController.GetPdf (Invoice.CoreAPI)'
+2026-11-15 20:19:53.470 +05:30 [INF] Route matched with {action = "GetPdf", controller = "PurchaseOrder"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPdf(Int32) on controller Invoice.CoreAPI.Controllers.PurchaseOrderController (Invoice.CoreAPI).
+2026-11-15 20:19:53.484 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC dbo.sp_PurchaseOrder_GetById @Id
+2026-11-15 20:19:53.490 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@PurchaseOrderId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC dbo.sp_PurchaseOrderDetail_GetByPurchaseOrderId @PurchaseOrderId
+2026-11-15 20:19:53.505 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Vendor_GetById @Id
+2026-11-15 20:19:53.532 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetById @Id
+2026-11-15 20:19:53.536 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetById @Id
+2026-11-15 20:19:53.538 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@Id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_Itemmaster_GetById @Id
+2026-11-15 20:19:53.585 +05:30 [INF] Executing FileContentResult, sending file with download name 'PurchaseOrder-3.pdf' ...
+2026-11-15 20:19:53.586 +05:30 [INF] Executed action Invoice.CoreAPI.Controllers.PurchaseOrderController.GetPdf (Invoice.CoreAPI) in 115.7042ms
+2026-11-15 20:19:53.586 +05:30 [INF] Executed endpoint 'Invoice.CoreAPI.Controllers.PurchaseOrderController.GetPdf (Invoice.CoreAPI)'
+2026-11-15 20:19:53.586 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5063/api/v1/PurchaseOrder/3/pdf - 200 47065 application/pdf 119.4692ms

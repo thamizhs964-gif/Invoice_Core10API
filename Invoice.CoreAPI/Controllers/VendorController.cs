@@ -245,7 +245,7 @@ public class VendorController : ControllerBase
         string? VendorName,
         string? MobileNo,
         string? City,
-        string? Isactive,
+        bool? Isactive,
         int pageNumber = 1,
         int pageSize = 10)
     {

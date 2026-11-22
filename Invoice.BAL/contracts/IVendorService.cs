@@ -27,7 +27,7 @@ public interface IVendorService
 
         string? City,
 
-         string? Isactive,
+        bool? Isactive,
 
         int pageNumber,
 

@@ -631,7 +631,8 @@ public class VendorRepositoriesTests
 
         Assert.Equal(2, result.Data.Count());
 
-        Assert.True(result.TotalRecords >= 4);
+        // TSTV004 is soft-deleted and is excluded by sp_Vendor_GetPaged.
+        Assert.Equal(3, result.TotalRecords);
 
     }
 

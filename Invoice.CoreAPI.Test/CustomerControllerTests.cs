@@ -557,6 +557,7 @@ public class CustomerControllerTests
                 "Customer",
                 "111",
                 "Chennai",
+                true,
                 1,
                 10))
             .ReturnsAsync(pagedResult);
@@ -567,6 +568,7 @@ public class CustomerControllerTests
             "Customer",
             "111",
             "Chennai",
+            true,
             1,
             10);
 
@@ -597,6 +599,7 @@ public class CustomerControllerTests
                 "Customer",
                 "111",
                 "Chennai",
+                true,
                 1,
                 10),
             Times.Once);
@@ -619,6 +622,7 @@ public class CustomerControllerTests
                 null,
                 null,
                 null,
+                true,
                 1,
                 10))
             .ReturnsAsync(pagedResult);
@@ -628,7 +632,10 @@ public class CustomerControllerTests
             null,
             null,
             null,
-            null);
+            null,
+            true,
+            1,
+            10);
 
         // Assert
         var okResult = Assert.IsType<OkObjectResult>(response);
@@ -647,6 +654,7 @@ public class CustomerControllerTests
                 null,
                 null,
                 null,
+                true,
                 1,
                 10),
             Times.Once);
@@ -663,6 +671,7 @@ public class CustomerControllerTests
                 "Customer",
                 "111",
                 "Chennai",
+                true,
                 1,
                 10))
             .ThrowsAsync(new Exception("Paging failed"));
@@ -673,6 +682,7 @@ public class CustomerControllerTests
             "Customer",
             "111",
             "Chennai",
+            true,
             1,
             10);
 
